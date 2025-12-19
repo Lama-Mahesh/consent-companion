@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local data / policy dumps 
+data/
+policies/
+*.txt
+*.html
+
+# Model caches (HuggingFace / sentence-transformers)
+.cache/
+hf_cache/
+**/.cache/
+**/huggingface/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.ipynb
+
+# Secrets
+.env
+.venv
+.env.*

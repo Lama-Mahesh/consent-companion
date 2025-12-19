@@ -1,0 +1,14 @@
+[
+  {
+    "service_id": "reddit",
+    "doc_type": "privacy",
+    "repo": "OpenTermsArchive/france-versions",
+    "path": "Reddit/Privacy Policy.md"
+  },
+  {
+    "service_id": "google",
+    "doc_type": "privacy",
+    "repo": "OpenTermsArchive/france-versions",
+    "path": "Google/Privacy Policy.md"
+  }
+]
