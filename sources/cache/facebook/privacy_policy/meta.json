@@ -1,0 +1,11 @@
+{
+  "name": "Facebook Privacy Policy (UK)",
+  "repo": "OpenTermsArchive/vlopses-gb-versions",
+  "branch": "main",
+  "path": "Facebook/Privacy Policy.md",
+  "service_id": "facebook",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "1ab7e8336ed228d8d1326d9c88bb07a708834a6e020bffa3cff10a50fd571de4",
+  "previous_sha256": null,
+  "changed": false
+}

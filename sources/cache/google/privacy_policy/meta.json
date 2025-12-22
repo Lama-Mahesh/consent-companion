@@ -1,0 +1,11 @@
+{
+  "name": "Google Privacy Policy",
+  "repo": "OpenTermsArchive/france-versions",
+  "branch": "main",
+  "path": "Google/Privacy Policy.md",
+  "service_id": "google",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "b2c54e2495839e2910e328a6f779ae5f582e370760b5d610ed6e8a3cbea893d9",
+  "previous_sha256": null,
+  "changed": false
+}

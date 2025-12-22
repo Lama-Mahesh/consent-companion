@@ -1,0 +1,11 @@
+{
+  "name": "ChatGPT Privacy Policy",
+  "repo": "OpenTermsArchive/genai-contrib-versions",
+  "branch": "main",
+  "path": "ChatGPT/Privacy Policy.md",
+  "service_id": "chatgpt",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "1f44a1390846e308c414cd8e0f76eeac36746a7c55014ae96aede9cd5fac6944",
+  "previous_sha256": null,
+  "changed": false
+}

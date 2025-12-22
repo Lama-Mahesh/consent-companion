@@ -1,0 +1,11 @@
+{
+  "name": "Instagram Privacy Policy (UK)",
+  "repo": "OpenTermsArchive/vlopses-gb-versions",
+  "branch": "main",
+  "path": "Instagram/Privacy Policy.md",
+  "service_id": "instagram",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "4f30a4d09916344abdac0b3060c4e04a8f767549502289bab91275151ce5a283",
+  "previous_sha256": null,
+  "changed": false
+}

@@ -1,14 +1,106 @@
 [
   {
+    "name": "Reddit Privacy Policy",
     "service_id": "reddit",
-    "doc_type": "privacy",
+    "doc_type": "privacy_policy",
     "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
     "path": "Reddit/Privacy Policy.md"
   },
   {
+    "name": "Google Privacy Policy",
     "service_id": "google",
-    "doc_type": "privacy",
+    "doc_type": "privacy_policy",
     "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
     "path": "Google/Privacy Policy.md"
+  },
+  {
+    "name": "Twitch Privacy Policy",
+    "service_id": "twitch",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
+    "path": "Twitch/Privacy Policy.md"
+  },
+  {
+    "name": "WhatsApp Privacy Policy",
+    "service_id": "whatsapp",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
+    "path": "WhatsApp/Privacy Policy.md"
+  },
+  {
+    "name": "Netflix Privacy Policy",
+    "service_id": "netflix",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
+    "path": "Netflix/Privacy Policy.md"
+  },
+  {
+    "name": "Discord Privacy Policy",
+    "service_id": "discord",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
+    "path": "Discord/Privacy Policy.md"
+  },
+  {
+    "name": "Amazon Privacy Policy",
+    "service_id": "amazon",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/france-versions",
+    "branch": "main",
+    "path": "Amazon/Privacy Policy.md"
+  },
+  {
+    "name": "Facebook Privacy Policy (UK)",
+    "service_id": "facebook",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/vlopses-gb-versions",
+    "branch": "main",
+    "path": "Facebook/Privacy Policy.md"
+  },
+  {
+    "name": "Instagram Privacy Policy (UK)",
+    "service_id": "instagram",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/vlopses-gb-versions",
+    "branch": "main",
+    "path": "Instagram/Privacy Policy.md"
+  },
+  {
+    "name": "LinkedIn Privacy Policy (UK)",
+    "service_id": "linkedin",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/vlopses-gb-versions",
+    "branch": "main",
+    "path": "LinkedIn/Privacy Policy.md"
+  },
+  {
+    "name": "Snapchat Privacy Policy (UK)",
+    "service_id": "snapchat",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/vlopses-gb-versions",
+    "branch": "main",
+    "path": "Snapchat/Privacy Policy.md"
+  },
+  {
+    "name": "X (Twitter) Privacy Policy (UK)",
+    "service_id": "x",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/vlopses-gb-versions",
+    "branch": "main",
+    "path": "X/Privacy Policy.md"
+  },
+  {
+    "name": "ChatGPT Privacy Policy",
+    "service_id": "chatgpt",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/genai-contrib-versions",
+    "branch": "main",
+    "path": "ChatGPT/Privacy Policy.md"
   }
 ]

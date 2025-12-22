@@ -1,0 +1,11 @@
+{
+  "name": "Netflix Privacy Policy",
+  "repo": "OpenTermsArchive/france-versions",
+  "branch": "main",
+  "path": "Netflix/Privacy Policy.md",
+  "service_id": "netflix",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "9bf9ad2077ff391295e8a9c30a57a24664e7533958c20d8e0b11c7352a0ebc9e",
+  "previous_sha256": null,
+  "changed": false
+}

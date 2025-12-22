@@ -1,0 +1,45 @@
+name: Nightly OTA Sync
+
+on:
+  schedule:
+    - cron: "30 2 * * *" # 02:30 UTC daily
+  workflow_dispatch: {}
+
+jobs:
+  ota-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || pip install -r backend/requirements.txt || true
+          pip install requests
+
+      - name: Run OTA sync (rolling cache)
+        env:
+          OTA_TARGETS_PATH: sources/ota_targets.json
+          CACHE_DIR: data/cache
+          API_MODE: semantic
+          MAX_CHANGES: "50"
+        run: |
+          python -m backend.scripts.ota_sync
+
+      - name: Commit cache updates
+        run: |
+          git config user.name "consent-companion-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/cache
+          git status
+          git commit -m "Nightly OTA sync (rolling cache)" || echo "No changes to commit"
+          git push

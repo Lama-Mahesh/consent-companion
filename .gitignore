@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+*.py[cod]
 *.pyc
 *.pyo
 *.pyd
@@ -41,3 +42,9 @@ hf_cache/
 .env
 .venv
 .env.*
+
+# Runtime caches / outputs
+backend/cache/
+
+# Node (if you later add frontend)
+node_modules/

@@ -1,0 +1,11 @@
+{
+  "name": "Reddit Privacy Policy",
+  "repo": "OpenTermsArchive/france-versions",
+  "branch": "main",
+  "path": "Reddit/Privacy Policy.md",
+  "service_id": "reddit",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "8f16a0fae5c55a3f99c8dae5ee3e8f3ba70b49469642d331d65fb24e33ed86ff",
+  "previous_sha256": null,
+  "changed": false
+}

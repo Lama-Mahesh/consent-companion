@@ -1,0 +1,11 @@
+{
+  "name": "Discord Privacy Policy",
+  "repo": "OpenTermsArchive/france-versions",
+  "branch": "main",
+  "path": "Discord/Privacy Policy.md",
+  "service_id": "discord",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "a22ae84cc497371a273ed7d8e690b93aef942136f95bf6e5d333b7b4fbfc5675",
+  "previous_sha256": null,
+  "changed": false
+}

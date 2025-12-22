@@ -1,0 +1,11 @@
+{
+  "name": "LinkedIn Privacy Policy (UK)",
+  "repo": "OpenTermsArchive/vlopses-gb-versions",
+  "branch": "main",
+  "path": "LinkedIn/Privacy Policy.md",
+  "service_id": "linkedin",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "ec224bf56393b1f667bea3f6fc6f9192dd3ac5b93aa7aa50068aab17189f7022",
+  "previous_sha256": null,
+  "changed": false
+}

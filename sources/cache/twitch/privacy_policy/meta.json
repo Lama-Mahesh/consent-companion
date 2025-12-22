@@ -1,0 +1,11 @@
+{
+  "name": "Twitch Privacy Policy",
+  "repo": "OpenTermsArchive/france-versions",
+  "branch": "main",
+  "path": "Twitch/Privacy Policy.md",
+  "service_id": "twitch",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "a94f1425fca5bdd4f7ae484fea77de7ffb418eaaddb6a1ee5fa6ffdc1aa72006",
+  "previous_sha256": null,
+  "changed": false
+}

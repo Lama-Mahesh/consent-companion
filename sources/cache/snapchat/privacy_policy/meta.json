@@ -1,0 +1,11 @@
+{
+  "name": "Snapchat Privacy Policy (UK)",
+  "repo": "OpenTermsArchive/vlopses-gb-versions",
+  "branch": "main",
+  "path": "Snapchat/Privacy Policy.md",
+  "service_id": "snapchat",
+  "doc_type": "privacy_policy",
+  "latest_sha256": "2f6b204966d2bd8b2fbe8ec11e91aa07499b584c51e7172deff2b9012190dc0e",
+  "previous_sha256": null,
+  "changed": false
+}
