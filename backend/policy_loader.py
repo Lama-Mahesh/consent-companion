@@ -231,19 +231,9 @@ def load_from_url(url: str, *, timeout: float = 25.0) -> LoadedPolicy:
 # ----------------------------
 # OTA: targets + loader
 # ----------------------------
-def _project_root() -> Path:
-    """
-    backend/policy_loader.py -> project root is one level up from backend/
-    """
-    return Path(__file__).resolve().parents[1]
-
-
 def _default_targets_path() -> Path:
-    """
-    Default location (your layout):
-      <project_root>/sources/ota_targets.json
-    """
-    return _project_root() / "sources" / "ota_targets.json"
+    # backend/policy_loader.py -> project root -> sources/ota_targets.json
+    return Path(__file__).resolve().parents[1] / "sources" / "ota_targets.json"
 
 
 def load_ota_targets(targets_path: Optional[str | Path] = None) -> List[Dict[str, Any]]:

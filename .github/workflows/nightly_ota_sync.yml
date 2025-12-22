@@ -5,6 +5,9 @@ on:
     - cron: "30 2 * * *" # 02:30 UTC daily
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   ota-sync:
     runs-on: ubuntu-latest

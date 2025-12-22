@@ -1,4 +1,6 @@
+# ======================
 # Python
+# ======================
 __pycache__/
 *.py[cod]
 *.pyc
@@ -8,43 +10,70 @@ __pycache__/
 dist/
 build/
 
+# ======================
 # Virtual environments
+# ======================
 .venv/
 venv/
 ENV/
 
+# ======================
 # OS / editor
+# ======================
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
+# ======================
 # Logs
+# ======================
 *.log
 
-# Local data / policy dumps 
+# ======================
+# Local data (default ignore)
+# ======================
 data/
 policies/
+
+# Allow rolling cache ONLY (research artefacts)
+!data/
+!data/cache/
+!data/cache/**
+
+# ======================
+# Raw policy dumps (never commit)
+# ======================
 *.txt
 *.html
 
+# ======================
 # Model caches (HuggingFace / sentence-transformers)
+# ======================
 .cache/
 hf_cache/
 **/.cache/
 **/huggingface/
 
+# ======================
 # Jupyter / Colab
+# ======================
 .ipynb_checkpoints/
 *.ipynb
 
+# ======================
 # Secrets
+# ======================
 .env
-.venv
 .env.*
+.venv
 
-# Runtime caches / outputs
+# ======================
+# Runtime caches / outputs (legacy – keep ignored)
+# ======================
 backend/cache/
 
-# Node (if you later add frontend)
+# ======================
+# Node (future frontend)
+# ======================
 node_modules/
