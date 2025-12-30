@@ -31,15 +31,12 @@ Thumbs.db
 *.log
 
 # ======================
-# Local data (default ignore)
+# Local data (ignore everything in data/ EXCEPT rolling cache)
 # ======================
-data/
-policies/
-
-# Allow rolling cache ONLY (research artefacts)
-!data/
+data/**
 !data/cache/
 !data/cache/**
+policies/
 
 # ======================
 # Raw policy dumps (never commit)
@@ -74,6 +71,6 @@ hf_cache/
 backend/cache/
 
 # ======================
-# Node (future frontend)
+# Node (root-level)
 # ======================
 node_modules/

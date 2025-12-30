@@ -5,7 +5,7 @@ import json
 import hashlib
 from pathlib import Path
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List
 
 from backend.policy_loader import (
     load_ota_targets,
@@ -39,6 +39,13 @@ def clamp(n: int, lo: int, hi: int) -> int:
 
 
 def run_diff(old_text: str, new_text: str, mode: str, max_changes: int) -> Dict[str, Any]:
+    """
+    Compute diff. If semantic deps are missing, fall back to basic automatically.
+    Returns: { engine: {...}, changes: [...] }
+    """
+    mode = (mode or "semantic").strip().lower()
+    max_changes = clamp(max_changes, 1, 500)
+
     if mode == "basic":
         changes = analyze_policy_change_basic(old_text, new_text)
         formatted = []
@@ -58,26 +65,48 @@ def run_diff(old_text: str, new_text: str, mode: str, max_changes: int) -> Dict[
             "changes": formatted,
         }
 
-    # semantic
-    changes_raw = analyze_policy_change_semantic(old_text, new_text, model=None)
-    formatted = []
-    for ch in changes_raw[:max_changes]:
-        formatted.append({
-            "category": ch.get("category"),
-            "type": ch.get("type"),
-            "risk_score": ch.get("risk_score", 0.0),
-            "similarity": ch.get("similarity"),
-            "old_index": ch.get("old_index"),
-            "new_index": ch.get("new_index"),
-            "old": ch.get("old"),
-            "new": ch.get("new"),
-            "explanation": ch.get("explanation"),
-            "suggested_action": ch.get("suggested_action"),
-        })
-    return {
-        "engine": {"mode": "semantic", "model_name": "all-MiniLM-L6-v2", "num_changes": len(formatted)},
-        "changes": formatted,
-    }
+    # semantic (with safe fallback)
+    try:
+        changes_raw = analyze_policy_change_semantic(old_text, new_text, model=None)
+        formatted = []
+        for ch in changes_raw[:max_changes]:
+            formatted.append({
+                "category": ch.get("category"),
+                "type": ch.get("type"),
+                "risk_score": ch.get("risk_score", 0.0),
+                "similarity": ch.get("similarity"),
+                "old_index": ch.get("old_index"),
+                "new_index": ch.get("new_index"),
+                "old": ch.get("old"),
+                "new": ch.get("new"),
+                "explanation": ch.get("explanation"),
+                "suggested_action": ch.get("suggested_action"),
+            })
+        return {
+            "engine": {"mode": "semantic", "model_name": "all-MiniLM-L6-v2", "num_changes": len(formatted)},
+            "changes": formatted,
+        }
+
+    except ImportError as ie:
+        # Most common in GitHub Actions if sentence-transformers isn't installed
+        print(f"[WARN] Semantic unavailable ({ie}). Falling back to BASIC.")
+        changes = analyze_policy_change_basic(old_text, new_text)
+        formatted = []
+        for ch in changes[:max_changes]:
+            formatted.append({
+                "category": ch.get("category"),
+                "type": "modified",
+                "risk_score": ch.get("risk_score", 1.0),
+                "line_number": ch.get("line_number"),
+                "old": ch.get("old"),
+                "new": ch.get("new"),
+                "explanation": ch.get("explanation"),
+                "suggested_action": ch.get("suggested_action"),
+            })
+        return {
+            "engine": {"mode": "basic", "model_name": None, "num_changes": len(formatted), "fallback_reason": "semantic_import_error"},
+            "changes": formatted,
+        }
 
 
 def main() -> None:
@@ -88,6 +117,8 @@ def main() -> None:
 
     targets: List[Dict[str, Any]] = load_ota_targets(targets_path)
 
+    any_updates = False
+
     for t in targets:
         service_id = t.get("service_id")
         doc_type = t.get("doc_type")
@@ -97,10 +128,9 @@ def main() -> None:
         path = t.get("path")
 
         if not (service_id and doc_type and repo and path):
-            print(f"Skipping invalid target: {t}")
+            print(f"[SKIP] Invalid target: {t}")
             continue
 
-        # per-target folder
         out_dir = cache_dir / service_id / doc_type
         latest_path = out_dir / "latest.json"
         prev_path = out_dir / "previous.json"
@@ -109,14 +139,21 @@ def main() -> None:
         url = ota_target_raw_url(t)
 
         print(f"\n==> Fetching {name}")
-        loaded = load_from_url(url)
+
+        # --- Fetch protected: one target failure should not kill the whole job
+        try:
+            loaded = load_from_url(url)
+        except Exception as e:
+            print(f"[ERROR] Fetch failed for {name}: {e}")
+            continue
+
         text = loaded.text
         fetched_at = utc_now_iso()
         content_hash = sha256_text(text)
 
         latest_obj = safe_read_json(latest_path)
 
-        # If no latest exists yet -> initialize
+        # First run init
         if not latest_obj:
             latest_snapshot = {
                 "service_id": service_id,
@@ -135,10 +172,11 @@ def main() -> None:
                 "text": text,
             }
             safe_write_json(latest_path, latest_snapshot)
+            any_updates = True
             print("Initialized latest.json (first run)")
             continue
 
-        # If unchanged -> do nothing
+        # No change
         if latest_obj.get("content_sha256") == content_hash:
             print("No change (hash match) — skipping diff.")
             continue
@@ -165,34 +203,45 @@ def main() -> None:
         }
         safe_write_json(latest_path, latest_snapshot)
 
-        # Compute diff previous -> latest
-        old_text = (latest_obj.get("text") or "").strip()
-        new_text = text.strip()
+        # Diff prev -> latest (protected)
+        try:
+            old_text = (latest_obj.get("text") or "").strip()
+            new_text = text.strip()
 
-        diff_core = run_diff(old_text, new_text, mode=mode, max_changes=max_changes)
+            diff_core = run_diff(old_text, new_text, mode=mode, max_changes=max_changes)
 
-        diff_obj = {
-            "service_id": service_id,
-            "doc_type": doc_type,
-            "name": name,
-            "generated_at": utc_now_iso(),
-            "provenance": {
-                "old": {
-                    "fetched_at": latest_obj.get("fetched_at"),
-                    "content_sha256": latest_obj.get("content_sha256"),
-                    "source": latest_obj.get("source"),
+            diff_obj = {
+                "service_id": service_id,
+                "doc_type": doc_type,
+                "name": name,
+                "generated_at": utc_now_iso(),
+                "mode_requested": mode,
+                "mode_used": diff_core.get("engine", {}).get("mode"),
+                "provenance": {
+                    "old": {
+                        "fetched_at": latest_obj.get("fetched_at"),
+                        "content_sha256": latest_obj.get("content_sha256"),
+                        "source": latest_obj.get("source"),
+                    },
+                    "new": {
+                        "fetched_at": fetched_at,
+                        "content_sha256": content_hash,
+                        "source": latest_snapshot.get("source"),
+                    },
                 },
-                "new": {
-                    "fetched_at": fetched_at,
-                    "content_sha256": content_hash,
-                    "source": latest_snapshot.get("source"),
-                },
-            },
-            **diff_core,
-        }
-        safe_write_json(diff_path, diff_obj)
+                **diff_core,
+            }
+            safe_write_json(diff_path, diff_obj)
+            any_updates = True
+            print("Updated latest.json, previous.json, last_diff.json")
 
-        print("Updated latest.json, previous.json, last_diff.json")
+        except Exception as e:
+            print(f"[ERROR] Diff failed for {name}: {e}")
+            # keep latest/previous snapshots, but skip writing last_diff.json
+            continue
+
+    if not any_updates:
+        print("\nNo updates written (all targets unchanged).")
 
 
 if __name__ == "__main__":
