@@ -1,0 +1,74 @@
+/* src/App.css */
+:root {
+  --bg: #0b0f17;
+  --card: #121a27;
+  --muted: #90a4b8;
+  --text: #e8eef6;
+  --border: rgba(255,255,255,0.08);
+  --accent: #6aa6ff;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px;
+  text-align: left;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  backdrop-filter: blur(6px);
+}
+
+.app-brand .app-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.app-brand .app-subtitle {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.app-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.app-link {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.app-link:hover {
+  opacity: 1;
+  border-color: rgba(106,166,255,0.35);
+}
+
+.app-link.active {
+  border-color: rgba(106,166,255,0.55);
+  box-shadow: 0 0 0 3px rgba(106,166,255,0.12);
+}
+
+.app-main {
+  margin-top: 14px;
+}
