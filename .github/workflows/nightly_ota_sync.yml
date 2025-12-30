@@ -44,7 +44,19 @@ jobs:
         run: |
           git config user.name "consent-companion-bot"
           git config user.email "actions@users.noreply.github.com"
+
           git add data/cache
+          
+          # If nothing staged, stop here (no commit, no push)
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
           git status
-          git commit -m "Nightly OTA sync (rolling cache)" || echo "No changes to commit"
-          git push
+          git commit -m "Nightly OTA sync (rolling cache)"
+
+          # Always sync with remote main before pushing
+          git pull --rebase origin main
+          git push origin main
+          
+          
