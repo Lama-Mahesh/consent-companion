@@ -1,0 +1,106 @@
+.sp-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 20, 24, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.sp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.sp-title {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.sp-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.sp-pill {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.15s ease, border 0.15s ease;
+}
+
+.sp-pill:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.sp-pill.active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.sp-body {
+  display: grid;
+  gap: 10px;
+}
+
+.sp-block {
+  display: grid;
+  gap: 8px;
+}
+
+.sp-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.sp-input,
+.sp-select,
+.sp-textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.sp-textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.sp-file {
+  width: 100%;
+}
+
+.sp-filemeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.sp-hint {
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+
+@media (max-width: 720px) {
+  .sp-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sp-pills {
+    justify-content: flex-start;
+  }
+}
