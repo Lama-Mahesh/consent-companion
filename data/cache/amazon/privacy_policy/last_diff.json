@@ -1,0 +1,61 @@
+{
+  "service_id": "amazon",
+  "doc_type": "privacy_policy",
+  "name": "Amazon Privacy Policy",
+  "generated_at": "2025-12-30T03:21:26+00:00",
+  "provenance": {
+    "old": {
+      "fetched_at": "2025-12-22T06:45:30+00:00",
+      "content_sha256": "59d3dc4bc6033f4598d8c147fd3bc0e3f55757ace13621df7ce6ff43c9f3db2e",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Amazon/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Amazon/Privacy Policy.md"
+      }
+    },
+    "new": {
+      "fetched_at": "2025-12-30T03:21:17+00:00",
+      "content_sha256": "8f1aa922724ac71dabda335a75cf6c90faf33a73462ec16b5d20d9337cb37499",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Amazon/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Amazon/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 2
+  },
+  "changes": [
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 5,
+      "old": null,
+      "new": "Veuillez également consulter la [politique relative aux cookies](https://www.amazon.fr/-/en/gp/help/customer/display.html?nodeId=GVASXV5UZ64R4Y25) et la politique relative aux [publicités basées sur vos centres d'intérêt](https://www.amazon.fr/-/en/gp/help/customer/display.html?nodeId=G64JFZVFDY66XG9K).",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 0.5,
+      "similarity": 0.8811905384063721,
+      "old_index": 2,
+      "new_index": 2,
+      "old": "Dernière mise à jour le 09 janvier 2025.",
+      "new": "Dernière mise à jour : le 22 décembre 2025.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}
