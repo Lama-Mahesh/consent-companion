@@ -1,12 +1,16 @@
-name: Nightly OTA Sync
+name: OTA Sync (smart)
 
 on:
   schedule:
-    - cron: "30 2 * * *" # 02:30 UTC daily
+    - cron: "0 */3 * * *" # every 3 hours (UTC)
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+concurrency:
+  group: ota-sync-main
+  cancel-in-progress: false
 
 jobs:
   ota-sync:
@@ -23,15 +27,43 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      # Light deps first (fast upstream check)
+      - name: Install dependencies (light)
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt || true
-          pip install -r backend/requirements.txt || true
           pip install requests
-          pip install sentence-transformers torch
 
-      - name: Run OTA sync (rolling cache)
+          # If your check_upstream imports project modules, keep these.
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+          if [ -f backend/requirements.txt ]; then
+            pip install -r backend/requirements.txt
+          fi
+
+      - name: Check upstream (fast)
+        id: check
+        env:
+          OTA_TARGETS_PATH: sources/ota_targets.json
+        run: |
+          python -m backend.scripts.check_upstream \
+            --targets sources/ota_targets.json \
+            --state data/cache/_upstream_state.json
+
+      - name: Show check outputs
+        run: |
+          echo "changed = ${{ steps.check.outputs.changed }}"
+          echo "changed_keys = ${{ steps.check.outputs.changed_keys }}"
+
+      # Heavy deps ONLY if something changed upstream
+      - name: Install semantic engine (heavy, only if changed)
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch sentence-transformers
+
+      - name: Run OTA sync (only if upstream changed)
+        if: steps.check.outputs.changed == 'true'
         env:
           OTA_TARGETS_PATH: sources/ota_targets.json
           CACHE_DIR: data/cache
@@ -40,23 +72,27 @@ jobs:
         run: |
           python -m backend.scripts.ota_sync
 
-      - name: Commit cache updates
+      - name: Commit & push cache/state (only if upstream changed)
+        if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "consent-companion-bot"
           git config user.email "actions@users.noreply.github.com"
 
+          # Track cache + upstream state file
           git add data/cache
-          
+
           # If nothing staged, stop here (no commit, no push)
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          git status
-          git commit -m "Nightly OTA sync (rolling cache)"
 
-          # Always sync with remote main before pushing
-          git pull --rebase origin main
-          git push origin main
-          
-          
+          git status
+          git commit -m "OTA sync: update rolling cache"
+
+          # Rebase onto latest main to prevent push rejection
+          git fetch origin main
+          git rebase origin/main
+
+          # Push current HEAD to main
+          git push origin HEAD:main
