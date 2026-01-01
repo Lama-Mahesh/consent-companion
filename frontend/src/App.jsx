@@ -3,6 +3,7 @@ import { Routes, Route, Navigate, Link } from "react-router-dom";
 import PolicyCompare from "./pages/PolicyCompare";
 import History from "./pages/History";
 import HistoryDetail from "./pages/HistoryDetail";
+import OtaCache from "./pages/OtaCache";
 import "./App.css";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <nav className="app-nav">
           <Link to="/compare" className="app-link">Compare</Link>
           <Link to="/history" className="app-link">History</Link>
+          <Link to="/ota-cache" className="app-link">OTA Cache</Link>
         </nav>
       </header>
 
@@ -26,6 +28,7 @@ export default function App() {
           <Route path="/compare" element={<PolicyCompare />} />
           <Route path="/history" element={<History />} />
           <Route path="/history/:id" element={<HistoryDetail />} />
+          <Route path="/ota-cache" element={<OtaCache />} />
           <Route path="*" element={<Navigate to="/compare" replace />} />
         </Routes>
       </main>
