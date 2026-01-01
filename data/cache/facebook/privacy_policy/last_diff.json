@@ -2,13 +2,13 @@
   "service_id": "facebook",
   "doc_type": "privacy_policy",
   "name": "Facebook Privacy Policy (UK)",
-  "generated_at": "2025-12-31T03:51:35+00:00",
+  "generated_at": "2026-01-01T12:30:23+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2025-12-30T03:21:26+00:00",
-      "content_sha256": "3f534e674fe5743be4c806536aa528553927a402bad694de30b03029b77183cc",
+      "fetched_at": "2025-12-31T03:51:03+00:00",
+      "content_sha256": "1ab7e8336ed228d8d1326d9c88bb07a708834a6e020bffa3cff10a50fd571de4",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2025-12-31T03:51:03+00:00",
-      "content_sha256": "1ab7e8336ed228d8d1326d9c88bb07a708834a6e020bffa3cff10a50fd571de4",
+      "fetched_at": "2026-01-01T12:30:01+00:00",
+      "content_sha256": "3f534e674fe5743be4c806536aa528553927a402bad694de30b03029b77183cc",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -43,7 +43,7 @@
       "old_index": null,
       "new_index": 732,
       "old": null,
-      "new": "A person, business, organisation or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things such as investigate suspicious activity and provide customer support.",
+      "new": "A person, business, organization or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things like investigate suspicious activity and provide customer support.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
@@ -79,7 +79,7 @@
       "old_index": null,
       "new_index": 860,
       "old": null,
-      "new": "A person, business, organisation or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things such as investigate suspicious activity and provide customer support.",
+      "new": "A person, business, organization or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things like investigate suspicious activity and provide customer support.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
@@ -211,7 +211,7 @@
       "old_index": null,
       "new_index": 1390,
       "old": null,
-      "new": "A person, business, organisation or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things such as investigate suspicious activity and provide customer support.",
+      "new": "A person, business, organization or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things like investigate suspicious activity and provide customer support.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
@@ -223,7 +223,7 @@
       "old_index": null,
       "new_index": 421,
       "old": null,
-      "new": "Just like you need a postal address to receive a letter from a friend, your device needs an IP address to receive information on the Internet.",
+      "new": "Just like you need a mailing address to receive a letter from a friend, your device needs an IP address to receive information on the internet.",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -259,7 +259,7 @@
       "old_index": null,
       "new_index": 1085,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -271,7 +271,7 @@
       "old_index": null,
       "new_index": 1113,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -295,7 +295,7 @@
       "old_index": null,
       "new_index": 1162,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -319,7 +319,7 @@
       "old_index": null,
       "new_index": 1187,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -343,7 +343,7 @@
       "old_index": null,
       "new_index": 1214,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -367,7 +367,7 @@
       "old_index": null,
       "new_index": 1240,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -391,7 +391,7 @@
       "old_index": null,
       "new_index": 1279,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -415,7 +415,7 @@
       "old_index": null,
       "new_index": 1305,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -439,7 +439,7 @@
       "old_index": null,
       "new_index": 1337,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -463,7 +463,7 @@
       "old_index": null,
       "new_index": 1366,
       "old": null,
-      "new": "* Information about the network that you connect your device to, including your IP address",
+      "new": "* Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -487,7 +487,7 @@
       "old_index": null,
       "new_index": 1384,
       "old": null,
-      "new": "Just like you need a postal address to receive a letter from a friend, your device needs an IP address to receive information on the Internet.",
+      "new": "Just like you need a mailing address to receive a letter from a friend, your device needs an IP address to receive information on the internet.",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
       "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
@@ -547,7 +547,7 @@
       "old_index": null,
       "new_index": 819,
       "old": null,
-      "new": "* **Find and delete specific information.** We offer tools that you can use to delete certain information. For example, you can use Delete buttons to delete content that you've posted to your account. You can also use tools such as [activity log](https://mbasic.facebook.com/privacy/policy/logging/?target=POLICY_PLATFORM_LINK_COLLECTION%3AACTIVITY_LOG&element=privacy_policy_inline_text&containing_element_id=POLICY_ANNOTATION%3A6.ex.2-DeleteYourInformationOr&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F0%2Fallactivity%2F%3Fentry_point%3DPOLICY_ANNOTATION%253A6.ex.2-DeleteYourInformationOr%26should_load_landing_page%3D1) on Facebook to send content to the recycle bin in bulk. When you delete content, it's no longer visible to other users. Visit the [Facebook Help Centre](https://www.facebook.com/help/356107851084108?entry_point=POLICY_ANNOTATION%3A6.ex.2-DeleteYourInformationOr) or [Instagram Help Centre](https://lm.facebook.com/l.php?u=https%3A%2F%2Fhelp.instagram.com%2F711062676142607%3Fentry_point%3DPOLICY_ANNOTATION%253A6.ex.2-DeleteYourInformationOr) to learn what happens when you delete your content or move it to the [recycle bin](https://www.facebook.com/help/3094200253964092?entry_point=POLICY_ANNOTATION%3A6.ex.2-DeleteYourInformationOr).",
+      "new": "* **Find and delete specific information.** We offer tools you can use to delete certain information. For example, you can use Delete buttons to delete content you’ve posted to your account. You can also use tools like [activity log](https://mbasic.facebook.com/privacy/policy/logging/?target=POLICY_PLATFORM_LINK_COLLECTION%3AACTIVITY_LOG&element=privacy_policy_inline_text&containing_element_id=POLICY_ANNOTATION%3A6.ex.2-DeleteYourInformationOr&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F0%2Fallactivity%2F%3Fentry_point%3DPOLICY_ANNOTATION%253A6.ex.2-DeleteYourInformationOr%26should_load_landing_page%3D1) on Facebook to send content to the trash in bulk. When you delete content, it’s no longer visible to other users. Visit the [Facebook Help Center](https://www.facebook.com/help/356107851084108?entry_point=POLICY_ANNOTATION%3A6.ex.2-DeleteYourInformationOr) or [Instagram Help Center](https://lm.facebook.com/l.php?u=https%3A%2F%2Fhelp.instagram.com%2F711062676142607%3Fentry_point%3DPOLICY_ANNOTATION%253A6.ex.2-DeleteYourInformationOr) to learn what happens when you delete your content or move it to [trash](https://www.facebook.com/help/3094200253964092?entry_point=POLICY_ANNOTATION%3A6.ex.2-DeleteYourInformationOr).",
       "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
       "suggested_action": "This may improve the protection of your data. You can still review the details to understand how security practices have changed."
     },
@@ -559,7 +559,7 @@
       "old_index": null,
       "new_index": 115,
       "old": null,
-      "new": "This Policy describes the information that we, Meta Platforms, Inc., process to provide [Meta Products](https://www.facebook.com/legal/meta-products?entry_point=POLICY_ANNOTATION%3A0.ex.0-WhatProductsDoesThis), which we also call \"Products\".",
+      "new": "This Policy describes the information we, Meta Platforms, Inc., process to provide [Meta Products](https://www.facebook.com/legal/meta-products?entry_point=POLICY_ANNOTATION%3A0.ex.0-WhatProductsDoesThis), which we also call \"Products.\"",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -571,7 +571,7 @@
       "old_index": null,
       "new_index": 399,
       "old": null,
-      "new": "This Policy describes the information that we, Meta Platforms, Inc., process to provide [Meta Products](https://www.facebook.com/legal/meta-products?entry_point=POLICY_ANNOTATION%3A0.ex.0-WhatProductsDoesThis), which we also call \"Products\".",
+      "new": "This Policy describes the information we, Meta Platforms, Inc., process to provide [Meta Products](https://www.facebook.com/legal/meta-products?entry_point=POLICY_ANNOTATION%3A0.ex.0-WhatProductsDoesThis), which we also call \"Products.\"",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -583,7 +583,7 @@
       "old_index": null,
       "new_index": 420,
       "old": null,
-      "new": "Stands for \"Internet protocol address\". It's a unique number assigned to a device, such as a phone or computer, which allows it to communicate over the Internet. Numbers are assigned according to standard guidelines, or protocols.",
+      "new": "Stands for \"internet protocol address.\" It’s a unique number assigned to a device, like a phone or computer, that allows it to communicate over the internet. Numbers are assigned according to standard guidelines, or protocols.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -595,7 +595,7 @@
       "old_index": null,
       "new_index": 430,
       "old": null,
-      "new": "A person, business, organisation or body using or integrating our Products to advertise, market or support their products and services",
+      "new": "A person, business, organization or body using or integrating our Products to advertise, market or support their products and services",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -607,7 +607,7 @@
       "old_index": null,
       "new_index": 434,
       "old": null,
-      "new": "A person, business, organisation or body that is not part of the Meta Companies",
+      "new": "A person, business, organization or body that is not part of the Meta Companies",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -631,7 +631,7 @@
       "old_index": null,
       "new_index": 539,
       "old": null,
-      "new": "This Policy describes the information that we, Meta Platforms, Inc., process to provide [Meta Products](https://www.facebook.com/legal/meta-products?entry_point=POLICY_ANNOTATION%3A0.ex.0-WhatProductsDoesThis), which we also call \"Products\".",
+      "new": "This Policy describes the information we, Meta Platforms, Inc., process to provide [Meta Products](https://www.facebook.com/legal/meta-products?entry_point=POLICY_ANNOTATION%3A0.ex.0-WhatProductsDoesThis), which we also call \"Products.\"",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }

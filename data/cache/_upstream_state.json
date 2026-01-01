@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "fingerprints": {
+    "reddit:privacy_policy": "3476b2789f0349b6f6095d3e19f5e509677e3052e45ac714863935067f76a97a",
+    "google:privacy_policy": "ed811581674d2b3f546a6b0e01fb8ce14cdbc542edd4c1c498becbc7f5506748",
+    "twitch:privacy_policy": "29e05da2b4f8fcc40d03b88fb7c2bdb3eb636485e1c514c490b55e42910b6cde",
+    "whatsapp:privacy_policy": "058c26f17d472e17c09b3b0252bfdc12886d8e6a0b1c90d40edc57afdfb65534",
+    "netflix:privacy_policy": "4fb9bd18137302cd792cb315bb0f20ac87fc3b2670394e3da0d69c88ced6c9d0",
+    "discord:privacy_policy": "ac6eecc830443dfc48189152e7683ad1b8c81d88e8d24500840e6137fceab0a7",
+    "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
+    "facebook:privacy_policy": "5a8235486d40c65136fe10ebe4201ce1c0f88e9cb24b46f18ae45096e0213196",
+    "instagram:privacy_policy": "882d791a5f48a57a421e8242a0f9c9a875520adc20d66e0c47a55484534e7bb6",
+    "linkedin:privacy_policy": "bf08e284ac26f218c5193ab9587a43dec38453bbed1be5cfbe72a66a6ff306e5",
+    "snapchat:privacy_policy": "01e81443e3df9bf6c2555c3cd4874abb1c3547d5de0137e491a350b3e4c77fe4",
+    "x:privacy_policy": "9b8f6218c53d8f5b865e36cb8f26a1de36171282b2b3af2087c91f7c85e384a0",
+    "chatgpt:privacy_policy": "ae0bfacc3eb4233b4350ee78f9fece10b1bd6a082e39f2661d09110e0c9dc863"
+  },
+  "changed_keys": [
+    "reddit:privacy_policy",
+    "google:privacy_policy",
+    "twitch:privacy_policy",
+    "whatsapp:privacy_policy",
+    "netflix:privacy_policy",
+    "discord:privacy_policy",
+    "amazon:privacy_policy",
+    "facebook:privacy_policy",
+    "instagram:privacy_policy",
+    "linkedin:privacy_policy",
+    "snapchat:privacy_policy",
+    "x:privacy_policy",
+    "chatgpt:privacy_policy"
+  ],
+  "failures": []
+}
