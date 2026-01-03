@@ -1,16 +1,56 @@
-.hist-page { padding: 4px; }
+/* History.css */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hist-page {
+  padding: 4px;
+}
+
+/* =========================
+   Header
+========================= */
 .hist-header {
   display: flex;
   justify-content: space-between;
   gap: 14px;
   align-items: flex-start;
   margin-bottom: 14px;
+  flex-wrap: wrap;
 }
-.hist-h1 { margin: 0; font-size: 20px; }
-.hist-p { margin: 6px 0 0; color: #90a4b8; font-size: 13px; }
-.hist-actions { display: flex; gap: 12px; align-items: center; }
-.hist-metrics { color: #90a4b8; font-size: 13px; display: flex; gap: 8px; }
 
+.hist-h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.hist-p {
+  margin: 6px 0 0;
+  color: #90a4b8;
+  font-size: 13px;
+}
+
+.hist-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hist-metrics {
+  color: #90a4b8;
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   Buttons
+========================= */
 .hist-btn {
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(255,255,255,0.04);
@@ -21,11 +61,24 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 13px;
+  line-height: 1.2;
 }
-.hist-btn:hover { border-color: rgba(106,166,255,0.35); }
-.hist-btn.ghost { background: transparent; }
-.hist-btn.danger { border-color: rgba(255,90,90,0.35); }
 
+.hist-btn:hover {
+  border-color: rgba(106,166,255,0.35);
+}
+
+.hist-btn.ghost {
+  background: transparent;
+}
+
+.hist-btn.danger {
+  border-color: rgba(255,90,90,0.35);
+}
+
+/* =========================
+   Empty state
+========================= */
 .hist-empty {
   border: 1px dashed rgba(255,255,255,0.14);
   border-radius: 14px;
@@ -33,38 +86,128 @@
   color: #90a4b8;
 }
 
-.hist-list { display: grid; gap: 12px; }
+/* =========================
+   Filters (FIXED)
+========================= */
+.hist-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px 160px 130px;
+  gap: 10px;
+  margin: 10px 0 14px;
+}
+
+/* CRITICAL: allow grid children to shrink */
+.hist-filters > * {
+  min-width: 0;
+}
+
+/* Unified control sizing */
+.hist-input,
+.hist-select {
+  width: 100%;
+  height: 36px;                /* SAME HEIGHT */
+  padding: 0 12px;             /* SAME PADDING */
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  color: #e8eef6;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 36px;
+  outline: none;
+}
+
+/* Prevent search from pushing layout */
+.hist-input {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Dark select dropdown (no white flash) */
+.hist-select {
+  appearance: none;
+  background-color: rgba(255,255,255,0.04);
+  color: #e8eef6;
+}
+
+/* Focus states */
+.hist-input:focus,
+.hist-select:focus {
+  background-color: rgba(255,255,255,0.06);
+  border-color: rgba(106,166,255,0.45);
+  box-shadow: 0 0 0 1px rgba(106,166,255,0.45);
+}
+
+/* Dropdown menu colors */
+.hist-select option {
+  background-color: #0f0f14;
+  color: #e8eef6;
+}
+
+.hist-select option:hover,
+.hist-select option:checked {
+  background-color: rgba(106,166,255,0.25);
+  color: #ffffff;
+}
+
+/* =========================
+   List + Cards
+========================= */
+.hist-list {
+  display: grid;
+  gap: 12px;
+}
+
 .hist-card {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 14px;
   background: rgba(255,255,255,0.03);
   padding: 14px;
 }
-.hist-card-title { font-weight: 800; font-size: 14px; }
-.hist-card-meta { color: #90a4b8; font-size: 12px; margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
-.hist-card-bottom { display: flex; gap: 10px; margin-top: 12px; }
 
-.hist-filters {
-  display: grid;
-  grid-template-columns: 1fr 160px 180px 140px;
+.hist-card-title {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.hist-card-meta {
+  color: #90a4b8;
+  font-size: 12px;
+  margin-top: 6px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hist-card-bottom {
+  display: flex;
   gap: 10px;
-  margin: 10px 0 14px;
+  margin-top: 12px;
+  flex-wrap: wrap;
 }
 
-.hist-input, .hist-select {
-  width: 100%;
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.04);
-  color: #e8eef6;
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-weight: 700;
-  font-size: 13px;
-}
-
+/* =========================
+   Responsive
+========================= */
 @media (max-width: 900px) {
   .hist-filters {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+@media (max-width: 520px) {
+  .hist-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hist-actions {
+    justify-content: space-between;
+  }
+
+  .hist-card-bottom .hist-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

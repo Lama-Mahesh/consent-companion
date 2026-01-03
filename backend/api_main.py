@@ -161,6 +161,43 @@ def cache_history(service_id: str, doc_type: str):
         raise HTTPException(status_code=404, detail={"error": "No cache found for this target yet."})
     return out
 
+PolicyVersion = Literal["latest", "previous"]
+
+@app.get("/cache/{service_id}/{doc_type}/policy")
+def cache_policy(service_id: str, doc_type: str, version: PolicyVersion = "latest"):
+    """
+    Return cached policy text for a target.
+    version=latest|previous
+    """
+    base = _cache_base() / service_id / doc_type
+
+    file_map = {
+        "latest": base / "latest.json",
+        "previous": base / "previous.json",
+    }
+    fp = file_map[version]
+
+    if not fp.exists():
+        raise HTTPException(
+            status_code=404,
+            detail=f"No {version}.json found for {service_id}/{doc_type}. Run OTA sync first.",
+        )
+
+    obj = json.loads(fp.read_text(encoding="utf-8"))
+
+    # Keep response clean + useful for UI
+    return {
+        "service_id": service_id,
+        "doc_type": doc_type,
+        "version": version,
+        "name": obj.get("name"),
+        "fetched_at": obj.get("fetched_at"),
+        "content_sha256": obj.get("content_sha256"),
+        "source": obj.get("source"),
+        "meta": obj.get("meta", {}),
+        "text": obj.get("text", ""),
+    }
+
 
 @app.get("/cache/{service_id}/{doc_type}/last-diff")
 def cache_last_diff(service_id: str, doc_type: str):
@@ -171,6 +208,181 @@ def cache_last_diff(service_id: str, doc_type: str):
     if not fp.exists():
         raise HTTPException(status_code=404, detail={"error": "No cached diff yet. Run sync first."})
     return json.loads(fp.read_text(encoding="utf-8"))
+
+
+# ----------------------------
+# Extension endpoint (minimal, no ML)
+# ----------------------------
+
+from urllib.parse import urlparse
+
+def _normalize_domain(domain: str) -> str:
+    d = (domain or "").strip().lower()
+    if d.startswith("www."):
+        d = d[4:]
+    return d
+
+def _guess_service_id_from_domain(domain: str) -> str:
+    """
+    Minimal mapping:
+      facebook.com -> facebook
+      amazon.com -> amazon
+      bbc.co.uk -> bbc   (not perfect, but acceptable for baby-step #2)
+    """
+    d = _normalize_domain(domain)
+    if not d:
+        return ""
+    parts = d.split(".")
+    if len(parts) >= 2:
+        return parts[-2]  # "amazon" from "amazon.com"
+    return parts[0]
+
+def _impact_from_risk(max_risk: float, num_changes: int) -> str:
+    """
+    Keep aligned with your React UI heuristics (OtaCache.jsx):
+      risk >= 3  => high / important
+      risk >= 2  => medium / minor
+      else       => none (unless there are changes, then minor)
+    """
+    if max_risk >= 3:
+        return "important"
+    if max_risk >= 2:
+        return "minor"
+    if num_changes > 0:
+        return "minor"
+    return "none"
+
+
+@app.get("/extension/check")
+def extension_check(domain: str):
+    """
+    Minimal extension endpoint.
+    - NO ML
+    - Reads your OTA rolling cache only
+    - Returns: important | minor | none
+    """
+    domain_n = _normalize_domain(domain)
+    if not domain_n:
+        raise HTTPException(status_code=400, detail={"error": "domain is required"})
+
+    # Load OTA targets
+    try:
+        targets = json.loads(_default_targets_path().read_text(encoding="utf-8"))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail={"error": f"Failed to load ota_targets.json: {e}"})
+
+    # Map domain -> service_id (baby-step mapping)
+    service_guess = _guess_service_id_from_domain(domain_n)
+
+    # Find a matching OTA target (prefer privacy_policy)
+    target = None
+    for t in targets:
+        if t.get("service_id") == service_guess and t.get("doc_type") == "privacy_policy":
+            target = t
+            break
+
+    # If site not tracked, DO NOT 404 — return "none"
+    if not target:
+        return {
+            "domain": domain_n,
+            "status": "none",
+            "label": "Not tracked yet",
+            "summary": "This site is not in the monitored OTA target list.",
+            "last_changed": None,
+            "service_id": None,
+            "doc_type": None,
+            "changes": [],
+            "actions": [],
+            "detail_url": None,
+        }
+
+    service_id = target["service_id"]
+    doc_type = target["doc_type"]
+
+    diff_path = _cache_base() / service_id / doc_type / "last_diff.json"
+
+    # If tracked but no diff yet, return none (still not 404)
+    if not diff_path.exists():
+        return {
+            "domain": domain_n,
+            "status": "none",
+            "label": "No cached diff yet",
+            "summary": "Run the OTA sync to generate last_diff.json for this target.",
+            "last_changed": None,
+            "service_id": service_id,
+            "doc_type": doc_type,
+            "changes": [],
+            "actions": [],
+            "detail_url": f"/ota-cache?service_id={service_id}&doc_type={doc_type}",
+        }
+
+    try:
+        diff_obj = json.loads(diff_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail={"error": f"Failed to read last_diff.json: {e}"})
+
+    changes = diff_obj.get("changes") if isinstance(diff_obj.get("changes"), list) else []
+    max_risk = 0.0
+    if changes:
+        try:
+            max_risk = max(float(c.get("risk_score", 0.0) or 0.0) for c in changes)
+        except Exception:
+            max_risk = 0.0
+
+    status = _impact_from_risk(max_risk, len(changes))
+
+    LABELS = {
+        "important": "Important policy update",
+        "minor": "Minor policy update",
+        "none": "No meaningful changes",
+    }
+
+    # A short, human-friendly summary from top change
+    top = changes[0] if changes else {}
+    summary = (top.get("explanation") or top.get("category") or "No differences detected.").strip()
+
+    # keep popup payload small
+    def _dedupe_keep_order(items: list[str]) -> list[str]:
+        seen = set()
+        out = []
+        for x in items:
+            if not x:
+                continue
+            if x in seen:
+                continue
+            seen.add(x)
+            out.append(x)
+        return out
+
+    popup_changes_raw = []
+    popup_actions_raw = []
+
+    for c in changes[:10]:  # read a bit more, then dedupe down
+        exp = (c.get("explanation") or c.get("category") or "").strip()
+        act = (c.get("suggested_action") or "").strip()
+        if exp:
+            popup_changes_raw.append(exp)
+        if act:
+            popup_actions_raw.append(act)
+
+    popup_changes = _dedupe_keep_order(popup_changes_raw)[:5]
+    popup_actions = _dedupe_keep_order(popup_actions_raw)[:5]
+
+
+    last_changed = (diff_obj.get("generated_at") or diff_obj.get("provenance", {}).get("new", {}).get("fetched_at"))
+
+    return {
+        "domain": domain_n,
+        "status": status,                     # important | minor | none
+        "label": LABELS.get(status, "Status unknown"),
+        "summary": summary,
+        "last_changed": last_changed,
+        "service_id": service_id,
+        "doc_type": doc_type,
+        "changes": popup_changes,
+        "actions": popup_actions,
+        "detail_url": f"/ota-cache?service_id={service_id}&doc_type={doc_type}",
+    }
 
 
 # ----------------------------

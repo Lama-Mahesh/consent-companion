@@ -1,0 +1,75 @@
+:root {
+  --bg: #0b0d12;
+  --panel: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  width: 360px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.cc-wrap { padding: 12px; }
+
+.cc-head { margin-bottom: 10px; }
+.cc-title { font-weight: 900; font-size: 14px; }
+.cc-sub { margin-top: 2px; color: var(--muted); font-size: 12px; }
+
+.cc-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.cc-status {
+  font-weight: 900;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.cc-summary {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.cc-section { margin-top: 10px; }
+.cc-label { font-size: 12px; font-weight: 800; margin-bottom: 6px; color: rgba(255,255,255,0.85); }
+
+.cc-list { margin: 0; padding-left: 18px; color: rgba(255,255,255,0.85); }
+.cc-list li { margin: 4px 0; }
+
+.cc-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.cc-btn {
+  flex: 1;
+  padding: 9px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.10);
+  color: var(--text);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cc-btn:hover { background: rgba(255,255,255,0.14); }
+.cc-btn.ghost { background: rgba(255,255,255,0.06); }
+
+.cc-error {
+  margin-top: 10px;
+  color: rgba(255, 170, 170, 0.95);
+  font-size: 12px;
+}

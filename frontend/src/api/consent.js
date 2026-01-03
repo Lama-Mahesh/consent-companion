@@ -1,32 +1,53 @@
 // src/api/consent.js
-import { apiGet, apiPostForm } from "./client";
+// Central API layer for Consent Companion UI
+
+import { apiGet, apiPostForm, apiPostJson } from "./client";
 
 /**
- * Unified ingest endpoint (text/url/file/ota)
+ * Unified ingest endpoint
+ * Supports text / URL / file / OTA targets
  * POST /compare/ingest (multipart/form-data)
  */
-export async function compareIngest(formData) {
+export function compareIngest(formData) {
   return apiPostForm("/compare/ingest", formData);
 }
 
 /**
- * Load OTA targets for dropdown
+ * Load OTA targets (service + doc type)
+ * Used to populate dropdowns and feed
  * GET /ota/targets
  */
-export async function fetchOtaTargets() {
+export function fetchOtaTargets() {
   return apiGet("/ota/targets");
 }
 
 /**
- * Load rolling cache history for a target
+ * Load rolling cache history for a specific target
+ * Includes latest policy + last diff
  * GET /cache/{service_id}/{doc_type}/history
  */
-export async function fetchCacheHistory(serviceId, docType) {
-  return apiGet(`/cache/${encodeURIComponent(serviceId)}/${encodeURIComponent(docType)}/history`);
+export function fetchCacheHistory(serviceId, docType) {
+  return apiGet(
+    `/cache/${encodeURIComponent(serviceId)}/${encodeURIComponent(docType)}/history`
+  );
 }
 
+/**
+ * Fetch cached policy text
+ * version = "latest" | "previous"
+ * GET /cache/{service_id}/{doc_type}/policy
+ */
+export function fetchCachePolicy(serviceId, docType, version = "latest") {
+  const v = version === "previous" ? "previous" : "latest";
+  return apiGet(
+    `/cache/${encodeURIComponent(serviceId)}/${encodeURIComponent(docType)}/policy?version=${v}`
+  );
+}
 
-// Optional helpers (nice to have)
+/**
+ * Optional legacy compare helpers
+ * Only keep if still used elsewhere in the UI
+ */
 export function compareText({ old_text, new_text, mode = "semantic", max_changes = 50 }) {
   return apiPostJson("/compare", { old_text, new_text, mode, max_changes });
 }

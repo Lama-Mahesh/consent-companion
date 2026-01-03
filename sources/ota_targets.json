@@ -102,5 +102,21 @@
     "repo": "OpenTermsArchive/genai-contrib-versions",
     "branch": "main",
     "path": "ChatGPT/Privacy Policy.md"
+  },
+  {
+    "name": "Llama API Privacy Policy",
+    "service_id": "llama_api",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/genai-contrib-versions",
+    "branch": "main",
+    "path": "Llama API/Privacy Policy.md"
+  },
+  {
+    "name": "Claude.ai Privacy Policy",
+    "service_id": "claude_ai",
+    "doc_type": "privacy_policy",
+    "repo": "OpenTermsArchive/genai-contrib-versions",
+    "branch": "main",
+    "path": "Claude.ai/Privacy Policy.md"
   }
 ]
