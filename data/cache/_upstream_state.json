@@ -8,7 +8,7 @@
     "netflix:privacy_policy": "4fb9bd18137302cd792cb315bb0f20ac87fc3b2670394e3da0d69c88ced6c9d0",
     "discord:privacy_policy": "ac6eecc830443dfc48189152e7683ad1b8c81d88e8d24500840e6137fceab0a7",
     "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
-    "facebook:privacy_policy": "5a8235486d40c65136fe10ebe4201ce1c0f88e9cb24b46f18ae45096e0213196",
+    "facebook:privacy_policy": "33cefbbdac02d43c6f56028b19f7bc57f5a135194fe4c98b2f94930b5c904326",
     "instagram:privacy_policy": "882d791a5f48a57a421e8242a0f9c9a875520adc20d66e0c47a55484534e7bb6",
     "linkedin:privacy_policy": "bf08e284ac26f218c5193ab9587a43dec38453bbed1be5cfbe72a66a6ff306e5",
     "snapchat:privacy_policy": "01e81443e3df9bf6c2555c3cd4874abb1c3547d5de0137e491a350b3e4c77fe4",
@@ -16,19 +16,7 @@
     "chatgpt:privacy_policy": "ae0bfacc3eb4233b4350ee78f9fece10b1bd6a082e39f2661d09110e0c9dc863"
   },
   "changed_keys": [
-    "reddit:privacy_policy",
-    "google:privacy_policy",
-    "twitch:privacy_policy",
-    "whatsapp:privacy_policy",
-    "netflix:privacy_policy",
-    "discord:privacy_policy",
-    "amazon:privacy_policy",
-    "facebook:privacy_policy",
-    "instagram:privacy_policy",
-    "linkedin:privacy_policy",
-    "snapchat:privacy_policy",
-    "x:privacy_policy",
-    "chatgpt:privacy_policy"
+    "facebook:privacy_policy"
   ],
   "failures": []
 }
