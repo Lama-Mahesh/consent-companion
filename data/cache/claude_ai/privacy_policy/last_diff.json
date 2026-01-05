@@ -2,17 +2,23 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-01-04T23:17:05+00:00",
+  "generated_at": "2026-01-04T21:25:54+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": null,
-      "content_sha256": null,
-      "source": null
+      "fetched_at": "2026-01-04T09:27:41+00:00",
+      "content_sha256": "56526a80df2991e5f68043aa860c235252811fa526a2fddc3c7ecad9cc39b26b",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/genai-contrib-versions",
+        "branch": "main",
+        "path": "Claude.ai/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/genai-contrib-versions/main/Claude.ai/Privacy Policy.md"
+      }
     },
     "new": {
-      "fetched_at": "2026-01-03T16:10:38+00:00",
+      "fetched_at": "2026-01-04T21:25:46+00:00",
       "content_sha256": "cea94f3377d7021225f2bbca821edb0505d2d25f05430cb9ec470176c5fc14be",
       "source": {
         "type": "ota",
@@ -26,68 +32,32 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 12
+    "num_changes": 10
   },
   "changes": [
     {
       "category": "Data sharing & third parties",
       "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 271,
-      "old": null,
-      "new": "We rely on standard contractual clauses to transfer information as described in “Collection of personal data” to certain affiliates and third parties in countries without an adequacy decision.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Tracking, analytics & profiling",
-      "type": "added",
-      "risk_score": 3.7,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 242,
-      "old": null,
-      "new": "Automated decision-making : Anthropic does not engage in decision making based solely on automated processing or profiling in a manner which produces a legal effect (i.e., impacts your legal rights) or significantly affects you in a similar way (e.g., significantly affects your financial circumstances or ability to access essential goods or services).",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
       "risk_score": 3.5,
       "similarity": null,
       "old_index": null,
-      "new_index": 232,
-      "old": null,
-      "new": "Right to know : the right to know what personal data Anthropic processes about you, including the categories of personal data, the categories of sources from which it is collected, the business or commercial purposes for collection, and the categories of third parties to whom we disclose it.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 3.5,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 274,
+      "new_index": 235,
       "old": null,
       "new": "When the personal data collected is no longer required by us, we and our service providers will perform the necessary procedures for destroying, deleting, erasing, or converting it into an anonymous form as permitted or required under applicable laws.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
-      "category": "User rights & controls",
+      "category": "Tracking, analytics & profiling",
       "type": "added",
-      "risk_score": 2.7,
+      "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 281,
+      "new_index": 205,
       "old": null,
-      "new": "Please note that under many countries' laws, you have the right to lodge a complaint with the supervisory authority in the place in which you live or work.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them (e.g., deletion, opt-out)."
+      "new": "* **Automated decision-making**: Anthropic does not engage in decision making based solely on automated processing or profiling in a manner which produces a legal effect (i.e., impacts your legal rights) or significantly affects you in a similar way (e.g., significantly affects your financial circumstances or ability to access essential goods or services).",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
     },
     {
       "category": "User rights & controls",
@@ -95,21 +65,21 @@
       "risk_score": 2.7,
       "similarity": null,
       "old_index": null,
-      "new_index": 283,
+      "new_index": 243,
       "old": null,
-      "new": "If you live or work in the UK, you have the right to lodge a complaint with the UK Information Commissioner’s Office.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them (e.g., deletion, opt-out)."
+      "new": "Please note that under many countries' laws, you have the right to lodge a complaint with the supervisory authority in the place in which you live or work. A full list of EU supervisory authorities’ contact details is available [here](https://edpb.europa.eu/about-edpb/about-edpb/members_en). If you live or work in the UK, you have the right to lodge a complaint with the [UK Information Commissioner’s Office](https://ico.org.uk/make-a-complaint/). If you live in Brazil, you have the right to lodge a complaint with the [Brazilian Data Protection Authority (ANPD)](https://www.gov.br/anpd/pt-br/canais_atendimento/cidadao-titular-de-dados/denuncia-peticao-de-titular). If you live in Australia, you have the right to lodge a complaint with the [Office of the Australian Information Commissioner](https://www.oaic.gov.au/privacy/privacy-complaints/lodge-a-privacy-complaint-with-us).",
+      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
+      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
     },
     {
       "category": "Other policy change",
       "type": "added",
-      "risk_score": 1.7,
+      "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 244,
+      "new_index": 185,
       "old": null,
-      "new": "Anthropic does not “sell” your personal data as that term is defined by applicable laws and regulations.",
+      "new": "* Publicly available information via the Internet",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -119,9 +89,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 143,
+      "new_index": 222,
       "old": null,
-      "new": "Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable.",
+      "new": "Anthropic may also disclose personal data in the following circumstances:",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -131,9 +101,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 225,
+      "new_index": 228,
       "old": null,
-      "new": "However, please be aware that these rights are limited, and that the process by which we may need to action your requests regarding our training dataset are complex.",
+      "new": "Where information is transferred outside the EEA or the UK, we ensure it benefits from an adequate level of data protection by relying on:",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -143,9 +113,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 226,
+      "new_index": 231,
       "old": null,
-      "new": "We may also decline a request if we have a lawful reason for doing so.",
+      "new": "In certain situations, we rely on derogations provided for under applicable data protection law to transfer information to a third country.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -155,9 +125,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 227,
+      "new_index": 240,
       "old": null,
-      "new": "That said, we strive to prioritize the protection of personal data, and comply with all applicable privacy laws.",
+      "new": "* Anthropic PBC with a registered address at 548 Market St, PMB 90375, San Francisco, CA 94104 (United States).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -167,9 +137,21 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 229,
+      "new_index": 241,
       "old": null,
-      "new": "After we receive your request, we may verify it by requesting information sufficient to confirm your identity.",
+      "new": "* Anthropic Ireland, Limited with a registered address at 6th Floor, South Bank House, Barrow Street. Dublin 4, D04 TR29 (Ireland).",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 242,
+      "old": null,
+      "new": "You can email us at [privacy@anthropic.com](mailto:privacy@anthropic.com) and contact our Data Protection Officer at [dpo@anthropic.com](mailto:dpo@anthropic.com).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }

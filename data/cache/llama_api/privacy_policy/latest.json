@@ -9,7 +9,11 @@
     "path": "Llama API/Privacy Policy.md",
     "url": "https://raw.githubusercontent.com/OpenTermsArchive/genai-contrib-versions/main/Llama API/Privacy Policy.md"
   },
+<<<<<<< HEAD
   "fetched_at": "2026-01-04T20:31:50+00:00",
+=======
+  "fetched_at": "2026-01-04T21:25:15+00:00",
+>>>>>>> f084df1b043c133f43ba5c0abf44f97dc6590d7e
   "content_sha256": "0419429e70a5cc8cc1a40d6bcd275c4f1ee332347af3b3b73a96595103d57011",
   "meta": {
     "source_type": "url",
