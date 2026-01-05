@@ -1,0 +1,57 @@
+{
+  "service_id": "chatgpt",
+  "doc_type": "privacy_policy",
+  "name": "ChatGPT Privacy Policy",
+  "generated_at": "2026-01-04T23:15:49+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:35+00:00",
+      "content_sha256": "1f44a1390846e308c414cd8e0f76eeac36746a7c55014ae96aede9cd5fac6944",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/genai-contrib-versions",
+        "branch": "main",
+        "path": "ChatGPT/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/genai-contrib-versions/main/ChatGPT/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 2
+  },
+  "changes": [
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 88,
+      "old": null,
+      "new": "Account Information User Content Communication Information Other Information You Provide",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 99,
+      "old": null,
+      "new": "Account Information User Content Communication Information Social Media Information Other Information You Provide",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}

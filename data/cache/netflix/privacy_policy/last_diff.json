@@ -1,0 +1,45 @@
+{
+  "service_id": "netflix",
+  "doc_type": "privacy_policy",
+  "name": "Netflix Privacy Policy",
+  "generated_at": "2026-01-04T23:11:52+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:28+00:00",
+      "content_sha256": "9bf9ad2077ff391295e8a9c30a57a24664e7533958c20d8e0b11c7352a0ebc9e",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Netflix/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Netflix/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 1
+  },
+  "changes": [
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.7,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 58,
+      "old": null,
+      "new": "Nous utilisons les catégories de données personnelles suivantes pour cette finalité : coordonnées, informations de paiement, informations d'achat, informations sur le compte/profil Netflix, informations d'utilisation, informations sur les appareils et le réseau, et communications.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}

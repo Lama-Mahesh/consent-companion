@@ -1,0 +1,333 @@
+{
+  "service_id": "x",
+  "doc_type": "privacy_policy",
+  "name": "X (Twitter) Privacy Policy (UK)",
+  "generated_at": "2026-01-04T23:15:37+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:35+00:00",
+      "content_sha256": "57a94a233c7a619d7086fe6265344f80105b199275f1d0720216a74f13e31fb6",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/vlopses-gb-versions",
+        "branch": "main",
+        "path": "X/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/vlopses-gb-versions/main/X/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 25
+  },
+  "changes": [
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 253,
+      "old": null,
+      "new": "Information shared by ad partners and affiliates or collected by X from the websites and apps of ad partners and affiliates may be combined with the other information you share with X and that X receives, generates, or infers about you described elsewhere in this Privacy Policy. Other Third Parties, Account Connections, and Integrations.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 254,
+      "old": null,
+      "new": "We may receive information about you from third parties who are not our ad partners, such as other X users, developers, and partners who help us evaluate the safety and quality of content on our platform, our corporate affiliates, and other services you link to your X account.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 261,
+      "old": null,
+      "new": "We also use the information we collect to improve and personalize our products and services so that you have a better experience on X, including by showing you more relevant content and ads, suggesting people and topics to follow, enabling and helping you discover affiliates, third-party apps, and services.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 352,
+      "old": null,
+      "new": "We also use data centers and cloud providers, and engage our affiliates and third-party partners and service providers located in many parts of the world to help us provide our services.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.2,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 348,
+      "old": null,
+      "new": "And no, we don’t sell your personal information.",
+      "explanation": "The policy confirms that your personal data is not sold to third parties, including data brokers.",
+      "suggested_action": "You may still wish to review how your data is shared with partners or service providers for non-selling purposes such as analytics or advertising."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 202,
+      "old": null,
+      "new": "So if you skip reading every word of the Privacy Policy, at least know this: X is a public platform Learn what’s viewable & searchable We collect some data about you Learn what we collect & how Affiliate services may have their own policies Learn about affiliates We use your data to make X better Learn how we make your info work",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 291,
+      "old": null,
+      "new": "Advertisers may learn information from your engagement with their ads on or off X. For example, if you click on an external link or ad on our services, that advertiser or website operator might figure out that you came from X, along with other information associated with the ad you clicked, such as characteristics of the audience it was intended to reach and other X-generated identifiers for that ad.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Data collection expanded",
+      "type": "added",
+      "risk_score": 3.2,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 314,
+      "old": null,
+      "new": "We generally collect device information, location information, inferred identity information and log information using cookies.",
+      "explanation": "The policy indicates that additional types of personal or usage data are now collected, including: location.",
+      "suggested_action": "Review whether you are comfortable with these new types of data being collected. If not, adjust your privacy settings or limit the information you provide."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 121,
+      "old": null,
+      "new": "You can learn more about how we use cookies and similar technologies here.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 227,
+      "old": null,
+      "new": "Your interactions with other users’ content, such as reposts, likes, bookmarks, shares, downloads, replies, if other users mention or tag you in content or if you mention or tag them, and broadcasts you’ve participated in (including your viewing history, listening, commenting, speaking, and reacting).",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 232,
+      "old": null,
+      "new": "Information about your connection, such as your IP address, browser type, and related information.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 236,
+      "old": null,
+      "new": "You can also choose to share your current precise location or places where you’ve previously used X by enabling these settings in your account.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 243,
+      "old": null,
+      "new": "We may receive information when you view content on or otherwise interact with our products and services, even if you have not created an account or are signed out, such as: IP address and related information; browser type and language; operating system; the referring webpage; access times; pages visited; location; your mobile carrier; device information (including device and application IDs); search terms and IDs (including those not submitted as queries); ads shown to you on X; X-generated identiﬁers; and identiﬁers associated with cookies.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.8,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 223,
+      "old": null,
+      "new": "We may collect and use your personal information (such as your biographical information, employment history, educational history, employment preferences, skills and abilities, and job search activity and engagement, in addition to the information we already collect as disclosed in the “Information we collect when you use X” section of our Privacy Policy below) to recommend potential jobs to you, to share with potential employers when you apply for a job, to enable connections for professional opportunities, and to show you more relevant advertising.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and adjust consent/opt-out preferences where possible."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.8,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 233,
+      "old": null,
+      "new": "Information about your device and its settings, such as device and advertising ID, operating system, carrier, language, memory, apps installed, and battery level.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and adjust consent/opt-out preferences where possible."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.8,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 265,
+      "old": null,
+      "new": "We use your information to provide our advertising and sponsored content services subject to your settings, which helps make ads on X more relevant to you.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and adjust consent/opt-out preferences where possible."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.8,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 290,
+      "old": null,
+      "new": "Advertising revenue enables us to provide our products and services.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and adjust consent/opt-out preferences where possible."
+    },
+    {
+      "category": "User rights & controls",
+      "type": "added",
+      "risk_score": 2.7,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 387,
+      "old": null,
+      "new": "X Switzerland GmbH Attn: Data Protection Officer c/o Wasag Treuhand AG Normannenstrasse 8 Postfach 783 3018 Bern, SWITZERLAND If you wish to raise a concern about our data processing practices, you have the right to do so with your local supervisory authority or X Internet Unlimited Company’s lead supervisory authority, the Irish Data Protection Commission, using the contact details listed on their website.",
+      "explanation": "The updated policy describes additional rights or controls you have over your personal data.",
+      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them (e.g., deletion, opt-out)."
+    },
+    {
+      "category": "Data collection expanded",
+      "type": "added",
+      "risk_score": 2.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 222,
+      "old": null,
+      "new": "Based on your consent, we may collect and use your biometric information for safety, security, and identification purposes.",
+      "explanation": "The policy indicates that additional types of personal or usage data are now collected, including: biometric.",
+      "suggested_action": "Review whether you are comfortable with these new types of data being collected. If not, adjust your privacy settings or limit the information you provide."
+    },
+    {
+      "category": "Data collection expanded",
+      "type": "added",
+      "risk_score": 2.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 235,
+      "old": null,
+      "new": "When you use X, we collect some information about your approximate location to provide the service you expect, including showing you relevant ads.",
+      "explanation": "The policy indicates that additional types of personal or usage data are now collected, including: location.",
+      "suggested_action": "Review whether you are comfortable with these new types of data being collected. If not, adjust your privacy settings or limit the information you provide."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 200,
+      "old": null,
+      "new": "While we wish we could fit everything you need to know into a post, our regulators ask us to meet our legal obligations by describing them all in a lot of detail.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and adjust consent/opt-out preferences where possible."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 313,
+      "old": null,
+      "new": "If you communicate with us, such as through email, we will keep information about the communication and its content for up to 18 months, unless it is necessary for us to retain it for a longer period to comply with our legal obligations or to exercise or defend our legal rights.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and adjust consent/opt-out preferences where possible."
+    },
+    {
+      "category": "Billing & financial terms",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 212,
+      "old": null,
+      "new": "Likewise, if you use our paid products and services, we cannot provide them to you without getting payment information.",
+      "explanation": "The updated policy introduces or changes billing or payment-related terms, such as subscriptions, fees, pricing, or payment methods.",
+      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
+    },
+    {
+      "category": "Billing & financial terms",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 220,
+      "old": null,
+      "new": "In order to purchase ads or other offerings provided as part of our paid products and services you will need to provide us payment information, including your credit or debit card number, card expiration date, CVV code, and billing address.",
+      "explanation": "The updated policy introduces or changes billing or payment-related terms, such as subscriptions, fees, pricing, or payment methods.",
+      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
+    },
+    {
+      "category": "Billing & financial terms",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 231,
+      "old": null,
+      "new": "To allow you to make a payment or send money using X features or services, including through an intermediary, we may receive information about your transaction such as when it was made, when a subscription is set to expire or auto-renew, and amounts paid or received.",
+      "explanation": "The updated policy introduces or changes billing or payment-related terms, such as subscriptions, fees, pricing, or payment methods.",
+      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
+    }
+  ]
+}

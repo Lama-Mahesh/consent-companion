@@ -140,22 +140,13 @@
   background: rgba(255,255,255,0.08);
 }
 
-.rp-stat-k {
-  font-size: 12px;
-  opacity: 0.75;
-}
-
-.rp-stat-v {
-  margin-top: 2px;
-  font-size: 18px;
-  font-weight: 800;
-}
+.rp-stat-k { font-size: 12px; opacity: 0.75; }
+.rp-stat-v { margin-top: 2px; font-size: 18px; font-weight: 800; }
 
 @media (max-width: 720px) {
-  .rp-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .rp-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
 /* ---- Category summary + chips ---- */
 .rp-cats {
   margin: 12px 0 6px;
@@ -179,11 +170,7 @@
   opacity: 0.9;
 }
 
-.rp-cats-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+.rp-cats-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
 .rp-linkbtn {
   border: none;
@@ -197,11 +184,7 @@
 }
 .rp-linkbtn:hover { opacity: 1; }
 
-.rp-chiprow {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
+.rp-chiprow { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .rp-chip {
   cursor: pointer;
@@ -215,4 +198,45 @@
   background: rgba(255,255,255,0.08);
 }
 
+/* Optional per-change actions (right side of header) */
+.rp-row-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 
+/* ✅ NEW: place "Find in policy" INSIDE old/new panel header */
+.rp-diff-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+/* ✅ NEW: button style matches your UI / OtaCache vibe */
+.rp-find {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.rp-find:hover {
+  border-color: rgba(106,166,255,0.35);
+  color: var(--text);
+}
+.rp-find:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.rp-find:disabled:hover {
+  border-color: var(--border);
+  color: var(--muted);
+}

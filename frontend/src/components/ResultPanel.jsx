@@ -7,7 +7,9 @@ function Badge({ children, tone = "neutral", onClick, active = false, title }) {
   return (
     <Tag
       type={onClick ? "button" : undefined}
-      className={`rp-badge rp-${tone} ${onClick ? "rp-chip" : ""} ${active ? "is-active" : ""}`}
+      className={`rp-badge rp-${tone} ${onClick ? "rp-chip" : ""} ${
+        active ? "is-active" : ""
+      }`}
       onClick={onClick}
       title={title}
     >
@@ -31,8 +33,16 @@ function toNum(v) {
  * Props:
  * - data, loading, error
  * - showMeta (default true) -> set false in HistoryDetail
+ * - onFindOld, onFindNew (optional) -> buttons appear INSIDE old/new boxes like OtaCache
  */
-export default function ResultPanel({ data, loading, error, showMeta = true }) {
+export default function ResultPanel({
+  data,
+  loading,
+  error,
+  showMeta = true,
+  onFindOld,
+  onFindNew,
+}) {
   const [expanded, setExpanded] = useState({});
   const [riskView, setRiskView] = useState("all"); // all | high | med | low
   const [catFilter, setCatFilter] = useState("all"); // all | <category>
@@ -67,7 +77,10 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
       const cat = (ch?.category || "Uncategorized").trim() || "Uncategorized";
       map.set(cat, (map.get(cat) || 0) + 1);
     }
-    const arr = Array.from(map.entries()).map(([category, count]) => ({ category, count }));
+    const arr = Array.from(map.entries()).map(([category, count]) => ({
+      category,
+      count,
+    }));
     arr.sort((a, b) => b.count - a.count);
     return arr;
   }, [allChanges]);
@@ -93,7 +106,11 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
 
     // category filter
     if (catFilter !== "all") {
-      xs = xs.filter((ch) => ((ch?.category || "Uncategorized").trim() || "Uncategorized") === catFilter);
+      xs = xs.filter(
+        (ch) =>
+          ((ch?.category || "Uncategorized").trim() || "Uncategorized") ===
+          catFilter
+      );
     }
 
     return xs;
@@ -124,13 +141,21 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
     allChanges.length > 0 &&
     filteredChanges.length === 0;
 
+  const canFindOld = typeof onFindOld === "function";
+  const canFindNew = typeof onFindNew === "function";
+
   return (
     <div className="rp-wrap">
       <div className="rp-top">
         <h3>Results</h3>
 
         <div className="rp-actions" style={{ gap: 10 }}>
-          <button className="rp-btn" type="button" onClick={copyJson} disabled={!data || loading}>
+          <button
+            className="rp-btn"
+            type="button"
+            onClick={copyJson}
+            disabled={!data || loading}
+          >
             Copy JSON
           </button>
         </div>
@@ -173,13 +198,17 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
               label="High"
               value={stats.high}
               active={riskView === "high"}
-              onClick={() => setRiskView((v) => (v === "high" ? "all" : "high"))}
+              onClick={() =>
+                setRiskView((v) => (v === "high" ? "all" : "high"))
+              }
             />
             <StatCard
               label="Medium"
               value={stats.med}
               active={riskView === "med"}
-              onClick={() => setRiskView((v) => (v === "med" ? "all" : "med"))}
+              onClick={() =>
+                setRiskView((v) => (v === "med" ? "all" : "med"))
+              }
             />
             <StatCard
               label="Low"
@@ -202,12 +231,20 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
 
               <div className="rp-cats-actions">
                 {catFilter !== "all" && (
-                  <button className="rp-linkbtn" type="button" onClick={() => setCatFilter("all")}>
+                  <button
+                    className="rp-linkbtn"
+                    type="button"
+                    onClick={() => setCatFilter("all")}
+                  >
                     Clear category filter
                   </button>
                 )}
-                {(riskView !== "all") && (
-                  <button className="rp-linkbtn" type="button" onClick={() => setRiskView("all")}>
+                {riskView !== "all" && (
+                  <button
+                    className="rp-linkbtn"
+                    type="button"
+                    onClick={() => setRiskView("all")}
+                  >
                     Clear risk filter
                   </button>
                 )}
@@ -240,7 +277,9 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
                 <Badge
                   key={c.category}
                   tone="neutral"
-                  onClick={() => setCatFilter((cur) => (cur === c.category ? "all" : c.category))}
+                  onClick={() =>
+                    setCatFilter((cur) => (cur === c.category ? "all" : c.category))
+                  }
                   active={catFilter === c.category}
                   title="Click to filter by this category"
                 >
@@ -254,13 +293,13 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
           <RiskChart data={data} />
 
           {showNoMatch && (
-            <div className="rp-state">
-              No changes match the selected filters.
-            </div>
+            <div className="rp-state">No changes match the selected filters.</div>
           )}
 
           <div className="rp-list">
-            {allChanges.length === 0 && <div className="rp-state">No differences detected.</div>}
+            {allChanges.length === 0 && (
+              <div className="rp-state">No differences detected.</div>
+            )}
 
             {filteredChanges.map((ch, idx) => {
               const cat = (ch?.category || "Uncategorized").trim() || "Uncategorized";
@@ -273,7 +312,6 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
                   <div className="rp-card-head">
                     <div className="rp-title">
                       <div className="rp-cat">
-                        {/* ✅ Category chip inside cards too */}
                         <Badge
                           tone="neutral"
                           onClick={() => setCatFilter((cur) => (cur === cat ? "all" : cat))}
@@ -287,17 +325,22 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
                       <div className="rp-sub">
                         <Badge tone={tone}>Risk {toNum(ch.risk_score).toFixed(1)}</Badge>
                         <Badge>{ch.type}</Badge>
-                        {typeof ch.similarity === "number" && <Badge>Sim {ch.similarity.toFixed(2)}</Badge>}
+                        {typeof ch.similarity === "number" && (
+                          <Badge>Sim {ch.similarity.toFixed(2)}</Badge>
+                        )}
                       </div>
                     </div>
 
-                    <button
-                      className="rp-toggle"
-                      type="button"
-                      onClick={() => setExpanded((s) => ({ ...s, [key]: !s[key] }))}
-                    >
-                      {open ? "Hide" : "Details"}
-                    </button>
+                    {/* ✅ Keep ONLY Details button here (Find buttons move inside old/new boxes) */}
+                    <div className="rp-row-actions">
+                      <button
+                        className="rp-toggle"
+                        type="button"
+                        onClick={() => setExpanded((s) => ({ ...s, [key]: !s[key] }))}
+                      >
+                        {open ? "Hide" : "Details"}
+                      </button>
+                    </div>
                   </div>
 
                   <div className="rp-explain">{ch.explanation}</div>
@@ -307,12 +350,53 @@ export default function ResultPanel({ data, loading, error, showMeta = true }) {
 
                   {open && (
                     <div className="rp-diff">
+                      {/* OLD */}
                       <div className="rp-diff-col">
-                        <div className="rp-diff-label">Old</div>
+                        <div className="rp-diff-head">
+                          <div className="rp-diff-label">Old</div>
+
+                          {canFindOld && (
+                            <button
+                              className="rp-find"
+                              type="button"
+                              onClick={() => onFindOld(ch)}
+                              title={
+                                (ch?.old ?? "").trim()
+                                  ? "Find this clause in the old policy"
+                                  : "Nothing to find (old is empty)"
+                              }
+                              disabled={!(ch?.old ?? "").trim()}
+                            >
+                              Find in policy →
+                            </button>
+                          )}
+                        </div>
+
                         <pre className="rp-pre">{ch.old ?? ""}</pre>
                       </div>
+
+                      {/* NEW */}
                       <div className="rp-diff-col">
-                        <div className="rp-diff-label">New</div>
+                        <div className="rp-diff-head">
+                          <div className="rp-diff-label">New</div>
+
+                          {canFindNew && (
+                            <button
+                              className="rp-find"
+                              type="button"
+                              onClick={() => onFindNew(ch)}
+                              title={
+                                (ch?.new ?? "").trim()
+                                  ? "Find this clause in the new policy"
+                                  : "Nothing to find (new is empty)"
+                              }
+                              disabled={!(ch?.new ?? "").trim()}
+                            >
+                              Find in policy →
+                            </button>
+                          )}
+                        </div>
+
                         <pre className="rp-pre">{ch.new ?? ""}</pre>
                       </div>
                     </div>

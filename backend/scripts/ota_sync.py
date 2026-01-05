@@ -38,6 +38,11 @@ def clamp(n: int, lo: int, hi: int) -> int:
     return max(lo, min(int(n), hi))
 
 
+def truthy_env(name: str, default: str = "0") -> bool:
+    v = (os.getenv(name, default) or "").strip().lower()
+    return v in ("1", "true", "yes", "y", "on")
+
+
 def run_diff(old_text: str, new_text: str, mode: str, max_changes: int) -> Dict[str, Any]:
     """
     Compute diff. If semantic deps are missing, fall back to basic automatically.
@@ -88,7 +93,6 @@ def run_diff(old_text: str, new_text: str, mode: str, max_changes: int) -> Dict[
         }
 
     except ImportError as ie:
-        # Most common in GitHub Actions if sentence-transformers isn't installed
         print(f"[WARN] Semantic unavailable ({ie}). Falling back to BASIC.")
         changes = analyze_policy_change_basic(old_text, new_text)
         formatted = []
@@ -104,7 +108,12 @@ def run_diff(old_text: str, new_text: str, mode: str, max_changes: int) -> Dict[
                 "suggested_action": ch.get("suggested_action"),
             })
         return {
-            "engine": {"mode": "basic", "model_name": None, "num_changes": len(formatted), "fallback_reason": "semantic_import_error"},
+            "engine": {
+                "mode": "basic",
+                "model_name": None,
+                "num_changes": len(formatted),
+                "fallback_reason": "semantic_import_error",
+            },
             "changes": formatted,
         }
 
@@ -114,6 +123,9 @@ def main() -> None:
     cache_dir = Path(os.getenv("CACHE_DIR", "data/cache"))
     mode = os.getenv("API_MODE", "semantic").strip().lower()
     max_changes = clamp(int(os.getenv("MAX_CHANGES", "50")), 1, 500)
+
+    # ✅ NEW: force rebuild diffs even when hash unchanged
+    force_rediff = truthy_env("FORCE_REDIFF", "0")
 
     targets: List[Dict[str, Any]] = load_ota_targets(targets_path)
 
@@ -140,7 +152,6 @@ def main() -> None:
 
         print(f"\n==> Fetching {name}")
 
-        # --- Fetch protected: one target failure should not kill the whole job
         try:
             loaded = load_from_url(url)
         except Exception as e:
@@ -176,15 +187,51 @@ def main() -> None:
             print("Initialized latest.json (first run)")
             continue
 
-        # No change
-        if latest_obj.get("content_sha256") == content_hash:
+        hash_same = (latest_obj.get("content_sha256") == content_hash)
+
+        # No change (unless forcing re-diff)
+        if hash_same and not force_rediff:
             print("No change (hash match) — skipping diff.")
             continue
 
-        # Shift latest -> previous
+        # If forcing re-diff, do NOT rotate snapshots; just recompute diff against previous state.
+        if hash_same and force_rediff:
+            print("Hash unchanged but FORCE_REDIFF=1 → recomputing last_diff.json only.")
+            old_text = (safe_read_json(prev_path) or {}).get("text") or (latest_obj.get("text") or "")
+            new_text = (latest_obj.get("text") or "")
+            try:
+                diff_core = run_diff(old_text.strip(), new_text.strip(), mode=mode, max_changes=max_changes)
+                diff_obj = {
+                    "service_id": service_id,
+                    "doc_type": doc_type,
+                    "name": name,
+                    "generated_at": utc_now_iso(),
+                    "mode_requested": mode,
+                    "mode_used": diff_core.get("engine", {}).get("mode"),
+                    "provenance": {
+                        "old": {
+                            "fetched_at": (safe_read_json(prev_path) or {}).get("fetched_at"),
+                            "content_sha256": (safe_read_json(prev_path) or {}).get("content_sha256"),
+                            "source": (safe_read_json(prev_path) or {}).get("source"),
+                        },
+                        "new": {
+                            "fetched_at": latest_obj.get("fetched_at"),
+                            "content_sha256": latest_obj.get("content_sha256"),
+                            "source": latest_obj.get("source"),
+                        },
+                    },
+                    **diff_core,
+                }
+                safe_write_json(diff_path, diff_obj)
+                any_updates = True
+                print("Rebuilt last_diff.json (forced).")
+            except Exception as e:
+                print(f"[ERROR] Forced diff failed for {name}: {e}")
+            continue
+
+        # Otherwise: real update → rotate snapshots
         safe_write_json(prev_path, latest_obj)
 
-        # Write new latest
         latest_snapshot = {
             "service_id": service_id,
             "doc_type": doc_type,
@@ -195,7 +242,7 @@ def main() -> None:
                 "branch": branch,
                 "path": path,
                 "url": url,
-            },
+                },
             "fetched_at": fetched_at,
             "content_sha256": content_hash,
             "meta": loaded.meta,
@@ -203,7 +250,6 @@ def main() -> None:
         }
         safe_write_json(latest_path, latest_snapshot)
 
-        # Diff prev -> latest (protected)
         try:
             old_text = (latest_obj.get("text") or "").strip()
             new_text = text.strip()
@@ -237,7 +283,6 @@ def main() -> None:
 
         except Exception as e:
             print(f"[ERROR] Diff failed for {name}: {e}")
-            # keep latest/previous snapshots, but skip writing last_diff.json
             continue
 
     if not any_updates:

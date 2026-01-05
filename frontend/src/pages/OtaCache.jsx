@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { fetchOtaTargets, fetchCacheHistory, fetchCachePolicy } from "../api/consent";
 import "./OtaCache.css";
 
@@ -36,7 +36,6 @@ function impactFromRisk(risk) {
 
 /**
  * Very lightweight heuristic “Key insights” (no LLM).
- * Keep this short and practical; avoid spammy category counts.
  */
 const ENTITY_PATTERNS = [
   { label: "Email", re: /\bemail\b/i },
@@ -127,9 +126,7 @@ function buildInsights(diff) {
 }
 
 /**
- * Action-first summary (the “assistant” layer).
- * - Uses suggested_action + category + impact.
- * - Keeps it human, short, and non-numeric.
+ * Action-first summary
  */
 function buildActionSummary(diff, maxItems = 3) {
   const changes = Array.isArray(diff?.changes) ? diff.changes : [];
@@ -163,14 +160,10 @@ function buildActionSummary(diff, maxItems = 3) {
     if (used.has(key)) continue;
     used.add(key);
 
-    // Example bullet:
-    // "High impact: Tracking, analytics & profiling — Review privacy settings to limit tracking..."
     bullets.push(`${impact.label}: ${cat} — ${act}`);
-
     if (bullets.length >= maxItems) break;
   }
 
-  // Fallback: if suggested_action missing, use explanation
   if (!bullets.length) {
     for (const ch of sorted) {
       const impact = impactFromRisk(ch?.risk_score);
@@ -188,7 +181,6 @@ function buildActionSummary(diff, maxItems = 3) {
   }
 
   if (!bullets.length) bullets.push("Open the details below to see what changed and where it appears in the policy.");
-
   return { headline, bullets };
 }
 
@@ -196,10 +188,6 @@ function escapeRegExp(str) {
   return String(str || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-/**
- * Renders policy text and highlights the first match of `query`.
- * Adds id="cc-hit" so we can scroll into view.
- */
 function renderHighlightedText(text, query) {
   const t = String(text || "");
   const q = String(query || "").trim();
@@ -231,9 +219,6 @@ function renderHighlightedText(text, query) {
   );
 }
 
-/**
- * Choose a “search snippet” likely to exist in policy text.
- */
 function snippetFor(ch) {
   const newText = String(ch?.new ?? "").trim();
   const oldText = String(ch?.old ?? "").trim();
@@ -243,23 +228,16 @@ function snippetFor(ch) {
   return { version: "latest", query: exp };
 }
 
-/**
- * =========================
- * Modal
- * =========================
- */
 function PolicyModal({ open, title, subtitle, text, highlight, onClose }) {
   const bodyRef = useRef(null);
 
   useEffect(() => {
     if (!open) return;
-
     const t = setTimeout(() => {
       const hit = document.getElementById("cc-hit");
       if (hit) hit.scrollIntoView({ block: "center", behavior: "smooth" });
       else if (bodyRef.current) bodyRef.current.scrollTop = 0;
     }, 50);
-
     return () => clearTimeout(t);
   }, [open, text, highlight]);
 
@@ -286,13 +264,13 @@ function PolicyModal({ open, title, subtitle, text, highlight, onClose }) {
   );
 }
 
-/**
- * =========================
- * Component
- * =========================
- */
 export default function OtaCache() {
-  const [tab, setTab] = useState("latest"); // latest | browse
+  // If deep-link present, start on browse tab. Otherwise default latest.
+  const [tab, setTab] = useState(() => {
+    const sp = new URLSearchParams(window.location.search);
+    return sp.get("service_id") && sp.get("doc_type") ? "browse" : "latest";
+  });
+
   const [targets, setTargets] = useState([]);
   const [feed, setFeed] = useState([]);
 
@@ -300,13 +278,9 @@ export default function OtaCache() {
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState("");
 
-  // Expanded/collapsed state for diff items
   const [openChanges, setOpenChanges] = useState({});
-
-  // Evidence toggles (per change)
   const [openEvidence, setOpenEvidence] = useState({});
 
-  // Policy modal state
   const [modalOpen, setModalOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalSubtitle, setModalSubtitle] = useState("");
@@ -317,16 +291,27 @@ export default function OtaCache() {
   const toggleChange = (key) => setOpenChanges((s) => ({ ...s, [key]: !s[key] }));
   const toggleEvidence = (key) => setOpenEvidence((s) => ({ ...s, [key]: !s[key] }));
 
-    // ✅ Deep-link support (SPA)
-  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
 
+  // Read deep-link params ONCE (avoids races and blank screens)
+  const initialParamsRef = useRef(null);
+  if (initialParamsRef.current == null) {
+    const sp = new URLSearchParams(window.location.search);
+    initialParamsRef.current = {
+      service_id: sp.get("service_id") || "",
+      doc_type: sp.get("doc_type") || "",
+    };
+  }
 
-  /**
-   * Initial load:
-   * - targets list
-   * - history for each target (for latest feed)
-   */
+  // Read change index ONCE
+  const initialChangeRef = useRef(null);
+  if (initialChangeRef.current == null) {
+    const sp = new URLSearchParams(window.location.search);
+    const raw = sp.get("change");
+    const n = raw == null ? null : parseInt(raw, 10);
+    initialChangeRef.current = Number.isFinite(n) ? n : null;
+  }
+
   useEffect(() => {
     (async () => {
       setLoading(true);
@@ -337,29 +322,25 @@ export default function OtaCache() {
         const list = Array.isArray(t) ? t : [];
         setTargets(list);
 
-        if (list.length) setSelected(`${list[0].service_id}:${list[0].doc_type}`);
+        // Pick selection:
+        // 1) deep-link match (service_id+doc_type)
+        // 2) otherwise first target
+        let initialSelected = "";
 
-        // ✅ Deep-link: /ota-cache?service_id=facebook&doc_type=privacy_policy
-        // When present, force selection + switch to browse tab.
-        useEffect(() => {
-          if (!targets.length) return;
+        const { service_id, doc_type } = initialParamsRef.current || {};
+        if (service_id && doc_type) {
+          const match = list.find((x) => x.service_id === service_id && x.doc_type === doc_type);
+          if (match) {
+            initialSelected = `${match.service_id}:${match.doc_type}`;
+            setTab("browse");
+          }
+        }
 
-          const sid = searchParams.get("service_id");
-          const dt = searchParams.get("doc_type");
-          if (!sid || !dt) return;
+        if (!initialSelected && list.length) {
+          initialSelected = `${list[0].service_id}:${list[0].doc_type}`;
+        }
 
-          const match = targets.find((t) => t.service_id === sid && t.doc_type === dt);
-          if (!match) return;
-
-          const next = `${match.service_id}:${match.doc_type}`;
-
-          // Avoid loops / unnecessary state updates
-          if (selected !== next) setSelected(next);
-
-          // If user came from extension, show the details view
-          if (tab !== "browse") setTab("browse");
-        }, [targets, searchParams, selected, tab]);
-
+        if (initialSelected) setSelected(initialSelected);
 
         const results = await Promise.all(
           list.map(async (x) => {
@@ -405,7 +386,6 @@ export default function OtaCache() {
       }
     })();
   }, []);
-
   const selectedTarget = useMemo(() => {
     if (!selected) return null;
     const [sid, dt] = selected.split(":");
@@ -415,16 +395,12 @@ export default function OtaCache() {
   const selectedItem = useMemo(() => {
     if (!selectedTarget) return null;
     return (
-      feed.find(
-        (x) => x.service_id === selectedTarget.service_id && x.doc_type === selectedTarget.doc_type
-      ) || null
+      feed.find((x) => x.service_id === selectedTarget.service_id && x.doc_type === selectedTarget.doc_type) ||
+      null
     );
   }, [selectedTarget, feed]);
 
-  /**
-   * Auto-expand ONLY high-risk items (risk >= 3) whenever selection changes.
-   * Also reset evidence toggles for new selection (keeps UI clean).
-   */
+  // Auto-expand ONLY high-risk items (risk >= 3) whenever selection changes.
   useEffect(() => {
     if (!selectedItem?.history?.last_diff?.changes) return;
 
@@ -440,6 +416,27 @@ export default function OtaCache() {
     setOpenEvidence({});
   }, [selectedItem]);
 
+  // ✅ NEW: if URL includes &change=N, open and scroll to that change
+  useEffect(() => {
+    const idx = initialChangeRef.current;
+    if (idx == null) return;
+    if (!selectedItem?.history?.last_diff?.changes) return;
+    if (idx < 0 || idx >= selectedItem.history.last_diff.changes.length) return;
+
+    const key = `${selectedItem.service_id}:${selectedItem.doc_type}:${idx}`;
+
+    // open it (without wiping other expansions)
+    setOpenChanges((s) => ({ ...s, [key]: true }));
+
+    // scroll
+    const t = setTimeout(() => {
+      const el = document.getElementById(`cc-change-${idx}`);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 180);
+
+    return () => clearTimeout(t);
+  }, [selectedItem]);
+
   const globalSummary = useMemo(() => {
     const totalTracked = feed.length;
     const withDiffs = feed.filter((x) => (x.summary?.num_changes || 0) > 0).length;
@@ -451,9 +448,6 @@ export default function OtaCache() {
     return buildActionSummary(selectedItem?.history?.last_diff, 3);
   }, [selectedItem]);
 
-  /**
-   * Open policy modal and optionally highlight a query snippet
-   */
   const openPolicy = async (serviceId, docType, version, highlight = "") => {
     setModalOpen(true);
     setModalLoading(true);
@@ -499,7 +493,6 @@ export default function OtaCache() {
           <p className="oc-sub">Rolling cache + diffs pulled by GitHub Actions.</p>
         </div>
 
-        {/* Keep KPIs, but they’re small + not the focus */}
         <div className="oc-kpis">
           <div className="oc-kpi">
             <div className="oc-kpi-num">{globalSummary.totalTracked}</div>
@@ -525,9 +518,6 @@ export default function OtaCache() {
         </button>
       </div>
 
-      {/* =========================
-          Latest Feed
-      ========================= */}
       {tab === "latest" && (
         <section className="oc-feed">
           {feed.length === 0 ? (
@@ -574,9 +564,10 @@ export default function OtaCache() {
                           setSelected(v);
                           setTab("browse");
 
-                          // ✅ Keep URL in sync
                           navigate(
-                            `/ota-cache?service_id=${encodeURIComponent(x.service_id)}&doc_type=${encodeURIComponent(x.doc_type)}`,
+                            `/ota-cache?service_id=${encodeURIComponent(x.service_id)}&doc_type=${encodeURIComponent(
+                              x.doc_type
+                            )}`,
                             { replace: true }
                           );
                         }}
@@ -592,9 +583,6 @@ export default function OtaCache() {
         </section>
       )}
 
-      {/* =========================
-          Browse View
-      ========================= */}
       {tab === "browse" && (
         <section className="oc-browse">
           <div className="oc-browse-bar">
@@ -606,13 +594,11 @@ export default function OtaCache() {
                 const v = e.target.value;
                 setSelected(v);
 
-                // ✅ Keep URL in sync for deep-linking
                 const [sid, dt] = v.split(":");
                 if (sid && dt) {
-                  navigate(
-                    `/ota-cache?service_id=${encodeURIComponent(sid)}&doc_type=${encodeURIComponent(dt)}`,
-                    { replace: true }
-                  );
+                  navigate(`/ota-cache?service_id=${encodeURIComponent(sid)}&doc_type=${encodeURIComponent(dt)}`, {
+                    replace: true,
+                  });
                 }
               }}
             >
@@ -647,7 +633,6 @@ export default function OtaCache() {
                 </div>
               </div>
 
-              {/* ✅ ACTION-FIRST SUMMARY (big marks booster) */}
               <div className="oc-action">
                 <div className="oc-action-title">What you should do</div>
                 <div className="oc-action-headline">{selectedActionSummary.headline}</div>
@@ -659,18 +644,10 @@ export default function OtaCache() {
               </div>
 
               <div className="oc-detail-actions">
-                <button
-                  className="oc-btn"
-                  type="button"
-                  onClick={() => openPolicy(selectedItem.service_id, selectedItem.doc_type, "latest")}
-                >
+                <button className="oc-btn" type="button" onClick={() => openPolicy(selectedItem.service_id, selectedItem.doc_type, "latest")}>
                   View latest policy
                 </button>
-                <button
-                  className="oc-btn ghost"
-                  type="button"
-                  onClick={() => openPolicy(selectedItem.service_id, selectedItem.doc_type, "previous")}
-                >
+                <button className="oc-btn ghost" type="button" onClick={() => openPolicy(selectedItem.service_id, selectedItem.doc_type, "previous")}>
                   View previous policy
                 </button>
               </div>
@@ -701,17 +678,13 @@ export default function OtaCache() {
                   const impact = impactFromRisk(ch?.risk_score);
 
                   return (
-                    <div className="oc-change" key={key}>
+                    <div className="oc-change" key={key} id={`cc-change-${idx}`}>
                       <div className="oc-change-top">
                         <div className="oc-change-cat">{ch.category || "Other"}</div>
                         <div className="oc-change-type">{ch.type}</div>
                         <span className={impact.cls}>{impact.label}</span>
 
-                        <button
-                          className="oc-change-toggle oc-btn sm"
-                          type="button"
-                          onClick={() => toggleChange(key)}
-                        >
+                        <button className="oc-change-toggle oc-btn sm" type="button" onClick={() => toggleChange(key)}>
                           {isOpen ? "Hide" : "Details"}
                         </button>
                       </div>
@@ -725,7 +698,6 @@ export default function OtaCache() {
                       {isOpen && (
                         <>
                           <div className="oc-diff">
-                            {/* Old */}
                             <div className="oc-diff-col">
                               <div className="oc-diff-head">
                                 <div className="oc-diff-label">Old</div>
@@ -734,14 +706,7 @@ export default function OtaCache() {
                                   type="button"
                                   disabled={!String(ch?.old ?? "").trim()}
                                   title={!String(ch?.old ?? "").trim() ? "No old snippet available" : ""}
-                                  onClick={() =>
-                                    openPolicy(
-                                      selectedItem.service_id,
-                                      selectedItem.doc_type,
-                                      "previous",
-                                      String(ch?.old ?? "")
-                                    )
-                                  }
+                                  onClick={() => openPolicy(selectedItem.service_id, selectedItem.doc_type, "previous", String(ch?.old ?? ""))}
                                 >
                                   Find in policy →
                                 </button>
@@ -749,7 +714,6 @@ export default function OtaCache() {
                               <pre className="oc-diff-pre">{String(ch?.old ?? "").trim() || "—"}</pre>
                             </div>
 
-                            {/* New */}
                             <div className="oc-diff-col">
                               <div className="oc-diff-head">
                                 <div className="oc-diff-label">New</div>
@@ -758,14 +722,7 @@ export default function OtaCache() {
                                   type="button"
                                   disabled={!String(ch?.new ?? "").trim()}
                                   title={!String(ch?.new ?? "").trim() ? "No new snippet available" : ""}
-                                  onClick={() =>
-                                    openPolicy(
-                                      selectedItem.service_id,
-                                      selectedItem.doc_type,
-                                      "latest",
-                                      String(ch?.new ?? "")
-                                    )
-                                  }
+                                  onClick={() => openPolicy(selectedItem.service_id, selectedItem.doc_type, "latest", String(ch?.new ?? ""))}
                                 >
                                   Find in policy →
                                 </button>
@@ -774,13 +731,8 @@ export default function OtaCache() {
                             </div>
                           </div>
 
-                          {/* ✅ Evidence toggle (keeps UI calm; numbers on demand) */}
                           <div className="oc-evidence">
-                            <button
-                              className="oc-evidence-toggle"
-                              type="button"
-                              onClick={() => toggleEvidence(key)}
-                            >
+                            <button className="oc-evidence-toggle" type="button" onClick={() => toggleEvidence(key)}>
                               {evidenceOpen ? "Hide evidence & technical details" : "Evidence & technical details"}
                             </button>
 
@@ -800,7 +752,6 @@ export default function OtaCache() {
                                   <strong>New index:</strong> {ch?.new_index == null ? "—" : String(ch.new_index)}
                                 </div>
 
-                                {/* If old/new missing, provide best-effort “find” */}
                                 {!String(ch?.old ?? "").trim() && !String(ch?.new ?? "").trim() && (
                                   <button
                                     className="oc-btn sm"

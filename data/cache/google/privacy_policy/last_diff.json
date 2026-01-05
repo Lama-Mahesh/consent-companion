@@ -1,0 +1,129 @@
+{
+  "service_id": "google",
+  "doc_type": "privacy_policy",
+  "name": "Google Privacy Policy",
+  "generated_at": "2026-01-04T23:10:39+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:26+00:00",
+      "content_sha256": "b2c54e2495839e2910e328a6f779ae5f582e370760b5d610ed6e8a3cbea893d9",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Google/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Google/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 8
+  },
+  "changes": [
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 272,
+      "old": null,
+      "new": "Informations de géolocalisation, telles que les informations pouvant être déterminées à partir du GPS, de l'adresse IP et d'autres données issues des capteurs situés sur votre appareil",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 437,
+      "old": null,
+      "new": "Vous pouvez configurer votre navigateur pour qu'il refuse tous les cookies ou vous signale l'envoi d'un cookie.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 199,
+      "old": null,
+      "new": "Exporter vos données Les options suivantes s'offrent à vous si vous souhaitez supprimer vos informations :",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 200,
+      "old": null,
+      "new": "Supprimer votre contenu de services Google spécifiques Rechercher, puis supprimer des éléments spécifiques de votre compte depuis la page",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 201,
+      "old": null,
+      "new": "Supprimer des produits Google spécifiques, y compris vos informations associées à ces produits",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 244,
+      "old": null,
+      "new": "Par exemple, si votre nom est mentionné dans un journal local, le moteur de recherche Google est susceptible d'indexer l'article en question et de l'afficher si des utilisateurs recherchent votre nom.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 265,
+      "old": null,
+      "new": "| Les informations traitées dépendent de votre utilisation des services Google et de vos paramètres, mais elles peuvent porter sur les éléments suivants :",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 266,
+      "old": null,
+      "new": "Contenus que vous créez, téléversez ou recevez (photos, vidéos, e-mails, documents, feuilles de calcul, etc.).",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}

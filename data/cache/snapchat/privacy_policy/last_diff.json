@@ -1,0 +1,81 @@
+{
+  "service_id": "snapchat",
+  "doc_type": "privacy_policy",
+  "name": "Snapchat Privacy Policy (UK)",
+  "generated_at": "2026-01-04T23:15:12+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:34+00:00",
+      "content_sha256": "2f6b204966d2bd8b2fbe8ec11e91aa07499b584c51e7172deff2b9012190dc0e",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/vlopses-gb-versions",
+        "branch": "main",
+        "path": "Snapchat/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/vlopses-gb-versions/main/Snapchat/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 4
+  },
+  "changes": [
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 284,
+      "old": null,
+      "new": "Sometimes we provide features that allow you to connect with third-party apps.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 285,
+      "old": null,
+      "new": "If you decide to connect your Snapchat account with a third-party app, we will share any additional information you direct us to.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 604,
+      "old": null,
+      "new": "We also scan URLs sent on Snapchat to see if that webpage is potentially harmful, and can give you a warning about it.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 767,
+      "old": null,
+      "new": "Until the data is deleted or returned, the data importer shall continue to ensure compliance with these Clauses.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}

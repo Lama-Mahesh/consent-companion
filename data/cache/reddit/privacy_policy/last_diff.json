@@ -1,0 +1,45 @@
+{
+  "service_id": "reddit",
+  "doc_type": "privacy_policy",
+  "name": "Reddit Privacy Policy",
+  "generated_at": "2026-01-04T23:09:46+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:25+00:00",
+      "content_sha256": "8f16a0fae5c55a3f99c8dae5ee3e8f3ba70b49469642d331d65fb24e33ed86ff",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Reddit/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Reddit/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 1
+  },
+  "changes": [
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 35,
+      "old": null,
+      "new": "Il s’agit de ce qui suit : | | | |",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}

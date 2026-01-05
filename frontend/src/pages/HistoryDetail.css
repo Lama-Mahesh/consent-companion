@@ -1,4 +1,5 @@
 .hd-page { padding: 4px; }
+
 .hd-header {
   display: flex;
   justify-content: space-between;
@@ -6,6 +7,7 @@
   align-items: flex-start;
   margin-bottom: 12px;
 }
+
 .hd-back {
   border: 1px solid rgba(255,255,255,0.10);
   background: transparent;
@@ -17,9 +19,10 @@
   font-size: 13px;
 }
 .hd-back:hover { border-color: rgba(106,166,255,0.35); }
+
 .hd-title { font-size: 18px; font-weight: 900; margin-top: 10px; }
 .hd-sub { color: #90a4b8; font-size: 13px; margin-top: 4px; }
-.hd-actions { display: flex; gap: 10px; }
+
 .hd-btn {
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(255,255,255,0.04);
@@ -31,4 +34,167 @@
   font-size: 13px;
 }
 .hd-btn:hover { border-color: rgba(106,166,255,0.35); }
+
 .hd-body { margin-top: 8px; }
+
+/* -------------------------
+   Policy tools (HistoryDetail)
+------------------------- */
+
+.hd-tools {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+}
+
+.hd-toolsTop { display: flex; justify-content: space-between; gap: 12px; }
+.hd-toolsTitle { font-weight: 900; font-size: 14px; }
+.hd-toolsSub { color: #90a4b8; font-size: 13px; margin-top: 4px; }
+
+.hd-toolsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .hd-toolsGrid { grid-template-columns: 1fr; }
+}
+
+.hd-toolCard {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.02);
+}
+
+.hd-toolLabel {
+  font-size: 12px;
+  color: #90a4b8;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.hd-toolsMuted { color: #90a4b8; font-size: 13px; }
+
+.hd-warn {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(229,62,62,0.08);
+  color: #ffd6d6;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* -------------------------
+   Policy modal (OtaCache vibe)
+------------------------- */
+
+.hd-modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 9999;
+}
+
+.hd-modal {
+  width: min(1040px, 100%);
+  max-height: 86vh;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(12, 18, 28, 0.98);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}
+
+.hd-modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.hd-modalTitle {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.hd-modalMeta {
+  margin-top: 4px;
+  color: #90a4b8;
+  font-size: 12px;
+}
+
+.hd-modalClose {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: #e8eef6;
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 900;
+}
+.hd-modalClose:hover { border-color: rgba(106,166,255,0.35); }
+
+.hd-modalTools {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.hd-find {
+  flex: 1;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+  color: #e8eef6;
+  border-radius: 12px;
+  padding: 9px 10px;
+  outline: none;
+  font-size: 13px;
+}
+.hd-find:focus { border-color: rgba(106,166,255,0.35); }
+
+.hd-findBtn {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: #e8eef6;
+  border-radius: 12px;
+  padding: 9px 11px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 13px;
+}
+.hd-findBtn:hover { border-color: rgba(106,166,255,0.35); }
+
+.hd-modalBody {
+  padding: 14px;
+  overflow: auto;
+  max-height: calc(86vh - 124px);
+}
+
+.hd-policyText {
+  white-space: pre-wrap;
+  line-height: 1.55;
+  font-size: 13px;
+  color: #e8eef6;
+}
+
+.hd-policyText mark,
+.hd-mark {
+  background: rgba(255, 229, 100, 0.35);
+  color: #fff;
+  padding: 0 2px;
+  border-radius: 4px;
+}

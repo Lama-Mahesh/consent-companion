@@ -5,6 +5,81 @@ import ResultPanel from "../components/ResultPanel";
 import { saveToHistory } from "../store/historyStore";
 import "./PolicyCompare.css";
 
+const DEFAULT_API_BASE = "http://127.0.0.1:8000";
+
+// tries to match your extension behavior
+function getApiBase() {
+  const v =
+    localStorage.getItem("cc_api_base") ||
+    localStorage.getItem("CC_API_BASE") ||
+    DEFAULT_API_BASE;
+  return String(v || DEFAULT_API_BASE).replace(/\/$/, "");
+}
+
+async function readFileAsText(file, maxChars = 250000) {
+  if (!file) return "";
+  const text = await new Promise((resolve, reject) => {
+    const fr = new FileReader();
+    fr.onload = () => resolve(String(fr.result || ""));
+    fr.onerror = () => reject(new Error("Failed to read file"));
+    fr.readAsText(file);
+  });
+  if (text.length > maxChars) {
+    return (
+      text.slice(0, maxChars) +
+      "\n\n[Truncated for history storage]\n"
+    );
+  }
+  return text;
+}
+
+async function fetchUrlTextViaBackend(urlToLoad) {
+  const apiBase = getApiBase();
+  const endpoint = `${apiBase}/load/url?url=${encodeURIComponent(urlToLoad)}`;
+  const res = await fetch(endpoint);
+  if (!res.ok) throw new Error(`Failed to load URL policy (${res.status})`);
+  const payload = await res.json();
+  return String(payload?.text || "");
+}
+
+function parseOtaSelector(sel) {
+  const s = String(sel || "").trim();
+  const [service_id, doc_type] = s.split(":");
+  if (!service_id || !doc_type) return null;
+  return { service_id, doc_type };
+}
+
+async function fetchCachedPolicyText(service_id, doc_type, version) {
+  const apiBase = getApiBase();
+  const endpoint =
+    `${apiBase}/cache/${encodeURIComponent(service_id)}/${encodeURIComponent(
+      doc_type
+    )}/policy?version=${encodeURIComponent(version)}`;
+
+  const res = await fetch(endpoint);
+  if (!res.ok) throw new Error(`Failed to load cached policy (${res.status})`);
+  const payload = await res.json();
+  return String(payload?.text || "");
+}
+
+async function fetchOtaOldText(otaSelector) {
+  // Old = previous (fallback to latest)
+  const parsed = parseOtaSelector(otaSelector);
+  if (!parsed) return "";
+  try {
+    return await fetchCachedPolicyText(parsed.service_id, parsed.doc_type, "previous");
+  } catch {
+    return await fetchCachedPolicyText(parsed.service_id, parsed.doc_type, "latest");
+  }
+}
+
+async function fetchOtaNewText(otaSelector) {
+  // New = latest
+  const parsed = parseOtaSelector(otaSelector);
+  if (!parsed) return "";
+  return await fetchCachedPolicyText(parsed.service_id, parsed.doc_type, "latest");
+}
+
 export default function PolicyCompare() {
   const [mode, setMode] = useState("semantic");
   const [maxChanges, setMaxChanges] = useState(50);
@@ -34,7 +109,6 @@ export default function PolicyCompare() {
     () => localStorage.getItem("cc_model_loaded") === "1"
   );
 
-
   useEffect(() => {
     (async () => {
       const t = await fetchOtaTargets();
@@ -55,7 +129,10 @@ export default function PolicyCompare() {
       if (type === "ota") return true;
       return false;
     };
-    return ok(oldType, oldText, oldUrl, oldFile) && ok(newType, newText, newUrl, newFile);
+    return (
+      ok(oldType, oldText, oldUrl, oldFile) &&
+      ok(newType, newText, newUrl, newFile)
+    );
   }, [oldType, oldText, oldUrl, oldFile, newType, newText, newUrl, newFile]);
 
   const buildFormData = () => {
@@ -76,32 +153,89 @@ export default function PolicyCompare() {
     return fd;
   };
 
+  function buildTitle() {
+    const label = (t, url, file, ota) => {
+      if (t === "text") return "Text";
+      if (t === "url") return "URL";
+      if (t === "file") return file?.name || "File";
+      if (t === "ota") return ota || "OTA";
+      return "Source";
+    };
+    return `Policy compare • ${label(oldType, oldUrl, oldFile, oldOta)} → ${label(
+      newType,
+      newUrl,
+      newFile,
+      newOta
+    )}`;
+  }
+
   const onAnalyze = async () => {
     setError("");
     setLoading(true);
     setData(null);
 
     try {
+      // ✅ Create stored copies of what we compared (for HistoryDetail)
+      // OLD
+      let oldStoredText = "";
+      if (oldType === "text") oldStoredText = oldText;
+      else if (oldType === "file") oldStoredText = await readFileAsText(oldFile);
+      else if (oldType === "url") oldStoredText = await fetchUrlTextViaBackend(oldUrl);
+      else if (oldType === "ota") oldStoredText = await fetchOtaOldText(oldOta);
+
+      // NEW
+      let newStoredText = "";
+      if (newType === "text") newStoredText = newText;
+      else if (newType === "file") newStoredText = await readFileAsText(newFile);
+      else if (newType === "url") newStoredText = await fetchUrlTextViaBackend(newUrl);
+      else if (newType === "ota") newStoredText = await fetchOtaNewText(newOta);
+
+      // Run compare
       const res = await compareIngest(buildFormData());
-      // console.log("COMPARE_RESULT:", res); 
       setData(res);
-      saveToHistory(res, {
-        title: "Policy Compare Result",
-        source: res?.source,
-        mode: res?.engine?.mode,
-        service_id: res?.service_id,
-        doc_type: res?.doc_type,
+
+      const changes = Array.isArray(res?.changes) ? res.changes : [];
+      const maxRisk =
+        changes.length > 0
+          ? Math.max(...changes.map((c) => Number(c?.risk_score || 0)))
+          : 0;
+
+      // ✅ sources now ALWAYS include text (when possible)
+      const historySources = {
+        old: {
+          type: oldType,
+          text: oldStoredText || undefined,
+          url: oldType === "url" ? oldUrl : undefined,
+          ota: oldType === "ota" ? oldOta : undefined,
+          file_name: oldType === "file" ? (oldFile?.name || null) : undefined,
+        },
+        new: {
+          type: newType,
+          text: newStoredText || undefined,
+          url: newType === "url" ? newUrl : undefined,
+          ota: newType === "ota" ? newOta : undefined,
+          file_name: newType === "file" ? (newFile?.name || null) : undefined,
+        },
+      };
+
+      saveToHistory({
+        title: buildTitle(),
+        mode: res?.engine?.mode || mode,
+        service_id: res?.service_id || null,
+        doc_type: res?.doc_type || null,
+        source: res?.source || "api",
+        max_risk: maxRisk,
+        num_changes: res?.engine?.num_changes ?? changes.length ?? 0,
+        result: res,
+        sources: historySources,
       });
+
       if (mode === "semantic" && localStorage.getItem("cc_model_loaded") !== "1") {
         localStorage.setItem("cc_model_loaded", "1");
         setFirstSemanticNoteShown(true);
-    }
-
-      // console.log("HISTORY_AFTER_SAVE:", localStorage.getItem("cc_history_v1"));
-
+      }
     } catch (e) {
-      // console.error("SAVE_HISTORY_FAILED:", e);
-      setError(e.message || "Unknown error");
+      setError(e?.message || "Unknown error");
     } finally {
       setLoading(false);
     }
@@ -172,6 +306,7 @@ export default function PolicyCompare() {
           <ResultPanel data={data} loading={loading} error={error} />
         </div>
       </main>
+
       <footer className="pc-foot">
         Backend: <code>/compare/ingest</code>
         {mode === "semantic" && !firstSemanticNoteShown && (

@@ -1,18 +1,30 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  clearHistory,
-  loadHistory,
-  removeHistoryItem,
-  updateHistoryItem,
-} from "../store/historyStore";
+import { clearHistory, listHistory, deleteHistoryItem } from "../store/historyStore";
 import "./History.css";
+
+const HISTORY_KEY = "cc_history_v1";
+
+// Local helper: update one item (pin/unpin) without needing updateHistoryItem in store
+function updateHistoryItemLocal(id, patch) {
+  try {
+    const raw = localStorage.getItem(HISTORY_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    const next = Array.isArray(arr)
+      ? arr.map((x) => (String(x.id) === String(id) ? { ...x, ...patch } : x))
+      : [];
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(next));
+    return next;
+  } catch {
+    return listHistory();
+  }
+}
 
 export default function History() {
   const [items, setItems] = useState(() => {
-    const h = loadHistory();
+    const h = listHistory();
     return Array.isArray(h) ? h : [];
-});
+  });
 
   // filters
   const [q, setQ] = useState("");
@@ -21,7 +33,7 @@ export default function History() {
   const [riskMin, setRiskMin] = useState(0);
 
   useEffect(() => {
-    setItems(loadHistory());
+    setItems(listHistory());
   }, []);
 
   const services = useMemo(() => {
@@ -67,11 +79,11 @@ export default function History() {
   };
 
   const onDeleteOne = (id) => {
-    setItems(removeHistoryItem(id));
+    setItems(deleteHistoryItem(id));
   };
 
   const onTogglePin = (id, pinned) => {
-    setItems(updateHistoryItem(id, { pinned: !pinned }));
+    setItems(updateHistoryItemLocal(id, { pinned: !pinned }));
   };
 
   return (
@@ -151,14 +163,14 @@ export default function History() {
           {[...filtered]
             .sort(
               (a, b) =>
-                Number(b.pinned) - Number(a.pinned) ||
+                Number(Boolean(b.pinned)) - Number(Boolean(a.pinned)) ||
                 (b.created_at > a.created_at ? 1 : -1)
             )
             .map((x) => (
               <div className="hist-card" key={x.id}>
                 <div className="hist-card-top">
                   <div className="hist-card-title">
-                    {x.pinned && "📌 "} {x.title}
+                    {x.pinned && "📌 "} {x.title || "Untitled"}
                   </div>
                   <div className="hist-card-meta">
                     <span>{new Date(x.created_at).toLocaleString()}</span>
@@ -167,7 +179,7 @@ export default function History() {
                     <span>•</span>
                     <span>{x.service_id || x.source}</span>
                     <span>•</span>
-                    <span>{x.num_changes} changes</span>
+                    <span>{x.num_changes || 0} changes</span>
                   </div>
                 </div>
 

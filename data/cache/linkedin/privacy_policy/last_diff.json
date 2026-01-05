@@ -1,0 +1,32 @@
+{
+  "service_id": "linkedin",
+  "doc_type": "privacy_policy",
+  "name": "LinkedIn Privacy Policy (UK)",
+  "generated_at": "2026-01-04T23:14:17+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:32+00:00",
+      "content_sha256": "ec224bf56393b1f667bea3f6fc6f9192dd3ac5b93aa7aa50068aab17189f7022",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/vlopses-gb-versions",
+        "branch": "main",
+        "path": "LinkedIn/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/vlopses-gb-versions/main/LinkedIn/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 0
+  },
+  "changes": []
+}

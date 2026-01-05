@@ -2,7 +2,9 @@
   "service_id": "amazon",
   "doc_type": "privacy_policy",
   "name": "Amazon Privacy Policy",
-  "generated_at": "2025-12-30T03:21:26+00:00",
+  "generated_at": "2026-01-04T23:12:30+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
   "provenance": {
     "old": {
       "fetched_at": "2025-12-22T06:45:30+00:00",
@@ -30,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 2
+    "num_changes": 5
   },
   "changes": [
     {
@@ -39,21 +41,57 @@
       "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 5,
+      "new_index": 3,
       "old": null,
-      "new": "Veuillez également consulter la [politique relative aux cookies](https://www.amazon.fr/-/en/gp/help/customer/display.html?nodeId=GVASXV5UZ64R4Y25) et la politique relative aux [publicités basées sur vos centres d'intérêt](https://www.amazon.fr/-/en/gp/help/customer/display.html?nodeId=G64JFZVFDY66XG9K).",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, including monitoring how you use the service (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalization or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking or analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if you are concerned about behavioural profiling."
+      "new": "Veuillez également consulter la politique relative aux cookies et",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 45,
+      "old": null,
+      "new": "Qu'en est-il des cookies et des autres identificateurs ?",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics, which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking or analytics; disable personalised ads or restrict cookies if concerned."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 13,
+      "old": null,
+      "new": "Quelles informations personnelles Amazon Europe collecte-t-elle sur ses clients ?",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 127,
+      "old": null,
+      "new": "Les enfants sont-ils autorisés à utiliser les Services Amazon ?",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
     {
       "category": "Other policy change",
       "type": "modified",
       "risk_score": 0.5,
-      "similarity": 0.8811905384063721,
-      "old_index": 2,
-      "new_index": 2,
-      "old": "Dernière mise à jour le 09 janvier 2025.",
-      "new": "Dernière mise à jour : le 22 décembre 2025.",
+      "similarity": 0.9361263513565063,
+      "old_index": 0,
+      "new_index": 0,
+      "old": "Notice : Protection de vos informations personnelles ==================================================== Dernière mise à jour le 09 janvier 2025.",
+      "new": "Notice : Protection de vos informations personnelles ==================================================== Dernière mise à jour : le 22 décembre 2025.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }

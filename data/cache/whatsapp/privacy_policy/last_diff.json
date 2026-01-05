@@ -1,0 +1,105 @@
+{
+  "service_id": "whatsapp",
+  "doc_type": "privacy_policy",
+  "name": "WhatsApp Privacy Policy",
+  "generated_at": "2026-01-04T23:11:23+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:28+00:00",
+      "content_sha256": "2c2397fbd2b444713c7bc74a8569a8cfeb6aeb3d903decc6e82d1e82a904bb59",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "WhatsApp/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/WhatsApp/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 6
+  },
+  "changes": [
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 118,
+      "old": null,
+      "new": "Nous travaillons avec des fournisseurs de services tiers et les",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 119,
+      "old": null,
+      "new": "Entités Facebook afin de nous permettre d'exploiter, de fournir, d'améliorer, de comprendre, de personnaliser, de prendre en charge et de commercialiser nos Services.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 165,
+      "old": null,
+      "new": "Catégories de données utilisées : nous utilisons les informations décrites dans les sections «",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 166,
+      "old": null,
+      "new": "Informations que vous fournissez », « Informations collectées automatiquement » et « Informations de tiers » de la présente Politique de confidentialité à cette fin.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 188,
+      "old": null,
+      "new": "Catégories de données utilisées : les informations que nous utilisons pour ce traitement varient en fonction des circonstances, mais elles comprennent en général les informations décrites dans les sections «",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 189,
+      "old": null,
+      "new": "Informations que vous fournissez » et « Informations collectées automatiquement » de la présente Politique de confidentialité.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}

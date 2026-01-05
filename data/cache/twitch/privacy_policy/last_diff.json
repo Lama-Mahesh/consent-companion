@@ -1,0 +1,32 @@
+{
+  "service_id": "twitch",
+  "doc_type": "privacy_policy",
+  "name": "Twitch Privacy Policy",
+  "generated_at": "2026-01-04T23:10:55+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": null,
+      "content_sha256": null,
+      "source": null
+    },
+    "new": {
+      "fetched_at": "2025-12-22T06:45:27+00:00",
+      "content_sha256": "a94f1425fca5bdd4f7ae484fea77de7ffb418eaaddb6a1ee5fa6ffdc1aa72006",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Twitch/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Twitch/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 0
+  },
+  "changes": []
+}
