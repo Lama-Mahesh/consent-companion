@@ -1,0 +1,207 @@
+{
+  "service_id": "llama_api",
+  "doc_type": "privacy_policy",
+  "name": "Llama API Privacy Policy",
+  "generated_at": "2026-01-05T21:29:05+00:00",
+  "mode_requested": "semantic",
+  "mode_used": "semantic",
+  "provenance": {
+    "old": {
+      "fetched_at": "2026-01-05T10:40:30+00:00",
+      "content_sha256": "8e7e05b798f2cd366a3394e6b525fb3ebcfff80dfc2aa6907ea864dc589dc126",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/genai-contrib-versions",
+        "branch": "main",
+        "path": "Llama API/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/genai-contrib-versions/main/Llama API/Privacy Policy.md"
+      }
+    },
+    "new": {
+      "fetched_at": "2026-01-05T21:28:50+00:00",
+      "content_sha256": "8ab0bd3eb93560555a1e41701f584e244caf970dc9b946eb10bebb29a10e0c5b",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/genai-contrib-versions",
+        "branch": "main",
+        "path": "Llama API/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/genai-contrib-versions/main/Llama API/Privacy Policy.md"
+      }
+    }
+  },
+  "engine": {
+    "mode": "semantic",
+    "model_name": "all-MiniLM-L6-v2",
+    "num_changes": 14
+  },
+  "changes": [
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 460,
+      "old": null,
+      "new": "We advertise our own products and services on non-Meta ad platforms. We use marketing vendors to deliver these ads. If we use your activity on our Products to tailor these ads, you can opt out of this type of use.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 4.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 516,
+      "old": null,
+      "new": "A third party that creates reports to help advertisers understand how their content and ads are performing. These reports also measure whether people took an action after seeing an ad.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 3.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 16,
+      "old": null,
+      "new": "Meta partners with and serves respected businesses around the world.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 3.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 440,
+      "old": null,
+      "new": "A person, business, organization or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things like investigate suspicious activity and provide customer support.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 262,
+      "old": null,
+      "new": "Just like you need a mailing address to receive a letter from a friend, your device needs an IP address to receive information on the internet.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 644,
+      "old": null,
+      "new": "Information about the network you connect your device to, including your IP address",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.8,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 462,
+      "old": null,
+      "new": "You can use the Digital Advertising Alliance industry opt-out platform on your web browser. If you live in Canada, you can use the Digital Advertising Alliance of Canada industry opt-out platform. Certain ad blockers and tools to restrict cookies can interfere with your ability to opt out.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 669,
+      "old": null,
+      "new": "Providing measurement, analytics and business services",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 269,
+      "old": null,
+      "new": "A person, business, organization or body that is not part of the Meta Companies",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 343,
+      "old": null,
+      "new": "Across Meta Company Products, you can interact with Meta’s generative AI features and experiences, collectively called AI at Meta.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 353,
+      "old": null,
+      "new": "A partner who uses technologies that help you make a connection to them through our Products, including plugins, login, checkout experiences, instant games, and other such integrations",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 486,
+      "old": null,
+      "new": "A legal request or obligation, including obligations of Meta Companies or to comply with applicable law",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 78,
+      "old": null,
+      "new": "This Policy describes the information we, Meta Platforms, Inc., process to provide Meta Products, which we also call \"Products.\"",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 261,
+      "old": null,
+      "new": "Stands for \"internet protocol address.\" It’s a unique number assigned to a device, like a phone or computer, that allows it to communicate over the internet. Numbers are assigned according to standard guidelines, or protocols.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
+}
