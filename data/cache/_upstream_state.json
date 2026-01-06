@@ -9,7 +9,7 @@
     "discord:privacy_policy": "ac6eecc830443dfc48189152e7683ad1b8c81d88e8d24500840e6137fceab0a7",
     "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
     "facebook:privacy_policy": "5a8235486d40c65136fe10ebe4201ce1c0f88e9cb24b46f18ae45096e0213196",
-    "instagram:privacy_policy": "882d791a5f48a57a421e8242a0f9c9a875520adc20d66e0c47a55484534e7bb6",
+    "instagram:privacy_policy": "b910984a4b6d88d02ec75a147fecb57f7e3ac7cbe13c81cebb5174de2d4bb6bb",
     "linkedin:privacy_policy": "bf08e284ac26f218c5193ab9587a43dec38453bbed1be5cfbe72a66a6ff306e5",
     "snapchat:privacy_policy": "01e81443e3df9bf6c2555c3cd4874abb1c3547d5de0137e491a350b3e4c77fe4",
     "x:privacy_policy": "9b8f6218c53d8f5b865e36cb8f26a1de36171282b2b3af2087c91f7c85e384a0",
@@ -18,8 +18,7 @@
     "claude_ai:privacy_policy": "422baacce7a0118dc62d40f0f697c679d1bf1719164ce638cab0e323014dd33f"
   },
   "changed_keys": [
-    "llama_api:privacy_policy",
-    "claude_ai:privacy_policy"
+    "instagram:privacy_policy"
   ],
   "failures": []
 }
