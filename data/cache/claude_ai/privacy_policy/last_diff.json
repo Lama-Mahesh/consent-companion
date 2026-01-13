@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-01-12T21:29:08+00:00",
+  "generated_at": "2026-01-13T09:35:47+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-01-12T09:40:27+00:00",
-      "content_sha256": "1d8c9e5cc2da62ac9350bfd90480de3cab39c3a03af6d53f0331e15a2a1326e1",
+      "fetched_at": "2026-01-12T21:29:04+00:00",
+      "content_sha256": "111e03676ab78d9a8ad01b8a71fa49525517c259cda536c924cc406671b0491f",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-01-12T21:29:04+00:00",
-      "content_sha256": "111e03676ab78d9a8ad01b8a71fa49525517c259cda536c924cc406671b0491f",
+      "fetched_at": "2026-01-13T09:35:42+00:00",
+      "content_sha256": "7fb81c501efb2e343f80696acfd778e5dcf05ec03470831846981a620f9bf416",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,21 +32,9 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 12
+    "num_changes": 11
   },
   "changes": [
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 5,
-      "old": null,
-      "new": "If you are located in Washington or a state with similar consumer health data laws, please read our Consumer Health Data Privacy Policy which applies to you if you integrate third party health applications with Claude.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
     {
       "category": "Data sharing & third parties",
       "type": "added",
@@ -113,18 +101,6 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 4,
-      "old": null,
-      "new": "If you are located in Canada, Brazil, or the Republic of Korea, please read the relevant Regional Supplemental Disclosure which applies to you.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
       "new_index": 72,
       "old": null,
       "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “European Region”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
@@ -176,6 +152,18 @@
       "new_index": 153,
       "old": null,
       "new": "Adequacy decisions . These are decisions from the European Commission under Article 45 GDPR (or equivalent decisions under other laws) where they recognise that a country outside of the EEA offers an adequate level of data protection. We transfer your information as described in “Collection of personal data” to some countries with adequacy decisions, such as the countries listed here; or",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 155,
+      "old": null,
+      "new": "In certain situations, we rely on derogations provided for under applicable data protection law to transfer information to a third country.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
