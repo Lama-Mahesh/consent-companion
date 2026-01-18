@@ -2,13 +2,13 @@
   "service_id": "facebook",
   "doc_type": "privacy_policy",
   "name": "Facebook Privacy Policy (UK)",
-  "generated_at": "2026-01-18T02:23:18+00:00",
+  "generated_at": "2026-01-18T15:27:15+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-01-15T02:07:18+00:00",
-      "content_sha256": "0c421d730aadd2befde94bb85b10eb6c0c30ef762db90dfea34b3d89cd810e05",
+      "fetched_at": "2026-01-18T02:23:02+00:00",
+      "content_sha256": "e3c4f3b3ffac230bf973aba33919514eece69b1ee9407c82fa33946a201d9fe8",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-01-18T02:23:02+00:00",
-      "content_sha256": "e3c4f3b3ffac230bf973aba33919514eece69b1ee9407c82fa33946a201d9fe8",
+      "fetched_at": "2026-01-18T15:26:59+00:00",
+      "content_sha256": "a8ccc4f9867a8907f72e3365de7ff9fee2eecadcd854f9b67adc52497d814a7b",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,21 +32,9 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 15
+    "num_changes": 13
   },
   "changes": [
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 320,
-      "old": null,
-      "new": "Public content can also be seen, accessed, reshared or downloaded through third-party services, such as:",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
     {
       "category": "Data sharing & third parties",
       "type": "added",
@@ -130,18 +118,6 @@
       "new": "Providing measurement, analytics and business services",
       "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
       "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Billing & financial terms",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 393,
-      "old": null,
-      "new": "Information to complete your transaction, such as order, payment, contact and delivery information",
-      "explanation": "The updated policy introduces or changes billing/payment-related terms (subscriptions, fees, pricing, or payment methods).",
-      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
     },
     {
       "category": "Other policy change",
