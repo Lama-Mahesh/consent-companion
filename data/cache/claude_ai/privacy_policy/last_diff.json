@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-01-20T21:28:42+00:00",
+  "generated_at": "2026-01-21T09:40:10+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-01-20T09:40:11+00:00",
-      "content_sha256": "57ec08bdf16f131614baeb2aca46143acf18fdcaca1e43733ec8b9994af88867",
+      "fetched_at": "2026-01-20T21:28:36+00:00",
+      "content_sha256": "c37773428f514deefeae22349919f483899d9ceef4a45e9060fd54df778a6f40",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-01-20T21:28:36+00:00",
-      "content_sha256": "c37773428f514deefeae22349919f483899d9ceef4a45e9060fd54df778a6f40",
+      "fetched_at": "2026-01-21T09:40:05+00:00",
+      "content_sha256": "74b2e556ae2d85c988afef6e03f5f09729398f269d096fc173aab697ea399030",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -101,6 +101,18 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
+      "new_index": 72,
+      "old": null,
+      "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “European Region”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
       "new_index": 136,
       "old": null,
       "new": "Restriction : the right to restrict our processing of your personal data in certain circumstances.",
@@ -152,18 +164,6 @@
       "new_index": 155,
       "old": null,
       "new": "In certain situations, we rely on derogations provided for under applicable data protection law to transfer information to a third country.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 160,
-      "old": null,
-      "new": "Anthropic PBC with a registered address at 548 Market St, PMB 90375, San Francisco, CA 94104 (United States).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
