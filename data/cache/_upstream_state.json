@@ -13,11 +13,12 @@
     "linkedin:privacy_policy": "bf08e284ac26f218c5193ab9587a43dec38453bbed1be5cfbe72a66a6ff306e5",
     "snapchat:privacy_policy": "01e81443e3df9bf6c2555c3cd4874abb1c3547d5de0137e491a350b3e4c77fe4",
     "x:privacy_policy": "666ebe4d2e26d6f99672882388400f95a0aae84a0f224b73824ceb0cb1e40b10",
-    "chatgpt:privacy_policy": "ae0bfacc3eb4233b4350ee78f9fece10b1bd6a082e39f2661d09110e0c9dc863",
+    "chatgpt:privacy_policy": "36c672a531e6ac2c529d284868805146c7c4af58a63f4270adad6cbaf8f4a656",
     "llama_api:privacy_policy": "7667a948b814aa0d3388cc1ef8e90e4a1ac37fef1b4e515ccf6ab963a6eddcc9",
-    "claude_ai:privacy_policy": "64f7f6b471c29b0d1bce9628111cbe5e4240a36218b11ebe170d233b751e85a8"
+    "claude_ai:privacy_policy": "a67a17307487a67d08e014bdac36cdd25f0e9904edf5f203c08de1292794c8a2"
   },
   "changed_keys": [
+    "chatgpt:privacy_policy",
     "claude_ai:privacy_policy"
   ],
   "failures": []
