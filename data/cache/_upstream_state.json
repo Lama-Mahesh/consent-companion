@@ -15,7 +15,7 @@
     "x:privacy_policy": "666ebe4d2e26d6f99672882388400f95a0aae84a0f224b73824ceb0cb1e40b10",
     "chatgpt:privacy_policy": "36c672a531e6ac2c529d284868805146c7c4af58a63f4270adad6cbaf8f4a656",
     "llama_api:privacy_policy": "861e571ad3060d372942ee6247e9cca02d96f2824f57c4133892c14d8e102048",
-    "claude_ai:privacy_policy": "1f27f4c0b201bdfc36aad3dbe45109be5235def1224243785d1546880c2333ac"
+    "claude_ai:privacy_policy": "a1ef7f4e04dd422b64fbd66d705ea3770d6c08f86da26c3e088f9e7de80cc80e"
   },
   "changed_keys": [
     "claude_ai:privacy_policy"
