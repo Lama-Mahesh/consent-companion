@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-02-08T21:35:05+00:00",
+  "generated_at": "2026-02-09T07:13:51+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-02-08T09:38:16+00:00",
-      "content_sha256": "9ebbf15e3df1dfd20a4cbccdd990acd60e6f57a31a41ab462baddd0b3ea6fc05",
+      "fetched_at": "2026-02-08T21:34:59+00:00",
+      "content_sha256": "407465acfcbd72a16dcc1a5bd4a9fe8f9f869b74417f7dfba7a8e009a7b429cf",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-02-08T21:34:59+00:00",
-      "content_sha256": "407465acfcbd72a16dcc1a5bd4a9fe8f9f869b74417f7dfba7a8e009a7b429cf",
+      "fetched_at": "2026-02-09T07:13:44+00:00",
+      "content_sha256": "8ff2deda3b7185d9dd162a36152ffd3ca623ef519fdd3a4032e644b0c629bac1",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -101,18 +101,6 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 72,
-      "old": null,
-      "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “European Region”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
       "new_index": 136,
       "old": null,
       "new": "Restriction : the right to restrict our processing of your personal data in certain circumstances.",
@@ -164,6 +152,18 @@
       "new_index": 155,
       "old": null,
       "new": "In certain situations, we rely on derogations provided for under applicable data protection law to transfer information to a third country.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 158,
+      "old": null,
+      "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “ European Region ”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
