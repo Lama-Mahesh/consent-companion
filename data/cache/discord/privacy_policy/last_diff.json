@@ -2,18 +2,24 @@
   "service_id": "discord",
   "doc_type": "privacy_policy",
   "name": "Discord Privacy Policy",
-  "generated_at": "2026-01-04T23:12:07+00:00",
+  "generated_at": "2026-02-10T02:53:31+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": null,
-      "content_sha256": null,
-      "source": null
-    },
-    "new": {
       "fetched_at": "2025-12-22T06:45:29+00:00",
       "content_sha256": "a22ae84cc497371a273ed7d8e690b93aef942136f95bf6e5d333b7b4fbfc5675",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Discord/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Discord/Privacy Policy.md"
+      }
+    },
+    "new": {
+      "fetched_at": "2026-02-10T02:53:25+00:00",
+      "content_sha256": "892310f8c574b709dec02027841d7d9ce45406956a3dd6e600d1e28353d2a167",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -35,9 +41,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 111,
+      "new_index": 82,
       "old": null,
-      "new": "As discussed in the “How to control your privacy” section below, you can choose to what extent we will use your personal information to personalize your Discord experience.",
+      "new": "In compliance with the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Discord commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs) and the UK Information Commissioner’s Office (ICO) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
