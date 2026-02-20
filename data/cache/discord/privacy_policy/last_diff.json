@@ -2,13 +2,13 @@
   "service_id": "discord",
   "doc_type": "privacy_policy",
   "name": "Discord Privacy Policy",
-  "generated_at": "2026-02-10T02:53:31+00:00",
+  "generated_at": "2026-02-20T02:36:39+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2025-12-22T06:45:29+00:00",
-      "content_sha256": "a22ae84cc497371a273ed7d8e690b93aef942136f95bf6e5d333b7b4fbfc5675",
+      "fetched_at": "2026-02-10T02:53:25+00:00",
+      "content_sha256": "892310f8c574b709dec02027841d7d9ce45406956a3dd6e600d1e28353d2a167",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-02-10T02:53:25+00:00",
-      "content_sha256": "892310f8c574b709dec02027841d7d9ce45406956a3dd6e600d1e28353d2a167",
+      "fetched_at": "2026-02-20T02:36:33+00:00",
+      "content_sha256": "703d29604ed391b757f178cb046d490b023872cc5625bb1e6404efdf9f15d489",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -37,13 +37,13 @@
   "changes": [
     {
       "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 82,
-      "old": null,
-      "new": "In compliance with the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Discord commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs) and the UK Information Commissioner’s Office (ICO) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF.",
+      "type": "removed",
+      "risk_score": 0.5,
+      "similarity": 0.4548022150993347,
+      "old_index": 48,
+      "new_index": null,
+      "old": "‍ With your consent",
+      "new": null,
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
