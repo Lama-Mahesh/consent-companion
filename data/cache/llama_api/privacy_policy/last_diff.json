@@ -2,13 +2,13 @@
   "service_id": "llama_api",
   "doc_type": "privacy_policy",
   "name": "Llama API Privacy Policy",
-  "generated_at": "2026-02-26T07:09:13+00:00",
+  "generated_at": "2026-02-26T21:39:49+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-02-25T19:15:01+00:00",
-      "content_sha256": "3a489eb844680120f635ef44cae63b9c660bdf18971751e1de4c9f8a5d7dbdc7",
+      "fetched_at": "2026-02-26T07:08:57+00:00",
+      "content_sha256": "11cac93330fe8a27d35984731e0c5eeed6c61117da368334e8c3ee8c6972f0af",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-02-26T07:08:57+00:00",
-      "content_sha256": "11cac93330fe8a27d35984731e0c5eeed6c61117da368334e8c3ee8c6972f0af",
+      "fetched_at": "2026-02-26T21:39:31+00:00",
+      "content_sha256": "7dec87a0977314f604a9f3846bcb23898fc96bb5f7eac5a4c1070b1a8066beee",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 25
+    "num_changes": 18
   },
   "changes": [
     {
@@ -53,54 +53,6 @@
       "risk_score": 4.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 678,
-      "old": null,
-      "new": "Transferring, storing or processing your information globally. We share information we collect globally, both internally across our offices and data centers and externally with our partners, third parties and service providers. Because Meta is global, with users, partners and employees around the world, transfers are necessary to:",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 705,
-      "old": null,
-      "new": "Access matters: to provide data to public sector bodies, the EU Commission, EU Central Bank or other EU bodies upon request from them, to provide data to you or your requested third party when requested by you, for example under EU Regulation 2023/2854 (Data Act)",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 719,
-      "old": null,
-      "new": "We rely on our legitimate interests or the legitimate interests of a third party, where they are not outweighed by your interests or fundamental rights and freedoms (\"legitimate interests\"). The categories of information we use, the legitimate interests relied on and why and how it’s processed are set out below:",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 740,
-      "old": null,
-      "new": "Information from partners, vendors and third parties (other than using partner data to tailor ads to you)",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
       "new_index": 743,
       "old": null,
       "new": "Connect your Meta Products account, including your public profile information, to an integrated partner to sign in or share your information,",
@@ -108,52 +60,52 @@
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
-      "category": "Tracking, analytics & profiling",
+      "category": "Data sharing & third parties",
       "type": "added",
-      "risk_score": 3.7,
+      "risk_score": 4.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 742,
+      "new_index": 1110,
       "old": null,
-      "new": "Providing and improving Meta Products: The provision of Meta Products includes collecting, storing, and, where relevant, sharing, profiling, reviewing and curating, automated processing, and in some instances manual (human) reviewing, to:",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+      "new": "We share your information with law enforcement, government authorities, Meta Companies and other third parties (including industry peers) when we have a good faith belief it’s necessary to detect, prevent and address a variety of situations, such as:",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
-      "category": "Tracking, analytics & profiling",
-      "type": "modified",
-      "risk_score": 3.5,
-      "similarity": 0.9161990880966187,
-      "old_index": 175,
-      "new_index": 163,
-      "old": "When you use our Products, you see ads and sponsored or commercial content, like product listings in Shops. Meta personalizes your ads on and across Meta Company Products. You also see ads shown through Meta Audience Network or commercial content when you visit other apps. We use your information to show you ads paid for by advertisers, businesses, and organizations. We want everything you see to be interesting and useful to you.",
-      "new": "When you use our Products, you see ads, such as boosted posts or product listings in Shops. Meta personalizes your ads on and across Meta Company Products. You also see ads shown through Meta Audience Network when you visit other apps. To provide our Products for free, we use your information to show you ads, which advertisers, businesses, organizations and others pay us to show you. We want everything you see to be interesting and useful to you, so we personalize ads for you and measure how they perform. We use information from your account or across accounts in your Accounts Center and cookies on our Products for this. You can control whether we show you ads and which information we use to show you ads in Ad Preferences.",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
-    },
-    {
-      "category": "Tracking, analytics & profiling",
+      "category": "Data sharing & third parties",
       "type": "added",
-      "risk_score": 3.5,
+      "risk_score": 4.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 577,
+      "new_index": 1118,
       "old": null,
-      "new": "If we show you ads, depending on your settings, we will use your information across the account(s) in your Accounts Centre to show you ads, including using cookies, to personalize your ads on and off the Meta Company Products, including apps using Meta Audience Network, and measure how those ads perform.",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+      "new": "For example, if you post threatening or harmful content, we may share your information across the Meta Companies to protect ourselves and others. This can include blocking your access to certain features or disabling your account across the Meta Companies.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
-      "category": "Tracking, analytics & profiling",
+      "category": "Data sharing & third parties",
       "type": "added",
       "risk_score": 3.5,
       "similarity": null,
       "old_index": null,
-      "new_index": 866,
+      "new_index": 428,
       "old": null,
-      "new": "In our interest to provide seamless, consistent and richer, innovative communication, engagement and sharing experiences across Meta Company Products.",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+      "new": "A person, business, organization or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things like investigate suspicious activity and provide customer support.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 3.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 980,
+      "old": null,
+      "new": "Develop and improve AI at Meta for Meta Products and for third parties.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
       "category": "Tracking, analytics & profiling",
@@ -173,83 +125,35 @@
       "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 589,
+      "new_index": 667,
       "old": null,
-      "new": "Information that you've shared through your device settings (e.g. GPS location)",
+      "new": "Information about the network you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
       "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
-      "category": "User rights & controls",
+      "category": "Tracking, analytics & profiling",
       "type": "added",
-      "risk_score": 2.7,
+      "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 456,
+      "new_index": 738,
       "old": null,
-      "new": "You have the right to access and correct your information, subject to applicable law.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
+      "new": "Information you’ve shared through your device settings (like GPS location)",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
-      "category": "User rights & controls",
+      "category": "Tracking, analytics & profiling",
       "type": "added",
-      "risk_score": 2.7,
+      "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 457,
+      "new_index": 815,
       "old": null,
-      "new": "Where we rely on your consent to process your information, you can withdraw your consent at any time. If you choose to withdraw your consent this will not affect the lawfulness of processing based on consent before its withdrawal.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
-    },
-    {
-      "category": "User rights & controls",
-      "type": "added",
-      "risk_score": 2.7,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 460,
-      "old": null,
-      "new": "You have the right to request that we erase your information, if there are valid grounds for doing so and subject to applicable law.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
-    },
-    {
-      "category": "User rights & controls",
-      "type": "added",
-      "risk_score": 2.7,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 465,
-      "old": null,
-      "new": "You have the right to object to and restrict certain processing of your information.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
-    },
-    {
-      "category": "User rights & controls",
-      "type": "added",
-      "risk_score": 2.7,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 467,
-      "old": null,
-      "new": "You can object to our processing your information when we rely on legitimate interests or perform a task in the public interest. We will consider several factors when assessing an objection, including:",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
-    },
-    {
-      "category": "User rights & controls",
-      "type": "added",
-      "risk_score": 2.7,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 615,
-      "old": null,
-      "new": "When we process information that you provide to us based on your consent, you have the right to withdraw your consent at any time without affecting the lawfulness of processing based on consent before its withdrawal. You also have the right to port that information you provide to us based on your consent. To exercise your rights, visit your device-based settings, and visit the Facebook settings and Instagram settings and our Help Centers.",
-      "explanation": "The updated policy describes additional rights or controls you have over your personal data, such as new ways to opt out, delete your data, or exercise privacy rights.",
-      "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
+      "new": "Information about the network you connect your device to and your connection, including your IP address",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
       "category": "Purpose & legal basis",
@@ -257,83 +161,95 @@
       "risk_score": 2.3,
       "similarity": null,
       "old_index": null,
-      "new_index": 454,
-      "old": null,
-      "new": "We process information as necessary for us to comply with a legal obligation.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 694,
-      "old": null,
-      "new": "The categories of information we use, why we process your information based on compliance with a legal obligation and how it’s processed are set out below:",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 706,
-      "old": null,
-      "new": "View the current list of laws which are enforceable in Ireland that give rise to a legal obligation for Meta which results in the processing of information. New laws may be enacted or other obligations may become binding on our processing of your information which may require us to process your information and we will update this list from time to time.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 720,
+      "new_index": 741,
       "old": null,
       "new": "ⓘ For registered users of the Meta Products ⓘ For registered users under the age of majority (under 18, in most applicable countries) who have a limited ability to enter into an enforceable contract only, where we may be unable to process your information on the grounds of contractual necessity.",
       "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
       "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
     },
     {
-      "category": "Purpose & legal basis",
+      "category": "Security & safety measures",
       "type": "added",
-      "risk_score": 2.3,
+      "risk_score": 2.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 799,
+      "new_index": 992,
       "old": null,
-      "new": "Providing measurement, analytics and other business services",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+      "new": "In our interest to secure our platform and network, to verify accounts and activity, to combat harmful conduct, to detect, prevent, and address spam and other bad experiences, to keep the Meta Company Products free of harmful or inappropriate content, and to investigate and take action in respect of suspicious activity or breaches of our terms or policies; and",
+      "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
+      "suggested_action": "This may improve protection of your data. You can still review details to understand what changed."
     },
     {
-      "category": "Purpose & legal basis",
+      "category": "Other policy change",
       "type": "added",
-      "risk_score": 2.3,
+      "risk_score": 1.5,
       "similarity": null,
       "old_index": null,
-      "new_index": 817,
+      "new_index": 263,
       "old": null,
-      "new": "Providing measurement, analytics and other business services if we show you ads",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+      "new": "A person, business, organization or body that is not part of the Meta Companies",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
     {
-      "category": "Billing & financial terms",
+      "category": "Other policy change",
       "type": "added",
-      "risk_score": 2.3,
+      "risk_score": 1.5,
       "similarity": null,
       "old_index": null,
-      "new_index": 382,
+      "new_index": 335,
       "old": null,
-      "new": "For example, if you donate to a charity that receives funds through PayPal Giving Fund, your donation will be made to PayPal Giving Fund. The PayPal Giving Fund will receive information such as the transaction amount and name of the charity. Their payment service provider will also receive information needed to facilitate the payment, including your payment card credential information.",
-      "explanation": "The updated policy introduces or changes billing/payment-related terms (subscriptions, fees, pricing, or payment methods).",
-      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
+      "new": "Across Meta Company Products, you can interact with Meta’s generative AI features and experiences, collectively called AI at Meta.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 345,
+      "old": null,
+      "new": "A partner who uses technologies that help you make a connection to them through our Products, including plugins, login, checkout experiences, instant games, and other such integrations",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 491,
+      "old": null,
+      "new": "A legal request or obligation, including obligations of Meta Companies or to comply with applicable law",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 770,
+      "old": null,
+      "new": "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to help ensure the safety, integrity and security of those services and those people who enjoy them. We process information we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 67,
+      "old": null,
+      "new": "This Policy describes the information we, Meta Platforms Ireland Limited, process to provide Meta Products, which we also call \"Products.\"",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
   ]
 }
