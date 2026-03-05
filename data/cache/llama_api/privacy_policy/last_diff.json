@@ -2,13 +2,13 @@
   "service_id": "llama_api",
   "doc_type": "privacy_policy",
   "name": "Llama API Privacy Policy",
-  "generated_at": "2026-03-05T09:54:22+00:00",
+  "generated_at": "2026-03-05T19:22:01+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-03-04T21:41:34+00:00",
-      "content_sha256": "c368c993279be07e5f9f5c4ab965fe25d8bebfeb1be22dc82b52e6cba0aa1ba4",
+      "fetched_at": "2026-03-05T09:54:03+00:00",
+      "content_sha256": "6c0ab266587e386096cb69e246a110e64281f72f9ae2b110404ae2b3d176d323",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-03-05T09:54:03+00:00",
-      "content_sha256": "6c0ab266587e386096cb69e246a110e64281f72f9ae2b110404ae2b3d176d323",
+      "fetched_at": "2026-03-05T19:21:49+00:00",
+      "content_sha256": "8c08232738a984bfd0cb3971b0fc68ca54a35bf790b0ea97202868876545b7ad",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -181,18 +181,6 @@
     },
     {
       "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 1.5,
-      "similarity": 0.6449741721153259,
-      "old_index": 12,
-      "new_index": 651,
-      "old": "Meta performs regular security and vulnerability testing to assess whether key controls are properly implemented and effective. Meta has a vulnerability management program that includes definition of roles and responsibilities, dedicated ownership of vulnerability monitoring, vulnerability risk assessment and patch deployment.Meta’s security team is responsible for the detection, triage and remediation of vulnerabilities in Meta’s hardware and software. Meta leverages various tools to detect security bugs in its code base, as well as in open-source and third-party code, in order to mitigate or fix security bugs before they make it into shipped Meta’s products and impact our customers.Llama API benefits from Meta’s commitment to the security of your data which manifests through the monitoring, controls and measures we have in place to pre-empt or respond to security risks.",
-      "new": "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to help ensure the safety, integrity and security of those services and those people who enjoy them. We process information we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
       "type": "added",
       "risk_score": 1.5,
       "similarity": null,
@@ -248,6 +236,18 @@
       "new_index": 770,
       "old": null,
       "new": "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to help ensure the safety, integrity and security of those services and those people who enjoy them. We process information we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 67,
+      "old": null,
+      "new": "This Policy describes the information we, Meta Platforms Ireland Limited, process to provide Meta Products, which we also call \"Products.\"",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
