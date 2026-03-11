@@ -2,13 +2,13 @@
   "service_id": "llama_api",
   "doc_type": "privacy_policy",
   "name": "Llama API Privacy Policy",
-  "generated_at": "2026-03-10T21:36:27+00:00",
+  "generated_at": "2026-03-11T09:52:59+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-03-10T09:54:25+00:00",
-      "content_sha256": "6d49e3e2071fd97de861ab1fbd411f797b3858298d51348af0428f5c627bb40f",
+      "fetched_at": "2026-03-10T21:36:08+00:00",
+      "content_sha256": "1e3ddc47c130624d57de3206baa55013e2150b9954d1a01891c76769ea4d502e",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-03-10T21:36:08+00:00",
-      "content_sha256": "1e3ddc47c130624d57de3206baa55013e2150b9954d1a01891c76769ea4d502e",
+      "fetched_at": "2026-03-11T09:52:39+00:00",
+      "content_sha256": "63867f22139e0897e633da6fbb5d023c9a5cf5afdb16671e22db28c7f903aee4",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
