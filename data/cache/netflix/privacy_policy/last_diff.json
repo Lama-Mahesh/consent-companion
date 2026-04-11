@@ -2,18 +2,24 @@
   "service_id": "netflix",
   "doc_type": "privacy_policy",
   "name": "Netflix Privacy Policy",
-  "generated_at": "2026-01-04T23:11:52+00:00",
+  "generated_at": "2026-04-11T02:45:22+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": null,
-      "content_sha256": null,
-      "source": null
-    },
-    "new": {
       "fetched_at": "2025-12-22T06:45:28+00:00",
       "content_sha256": "9bf9ad2077ff391295e8a9c30a57a24664e7533958c20d8e0b11c7352a0ebc9e",
+      "source": {
+        "type": "ota",
+        "repo": "OpenTermsArchive/france-versions",
+        "branch": "main",
+        "path": "Netflix/Privacy Policy.md",
+        "url": "https://raw.githubusercontent.com/OpenTermsArchive/france-versions/main/Netflix/Privacy Policy.md"
+      }
+    },
+    "new": {
+      "fetched_at": "2026-04-11T02:45:14+00:00",
+      "content_sha256": "a806348472ad91d9ab47b7e9d22ad388d866d3dcf9a91da6f88a2419530cf2b5",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -26,18 +32,102 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 1
+    "num_changes": 8
   },
   "changes": [
     {
-      "category": "Other policy change",
+      "category": "Tracking, analytics & profiling",
       "type": "added",
-      "risk_score": 1.7,
+      "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 58,
+      "new_index": 122,
       "old": null,
-      "new": "Nous utilisons les catégories de données personnelles suivantes pour cette finalité : coordonnées, informations de paiement, informations d'achat, informations sur le compte/profil Netflix, informations d'utilisation, informations sur les appareils et le réseau, et communications.",
+      "new": "Section D : Cookies et autres technologies",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 124,
+      "old": null,
+      "new": "Cookies et technologies similaires, pixel tags et autres identifiants",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 28,
+      "old": null,
+      "new": "Section A : Notre collecte, utilisation et partage de vos données personnelles",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 98,
+      "old": null,
+      "new": "Pour toute autre demande ou si vous êtes dans l'incapacité d'exercer vos droits par l'intermédiaire d'une des méthodes décrites plus haut, veuillez contacter privacy@netflix.com.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 104,
+      "old": null,
+      "new": "Choix concernant les Publicités comportementales pour les Publicités sur Netflix",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 115,
+      "old": null,
+      "new": "Section C : Accès à votre compte et à vos profils",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 134,
+      "old": null,
+      "new": "Comment puis-je exercer mes choix à l'égard de ces technologies ?",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 157,
+      "old": null,
+      "new": "Le service Netflix peut inclure des publicités interactives qui vous redirigent vers les sites et les applications de tiers (tels que ceux des Annonceurs). Ces sites et applications sont régis par des déclarations de confidentialité, des avis et des conditions d'utilisation distinctes que nous vous recommandons de consulter.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
