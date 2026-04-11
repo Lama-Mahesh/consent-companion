@@ -2,13 +2,13 @@
   "service_id": "snapchat",
   "doc_type": "privacy_policy",
   "name": "Snapchat Privacy Policy (UK)",
-  "generated_at": "2026-04-03T13:16:28+00:00",
+  "generated_at": "2026-04-11T15:40:13+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-03-06T15:44:44+00:00",
-      "content_sha256": "69c08082062204e1ffbf7923cd89b6f7454caf711ed7670c4c5e7414b7d23d88",
+      "fetched_at": "2026-04-03T13:16:17+00:00",
+      "content_sha256": "2f6b204966d2bd8b2fbe8ec11e91aa07499b584c51e7172deff2b9012190dc0e",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-04-03T13:16:17+00:00",
-      "content_sha256": "2f6b204966d2bd8b2fbe8ec11e91aa07499b584c51e7172deff2b9012190dc0e",
+      "fetched_at": "2026-04-11T15:39:59+00:00",
+      "content_sha256": "9e9801d0da27b4bf1602a15c4a2054c506b420c0506a662751f08af8cb7f111a",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 2
+    "num_changes": 1
   },
   "changes": [
     {
@@ -46,18 +46,6 @@
       "new": "Third-Party Apps. Sometimes we provide features that allow you to connect with third-party apps. If you decide to connect your Snapchat account with a third-party app, we will share any additional information you direct us to.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 1.0,
-      "similarity": 0.7951995134353638,
-      "old_index": 159,
-      "new_index": 159,
-      "old": "Your friends and Snapchatters in your household. (Lower weight) Many friends have similar interests. So, we may use information about your friends’ interactions with ads or content to determine whether to show those ads to you. For example, if your friends clicked on an ad for a new pair of shoes, we may use that to prioritize showing the same ad to you. We also may use similar information from Snapchatters in your household who are over 18 to help us choose which ads to show you.",
-      "new": "Your friends. (Lower weight) Many friends have similar interests. So, we may use information about your friends’ interactions with ads or content to determine whether to show those ads to you. For example, if your friends clicked on an ad for a new pair of shoes, we may use that to prioritize showing the same ad to you.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
   ]
 }
