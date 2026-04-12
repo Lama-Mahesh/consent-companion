@@ -2,13 +2,13 @@
   "service_id": "snapchat",
   "doc_type": "privacy_policy",
   "name": "Snapchat Privacy Policy (UK)",
-  "generated_at": "2026-04-11T15:40:13+00:00",
+  "generated_at": "2026-04-12T03:23:50+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-04-03T13:16:17+00:00",
-      "content_sha256": "2f6b204966d2bd8b2fbe8ec11e91aa07499b584c51e7172deff2b9012190dc0e",
+      "fetched_at": "2026-04-11T15:39:59+00:00",
+      "content_sha256": "9e9801d0da27b4bf1602a15c4a2054c506b420c0506a662751f08af8cb7f111a",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-04-11T15:39:59+00:00",
-      "content_sha256": "9e9801d0da27b4bf1602a15c4a2054c506b420c0506a662751f08af8cb7f111a",
+      "fetched_at": "2026-04-12T03:23:37+00:00",
+      "content_sha256": "f105daa8b45df20440fce486e89308381a72a6f7d261bec251667df6d88241c8",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 1
+    "num_changes": 2
   },
   "changes": [
     {
@@ -41,11 +41,23 @@
       "risk_score": 4.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 130,
+      "new_index": 131,
       "old": null,
       "new": "Third-Party Apps. Sometimes we provide features that allow you to connect with third-party apps. If you decide to connect your Snapchat account with a third-party app, we will share any additional information you direct us to.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 0.5,
+      "similarity": 0.9388593435287476,
+      "old_index": 274,
+      "new_index": 277,
+      "old": "We think ads are best when they’re relevant — advertisers prefer them and we think you’ll like them more too. So, we use some of the information we learn about you to try and select the right ads at the right time. For example, if you’ve clicked on a bunch of ads for video games, we might keep those ads coming! But we also use your information to avoid showing you ads you probably won’t like. For example, if a ticketing site tells us you’ve already bought tickets for a movie — or if you bought them through Snapchat — we can stop showing you ads for it. Learn more.",
+      "new": "We think adverts are best when they're relevant — advertisers prefer them and we think you'll like them more too. So, we use some of the information we learn about you to try to select the right adverts at the right time. For example, if you’ve clicked on a bunch of adverts for video games, we might keep those adverts coming! But we also use your information to avoid showing you adverts you probably won’t like. For example, if a ticketing site tells us you’ve already bought tickets for a movie — or if you bought them through Snapchat — we can stop showing you ads for it. Learn more.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
   ]
 }
