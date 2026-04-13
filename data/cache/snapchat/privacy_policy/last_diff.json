@@ -2,13 +2,13 @@
   "service_id": "snapchat",
   "doc_type": "privacy_policy",
   "name": "Snapchat Privacy Policy (UK)",
-  "generated_at": "2026-04-12T15:42:35+00:00",
+  "generated_at": "2026-04-13T03:30:26+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-04-12T03:23:37+00:00",
-      "content_sha256": "f105daa8b45df20440fce486e89308381a72a6f7d261bec251667df6d88241c8",
+      "fetched_at": "2026-04-12T15:42:22+00:00",
+      "content_sha256": "cfbb4540130d199e880c21801ad4c65c509e46e8b1f6a69b2bf0926f4f912f85",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-04-12T15:42:22+00:00",
-      "content_sha256": "cfbb4540130d199e880c21801ad4c65c509e46e8b1f6a69b2bf0926f4f912f85",
+      "fetched_at": "2026-04-13T03:30:11+00:00",
+      "content_sha256": "1d4b95d9f4010f43d0772697ba609a5a9da7282bcf331b58d881007f76b63846",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 5
+    "num_changes": 4
   },
   "changes": [
     {
@@ -49,25 +49,13 @@
     },
     {
       "category": "Other policy change",
-      "type": "removed",
-      "risk_score": 0.5,
-      "similarity": 0.5260199904441833,
-      "old_index": 264,
-      "new_index": null,
-      "old": "Develop new features & improve existing ones",
-      "new": null,
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "removed",
-      "risk_score": 0.5,
-      "similarity": 0.5612276792526245,
-      "old_index": 272,
-      "new_index": null,
-      "old": "Personalise your experience & give things context",
-      "new": null,
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 212,
+      "old": null,
+      "new": "BFF Story. If you just want to share your Story with your Best Friends, you can select the BFF Story format.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -75,23 +63,23 @@
       "category": "Other policy change",
       "type": "modified",
       "risk_score": 0.5,
-      "similarity": 0.9388594627380371,
-      "old_index": 277,
-      "new_index": 275,
-      "old": "We think adverts are best when they're relevant — advertisers prefer them and we think you'll like them more too. So, we use some of the information we learn about you to try to select the right adverts at the right time. For example, if you’ve clicked on a bunch of adverts for video games, we might keep those adverts coming! But we also use your information to avoid showing you adverts you probably won’t like. For example, if a ticketing site tells us you’ve already bought tickets for a movie — or if you bought them through Snapchat — we can stop showing you ads for it. Learn more.",
-      "new": "We think ads are best when they’re relevant — advertisers prefer them and we think you’ll like them more too. So, we use some of the information we learn about you to try and select the right ads at the right time. For example, if you’ve clicked on a bunch of ads for video games, we might keep those ads coming! But we also use your information to avoid showing you ads you probably won’t like. For example, if a ticketing site tells us you’ve already bought tickets for a movie — or if you bought them through Snapchat — we can stop showing you ads for it. Learn more.",
+      "similarity": 0.910354733467102,
+      "old_index": 190,
+      "new_index": 190,
+      "old": "Snaps and Chats are private and delete by default, including Voice and Video Chats between you and your friends — meaning we don’t scan their content to personalize your experience, make recommendations, or show you ads. This means we don’t know what you’re Chatting or Snapping except in limited, safety-related circumstances (for example, if we receive a report of content that is flagged for violating our Community Guidelines, or to help keep spammers from sending you malware or other harmful content) or unless you ask us to (for example, if you use our Voice Chat Transcription feature). To understand how Sponsored Snaps work, see Snap & Ads.",
+      "new": "Snaps and Chats are private and delete by default, including Voice and Video Chats between you and your friends – meaning we don’t scan their content to personalise your experience, make recommendations or show you ads. This means we don’t know what you’re Chatting or Snapping except in limited, safety-related circumstances (for example, if we receive a report of content that is flagged for violating our Community Guidelines, or to help keep spammers from sending you malware or other harmful content) or unless you ask us to (for example, if you use our Voice Chat Transcription feature).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
     {
       "category": "Other policy change",
-      "type": "removed",
+      "type": "modified",
       "risk_score": 0.5,
-      "similarity": 0.35360610485076904,
-      "old_index": 278,
-      "new_index": null,
-      "old": "Reach out to you",
-      "new": null,
+      "similarity": 0.9388593435287476,
+      "old_index": 275,
+      "new_index": 279,
+      "old": "We think ads are best when they’re relevant — advertisers prefer them and we think you’ll like them more too. So, we use some of the information we learn about you to try and select the right ads at the right time. For example, if you’ve clicked on a bunch of ads for video games, we might keep those ads coming! But we also use your information to avoid showing you ads you probably won’t like. For example, if a ticketing site tells us you’ve already bought tickets for a movie — or if you bought them through Snapchat — we can stop showing you ads for it. Learn more.",
+      "new": "We think adverts are best when they're relevant — advertisers prefer them and we think you'll like them more too. So, we use some of the information we learn about you to try to select the right adverts at the right time. For example, if you’ve clicked on a bunch of adverts for video games, we might keep those adverts coming! But we also use your information to avoid showing you adverts you probably won’t like. For example, if a ticketing site tells us you’ve already bought tickets for a movie — or if you bought them through Snapchat — we can stop showing you ads for it. Learn more.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
