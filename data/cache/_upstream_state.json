@@ -14,11 +14,12 @@
     "snapchat:privacy_policy": "0a7478163d48ce0b9958239aa4240c8f0e576107576d6fdf184dbbdf9278d004",
     "x:privacy_policy": "666ebe4d2e26d6f99672882388400f95a0aae84a0f224b73824ceb0cb1e40b10",
     "chatgpt:privacy_policy": "36c672a531e6ac2c529d284868805146c7c4af58a63f4270adad6cbaf8f4a656",
-    "llama_api:privacy_policy": "27461189c83a2201563e41c1afbdaa9300ca6c03b49555a0277008318f02a2cc",
-    "claude_ai:privacy_policy": "0f7039eadb67f0450441605ce6899f869c03064a278bdc7533119d8794947e9d"
+    "llama_api:privacy_policy": "19ca91fb6d5609954f58dda3c9fbfdeb157f4f0d1497193821178c8513ee0d77",
+    "claude_ai:privacy_policy": "4683bd631ea616dc5778883ac1678a5cfd5b9289bd922f97c60a042ef15ab0bc"
   },
   "changed_keys": [
-    "instagram:privacy_policy"
+    "llama_api:privacy_policy",
+    "claude_ai:privacy_policy"
   ],
   "failures": []
 }
