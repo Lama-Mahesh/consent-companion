@@ -2,13 +2,13 @@
   "service_id": "instagram",
   "doc_type": "privacy_policy",
   "name": "Instagram Privacy Policy (UK)",
-  "generated_at": "2026-05-03T03:47:10+00:00",
+  "generated_at": "2026-05-03T15:54:42+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-05-01T16:01:59+00:00",
-      "content_sha256": "c61ff52c14fba9fb1f558666ce6a276936e6288ea0c99642dbf952199add2c73",
+      "fetched_at": "2026-05-03T03:47:07+00:00",
+      "content_sha256": "3508cdae5f34a99de1a7698bafa9d82809581c5706bd417b66ed5554a8c669b7",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-05-03T03:47:07+00:00",
-      "content_sha256": "3508cdae5f34a99de1a7698bafa9d82809581c5706bd417b66ed5554a8c669b7",
+      "fetched_at": "2026-05-03T15:54:36+00:00",
+      "content_sha256": "c61ff52c14fba9fb1f558666ce6a276936e6288ea0c99642dbf952199add2c73",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 7
+    "num_changes": 9
   },
   "changes": [
     {
@@ -48,16 +48,28 @@
       "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
-      "category": "Other policy change",
+      "category": "Tracking, analytics & profiling",
       "type": "added",
-      "risk_score": 1.0,
+      "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 88,
+      "new_index": 297,
       "old": null,
-      "new": "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+      "new": "Accept cookies from Instagram on this browser?",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 298,
+      "old": null,
+      "new": "We use cookies to help personalize and improve content and services, serve relevant ads and provide a safer experience. You can review your cookie controls at any time. Learn more about cookie uses and controls in our Cookie Policy.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
       "category": "Other policy change",
@@ -80,6 +92,18 @@
       "new_index": 116,
       "old": null,
       "new": "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 117,
+      "old": null,
+      "new": "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
