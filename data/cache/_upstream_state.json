@@ -8,8 +8,8 @@
     "netflix:privacy_policy": "f0f5f92d7ff621434b8a56cb6756fdd52639855d18ffd81e27c2d37dd80c9535",
     "discord:privacy_policy": "1ba7c559c88354eb3f4bc07cb78ee962fa6f2125f8a549099fda5fe14153dc0c",
     "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
-    "facebook:privacy_policy": "ddca8c939c761f7b26a38958592a4351174e43429e0590e6ffe81b91eb5db15a",
-    "instagram:privacy_policy": "17b5355037e71864506c380d7ebe6640ebe1e68e38703b1c8f1cecb48b2491e3",
+    "facebook:privacy_policy": "898d814f61079d6758f820a0ba0290f40b441062a0b3c090f81e33cdf4968d11",
+    "instagram:privacy_policy": "70302e15f4982a4af5fac707d1f37e7067cfc731b482b177f6515d041b1c8130",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
     "snapchat:privacy_policy": "0a7478163d48ce0b9958239aa4240c8f0e576107576d6fdf184dbbdf9278d004",
     "x:privacy_policy": "666ebe4d2e26d6f99672882388400f95a0aae84a0f224b73824ceb0cb1e40b10",
@@ -18,7 +18,8 @@
     "claude_ai:privacy_policy": "2f034221f75a51a01b588c797c34d4512ec32d5fe5196f5cdd3a64b4a238060d"
   },
   "changed_keys": [
-    "llama_api:privacy_policy"
+    "facebook:privacy_policy",
+    "instagram:privacy_policy"
   ],
   "failures": []
 }
