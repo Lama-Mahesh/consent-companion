@@ -2,13 +2,13 @@
   "service_id": "facebook",
   "doc_type": "privacy_policy",
   "name": "Facebook Privacy Policy (UK)",
-  "generated_at": "2026-05-09T15:59:13+00:00",
+  "generated_at": "2026-05-10T03:50:39+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-05-09T03:34:58+00:00",
-      "content_sha256": "9f4f18487447273f9040b224c99a0e11dc4f015a3afa929634a7c03ed07438bc",
+      "fetched_at": "2026-05-09T15:58:50+00:00",
+      "content_sha256": "9e3f72b6f3cf7002a3f6522cad455a41f4bdd461017fd18ddad6fc2e6612eb5c",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-05-09T15:58:50+00:00",
-      "content_sha256": "9e3f72b6f3cf7002a3f6522cad455a41f4bdd461017fd18ddad6fc2e6612eb5c",
+      "fetched_at": "2026-05-10T03:50:19+00:00",
+      "content_sha256": "ecc37f375cc1d69ed0d2fe385c931046c332beacd9c7ac2766d003992ac1c68d",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 22
+    "num_changes": 19
   },
   "changes": [
     {
@@ -84,16 +84,16 @@
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
-      "category": "Tracking, analytics & profiling",
+      "category": "Data sharing & third parties",
       "type": "modified",
       "risk_score": 3.5,
-      "similarity": 0.8640046119689941,
-      "old_index": 1168,
-      "new_index": 170,
-      "old": "If we show you ads, we use data that advertisers and other partners provide us about your activity off Meta Company Products, including websites and apps, to show you better ads. You can control whether we use this data to show you ads in your ad settings.",
-      "new": "When you use our Products, you see ads, like product listings in Shops. Meta personalizes your ads on and across Meta Company Products. You also see ads shown through Meta Audience Network when you visit other apps. To provide our Products for free, we use your information to show you ads, which advertisers, businesses, organizations and others pay us to show you. We want everything you see to be interesting and useful to you, so we personalize ads for you and measure how they perform. We use information from your account or across accounts in your Accounts Center and cookies on our Products for this. You can control whether we show you ads and which information we use to show you ads in Ad Preferences.",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+      "similarity": 0.6324290633201599,
+      "old_index": 1146,
+      "new_index": 612,
+      "old": "At Meta, we have a responsibility to protect people’s privacy and have teams dedicated to this work for everything we build.",
+      "new": "For example, if you post threatening or harmful content, we may share your information across the Meta Companies to protect ourselves and others. This can include blocking your access to certain features or disabling your account across the Meta Companies.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
       "category": "Data sharing & third parties",
@@ -106,30 +106,6 @@
       "new": "A person, business, organization or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things like investigate suspicious activity and provide customer support.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 3.5,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 990,
-      "old": null,
-      "new": "Develop and improve AI at Meta for Meta Products and for third parties.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Tracking, analytics & profiling",
-      "type": "modified",
-      "risk_score": 3.0,
-      "similarity": 0.6809489727020264,
-      "old_index": 1169,
-      "new_index": 473,
-      "old": "You can opt out of seeing online interest-based ads from Meta and other participating companies through the Digital Advertising Alliance in the US, the Digital Advertising Alliance of Canada in Canada or the European Interactive Digital Advertising Alliance in Europe, or through your mobile device settings, if you are using Android, iOS 13 or an earlier version of iOS. Please note that ad blockers and tools that restrict our cookie use may interfere with these controls.",
-      "new": "For cookies on your web browser, you can use the Digital Advertising Alliance industry opt-out platform. If you live in Canada, you can use the Digital Advertising Alliance of Canada industry opt-out platform. Certain ad blockers and tools to restrict cookies can interfere with your ability to opt out.",
-      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
-      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
       "category": "Tracking, analytics & profiling",
@@ -192,18 +168,6 @@
       "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
     },
     {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 1150,
-      "old": null,
-      "new": "We’re investing so much in this space because we believe it provides benefits for people, creators and businesses around the world. That’s why we’re building AI at Meta and making models available through an open platform. To train effective models to unlock these advancements, a significant amount of information is needed. This is why we draw from publicly available and licensed sources, as well as information people have shared on Meta Products, including interactions with AI at Meta features. We keep training data for as long as we need it on a case-by-case basis to ensure an AI model is operating appropriately, safely and efficiently. We also may keep it to protect our or others' interests, or comply with legal obligations.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
       "category": "Security & safety measures",
       "type": "added",
       "risk_score": 2.0,
@@ -226,18 +190,6 @@
       "new": "In our interest to secure our platform and network, to verify accounts and activity, to combat harmful conduct, to detect, prevent, and address spam and other bad experiences, to keep the Meta Company Products free of harmful or inappropriate content, and to investigate and take action in respect of suspicious activity or breaches of our terms or policies; and",
       "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
       "suggested_action": "This may improve protection of your data. You can still review details to understand what changed."
-    },
-    {
-      "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 1.5,
-      "similarity": 0.7295612096786499,
-      "old_index": 1149,
-      "new_index": 876,
-      "old": "On third-party websites and apps to help companies that incorporate Meta technologies to share information with us about activity on their apps and websites.",
-      "new": "To provide a seamless, consistent and richer, innovative, experience across the Meta Company Products and to enable cross app interactions, sharing, viewing and engaging with content, including posts and videos.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
     {
       "category": "Other policy change",
@@ -289,13 +241,25 @@
     },
     {
       "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.8200574517250061,
+      "old_index": 1135,
+      "new_index": 89,
+      "old": "We’re developing generative AI experiences and are excited to bring them to more people and businesses across Meta Products worldwide. That’s why we’re developing AI at Meta, our collection of generative AI features and experiences, like Meta AI and AI Creative Tools, along with the models that power them. This also includes making models available through an open platform to support researchers, developers and others in the AI community.",
+      "new": "Across Meta Company Products, you can interact with Meta’s generative AI features and experiences, collectively called AI at Meta.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
       "type": "added",
-      "risk_score": 1.5,
+      "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 1135,
+      "new_index": 70,
       "old": null,
-      "new": "We’re developing generative AI experiences and are excited to bring them to more people and businesses across Meta Products worldwide. That’s why we’re developing AI at Meta, our collection of generative AI features and experiences, like Meta AI and AI Creative Tools, along with the models that power them. This also includes making models available through an open platform to support researchers, developers and others in the AI community.",
+      "new": "This Policy describes the information we, Meta Platforms, Inc., process to provide Meta Products, which we also call \"Products.\"",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
