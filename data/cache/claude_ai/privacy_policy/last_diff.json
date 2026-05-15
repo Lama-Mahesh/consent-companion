@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-05-14T19:53:25+00:00",
+  "generated_at": "2026-05-15T08:56:18+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-05-14T08:45:02+00:00",
-      "content_sha256": "a66742ccc837440386c763544a82d697178042e486b05be7474ad57a17deca53",
+      "fetched_at": "2026-05-14T19:53:20+00:00",
+      "content_sha256": "0f8fd7c4a7e4e23e56154e3cc6daa1eecce3078fcb72441b6e7ea7c46bd3b5fb",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-05-14T19:53:20+00:00",
-      "content_sha256": "0f8fd7c4a7e4e23e56154e3cc6daa1eecce3078fcb72441b6e7ea7c46bd3b5fb",
+      "fetched_at": "2026-05-15T08:56:11+00:00",
+      "content_sha256": "c68c6f11f0220e8c672d065503b0c45f9f1fcc49aa966ed8f010a97029a8b922",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
