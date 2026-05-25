@@ -2,13 +2,13 @@
   "service_id": "netflix",
   "doc_type": "privacy_policy",
   "name": "Netflix Privacy Policy",
-  "generated_at": "2026-05-24T13:47:30+00:00",
+  "generated_at": "2026-05-25T04:19:19+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-04-11T02:45:14+00:00",
-      "content_sha256": "a806348472ad91d9ab47b7e9d22ad388d866d3dcf9a91da6f88a2419530cf2b5",
+      "fetched_at": "2026-05-24T13:47:20+00:00",
+      "content_sha256": "2c4da478fada45d43894689f3e863e33c01a19040f09405c40721240aef47f38",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-05-24T13:47:20+00:00",
-      "content_sha256": "2c4da478fada45d43894689f3e863e33c01a19040f09405c40721240aef47f38",
+      "fetched_at": "2026-05-25T04:19:10+00:00",
+      "content_sha256": "a806348472ad91d9ab47b7e9d22ad388d866d3dcf9a91da6f88a2419530cf2b5",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
