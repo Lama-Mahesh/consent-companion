@@ -15,10 +15,10 @@
     "x:privacy_policy": "666ebe4d2e26d6f99672882388400f95a0aae84a0f224b73824ceb0cb1e40b10",
     "chatgpt:privacy_policy": "d52ae868d5edc40b68043462fbc766bac5f6516d1671b6080fe5dfcfb89453d3",
     "llama_api:privacy_policy": "c8092152f48b30f890c1671897ce62450e3d829ca87587c3ff47a1d1aae7cf1d",
-    "claude_ai:privacy_policy": "4396c99516dc8194c1f1a42670fc3c6e84736431a77328a8235a8735eb685df5"
+    "claude_ai:privacy_policy": "fcdd60d0a77c1484d872138504249e77890dcf43637dd44a7e19c1738a57cccd"
   },
   "changed_keys": [
-    "llama_api:privacy_policy"
+    "claude_ai:privacy_policy"
   ],
   "failures": []
 }
