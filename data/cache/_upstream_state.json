@@ -8,7 +8,7 @@
     "netflix:privacy_policy": "f0f5f92d7ff621434b8a56cb6756fdd52639855d18ffd81e27c2d37dd80c9535",
     "discord:privacy_policy": "1ba7c559c88354eb3f4bc07cb78ee962fa6f2125f8a549099fda5fe14153dc0c",
     "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
-    "facebook:privacy_policy": "e62c3ad56043090b94428756b66998c7f9fa6ef2aedf0c9d3d8c0099ba75ddb9",
+    "facebook:privacy_policy": "842481b8076d205e74c5701cf8601768c183bcc7ff6b8da416d2fd1188b1d413",
     "instagram:privacy_policy": "74495fe1badf6dd843bd01859ec33393315c8cb4761150c4de45ff6c4e4122f5",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
     "snapchat:privacy_policy": "753f1d400d7ff1c1d63d148231db283fb4e72d8c6593880962ada7f47d8a7bdd",
@@ -18,7 +18,7 @@
     "claude_ai:privacy_policy": "7235dedd3900b82342c2d6fb8e0700dd46685c74ba3ed59a1591720e7d775f79"
   },
   "changed_keys": [
-    "claude_ai:privacy_policy"
+    "facebook:privacy_policy"
   ],
   "failures": []
 }
