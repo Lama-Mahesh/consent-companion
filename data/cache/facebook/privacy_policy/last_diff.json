@@ -2,13 +2,13 @@
   "service_id": "facebook",
   "doc_type": "privacy_policy",
   "name": "Facebook Privacy Policy (UK)",
-  "generated_at": "2026-07-08T03:21:01+00:00",
+  "generated_at": "2026-07-09T15:21:33+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-06-25T04:03:40+00:00",
-      "content_sha256": "19f4183f1302553b65cbbb756ff6237617dcbb26b5ad3a867ab1d4f0260f9f7a",
+      "fetched_at": "2026-07-08T03:20:46+00:00",
+      "content_sha256": "3dad7d7cf35bf951966e300e92ca6d6a508c1a5f15443e9f36fb27d15574ac4b",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-07-08T03:20:46+00:00",
-      "content_sha256": "3dad7d7cf35bf951966e300e92ca6d6a508c1a5f15443e9f36fb27d15574ac4b",
+      "fetched_at": "2026-07-09T15:21:19+00:00",
+      "content_sha256": "f5c258d9538612900ab9975a2bd9b178d6b5236b5c8bb36ec60da818dd6b1765",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 13
+    "num_changes": 14
   },
   "changes": [
     {
@@ -68,6 +68,18 @@
       "new_index": 458,
       "old": null,
       "new": "A person, business, organisation or body that provides services to Meta or to our users on behalf of Meta. For example, our service providers do things such as investigate suspicious activity and provide customer support.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 3.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 853,
+      "old": null,
+      "new": "Information from third parties that provide content, including information from products and services built by external developers using our free models provided through APIs",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
