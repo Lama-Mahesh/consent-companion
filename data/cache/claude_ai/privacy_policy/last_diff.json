@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-07-08T19:42:01+00:00",
+  "generated_at": "2026-07-09T09:50:00+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-07-07T20:04:01+00:00",
-      "content_sha256": "e9b4740cfc0ff3034c62987918d96a5d7b88c4a11ea7b13d438c330b36b083ff",
+      "fetched_at": "2026-07-08T19:41:55+00:00",
+      "content_sha256": "16be56780884ba0b5f18a3a269c19527e53d1e7aead94e4b3face3ed453ea2ae",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-07-08T19:41:55+00:00",
-      "content_sha256": "16be56780884ba0b5f18a3a269c19527e53d1e7aead94e4b3face3ed453ea2ae",
+      "fetched_at": "2026-07-09T09:49:52+00:00",
+      "content_sha256": "cede34b63a12f43f94ca32533ef2b9af7b4b6afac2f45f93e5b1b441e3a85d6a",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,57 +32,9 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 15
+    "num_changes": 9
   },
   "changes": [
-    {
-      "category": "Data sharing & third parties",
-      "type": "modified",
-      "risk_score": 4.2,
-      "similarity": 0.8556002378463745,
-      "old_index": 138,
-      "new_index": 140,
-      "old": "We do not actively set out to collect personal data to train our models. However, a large amount of data on the Internet relates to people, so our training data may incidentally include personal data.",
-      "new": "We only use personal data included in our training data to help our models learn about language and how to understand and respond to it. We do not use such personal data to contact people, build profiles about them, to try to sell or market anything to them, or to sell the information itself to any third party.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "modified",
-      "risk_score": 4.0,
-      "similarity": 0.6887664794921875,
-      "old_index": 163,
-      "new_index": 67,
-      "old": "Your personal data may be transferred to our servers in the US, or to other countries outside the European Economic Area (“ EEA ”) and the UK.",
-      "new": "Anthropic is a global company, and when you access our Services, your personal data is transferred to our servers in the US, or to other countries outside the European Economic Area (“EEA”) and the UK for the purposes outlined in Section 2 of this Privacy Policy, for example to provide you with the Service, or to train our models, or to conduct research. This may be a direct provision of your personal data to us, or a transfer that we or a third party make. You can find more details about the affiliates and third parties we transfer data to, including their locations, in our Trust Center.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 136,
-      "old": null,
-      "new": "Third Party Datasets that we purchase, are made openly available, or that we obtain through agreements with third party organizations. These may include, for example, material that third parties have gathered and made openly available, physical texts, or non-public datasets obtained from businesses.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 152,
-      "old": null,
-      "new": "To exercise your rights, you or an authorized agent may submit a request by contacting us. After we receive your request, we may verify it by requesting information sufficient to confirm your identity. Where a third-party representative submits a request on behalf of a data subject, we require evidence of authorization to act on behalf of the data subject.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
     {
       "category": "Tracking, analytics & profiling",
       "type": "added",
@@ -120,6 +72,18 @@
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
     },
     {
+      "category": "Data sharing & third parties",
+      "type": "added",
+      "risk_score": 3.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 180,
+      "old": null,
+      "new": "When the personal data collected is no longer required by us, we and our service providers will perform the necessary procedures for destroying, deleting, erasing, or converting it into an anonymous form as permitted or required under applicable laws.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
       "category": "User rights & controls",
       "type": "added",
       "risk_score": 2.7,
@@ -134,36 +98,12 @@
     {
       "category": "Other policy change",
       "type": "added",
-      "risk_score": 1.7,
+      "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 150,
+      "new_index": 159,
       "old": null,
-      "new": "We make the finished models available through Claude.ai, our developer tools and our business products. We do not use personal information in our training material to contact people, build profiles about them, or sell that information to anyone. The same training material may be used at more than one of the stages above, and we may use it again to train newer versions of our models over time.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Security & safety measures",
-      "type": "modified",
-      "risk_score": 1.5,
-      "similarity": 0.8128342032432556,
-      "old_index": 167,
-      "new_index": 178,
-      "old": "In certain situations, we rely on derogations provided for under applicable data protection law to transfer information to a third country.",
-      "new": "In certain situations, we rely on derogations provided for under applicable data protection law to transfer information to a third country. If you have questions about international transfers or the safeguards we apply, you can contact us.",
-      "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
-      "suggested_action": "This may improve protection of your data. You can still review details to understand what changed."
-    },
-    {
-      "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 1.0,
-      "similarity": 0.8562847375869751,
-      "old_index": 128,
-      "new_index": 127,
-      "old": "We’ve prepared this notice (“ Notice ”) to explain how our large language models are ‘trained’ and how personal data obtained from third party sources may be used as part of the training process. We’ve also included information about the ways in which personal data of individuals who are not registered users of our services may incidentally be processed as part of our services, and the privacy rights such individuals may enjoy with respect to their personal data.",
-      "new": "We’ve prepared this policy (“ Policy ”) to explain how our large language models are ‘trained’ and how personal data may be used as part of the training process. We’ve also included information about the ways in which personal data of individuals who are not registered users of our services may incidentally be processed as part of our services, and the privacy rights such individuals may enjoy with respect to their personal data.",
+      "new": "Restriction: the right to restrict our processing of your personal data in certain circumstances.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -173,9 +113,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 130,
+      "new_index": 181,
       "old": null,
-      "new": "Training our models involves a number of separate stages, but broadly these fall into two steps: (1) pre-training and (2) post-training.",
+      "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “European Region”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -185,9 +125,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 134,
+      "new_index": 183,
       "old": null,
-      "new": "We’ve described the stages of model training in more detail in Section 4 below.",
+      "new": "Anthropic PBC with a registered address at 548 Market St, PMB 90375, San Francisco, CA 94104 (United States).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -197,21 +137,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 135,
+      "new_index": 185,
       "old": null,
-      "new": "Anthropic may obtain personal data from the following sources in order to train our models:",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 139,
-      "old": null,
-      "new": "When we gather this material, we are not looking for information about particular individuals, but some of it will incidentally contain personal information; for example, names, contact information, and work or biographical details.",
+      "new": "You can email us at privacy@anthropic.com and contact our Data Protection Officer at dpo@anthropic.com.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
