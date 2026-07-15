@@ -2,13 +2,13 @@
   "service_id": "llama_api",
   "doc_type": "privacy_policy",
   "name": "Llama API Privacy Policy",
-  "generated_at": "2026-07-08T08:37:39+00:00",
+  "generated_at": "2026-07-15T16:28:05+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-07-07T09:51:48+00:00",
-      "content_sha256": "318afe28eb53c14be5eacd660c3a05c2550d8d62dfbde4c05365fb3cd180e140",
+      "fetched_at": "2026-07-08T08:37:25+00:00",
+      "content_sha256": "a67dde6194a6e591334d2555d57a9a0339976b05b8e265aa5022102c8e670b4c",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-07-08T08:37:25+00:00",
-      "content_sha256": "a67dde6194a6e591334d2555d57a9a0339976b05b8e265aa5022102c8e670b4c",
+      "fetched_at": "2026-07-15T16:27:49+00:00",
+      "content_sha256": "1fbc2716f6b57497a685b7a6d12d290b6e18726fb5f1a1871d3a92e2e12439f4",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 14
+    "num_changes": 13
   },
   "changes": [
     {
@@ -96,18 +96,6 @@
       "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
-      "category": "Data sharing & third parties",
-      "type": "modified",
-      "risk_score": 3.0,
-      "similarity": 0.6282748579978943,
-      "old_index": 0,
-      "new_index": 607,
-      "old": "Meta’s responsible innovation principles serve as the foundation for all our work. These principles are specifically crafted to protect people’s privacy so they feel empowered to explore, connect and engage with our products.Meta does not train its AI models on Llama API Customer Content or Customer Data.",
-      "new": "Develop and improve AI at Meta for Meta Products and for third parties.",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
-    {
       "category": "Purpose & legal basis",
       "type": "added",
       "risk_score": 2.8,
@@ -130,18 +118,6 @@
       "new": "Providing measurement, analytics and business services",
       "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
       "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 1.5,
-      "similarity": 0.6303964257240295,
-      "old_index": 12,
-      "new_index": 611,
-      "old": "Meta performs regular security and vulnerability testing to assess whether key controls are properly implemented and effective. Meta has a vulnerability management program that includes definition of roles and responsibilities, dedicated ownership of vulnerability monitoring, vulnerability risk assessment and patch deployment.Meta’s security team is responsible for the detection, triage and remediation of vulnerabilities in Meta’s hardware and software. Meta leverages various tools to detect security bugs in its code base, as well as in open-source and third-party code, in order to mitigate or fix security bugs before they make it into shipped Meta’s products and impact our customers.Llama API benefits from Meta’s commitment to the security of your data which manifests through the monitoring, controls and measures we have in place to pre-empt or respond to security risks.",
-      "new": "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to research and help ensure the safety, integrity and security of those services and those people who enjoy them, on and off Meta Products. We process the information that we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
     {
       "category": "Other policy change",
@@ -193,13 +169,25 @@
     },
     {
       "category": "Other policy change",
-      "type": "removed",
-      "risk_score": 1.2,
-      "similarity": 0.5293626189231873,
-      "old_index": 5,
-      "new_index": null,
-      "old": "Your Customer Content and your Customer Data are not used for any purposes other than those described in our permitted purposes. Customer Content and Customer Data are not used for personalization of consumer Meta Products or advertising, and personal data collected from the use of Llama API products is not used to personalize ads.Your Customer Content and Customer Data are logically separated except when shared to enforce the AUP, to facilitate payments, or to comply with other legal or regulatory requirements. Your Customer Content and Customer Data are always stored subject to strict access controls, and Meta will not sell any customer or user data as defined in the Terms of Service.",
-      "new": null,
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 63,
+      "old": null,
+      "new": "This Policy describes the information that we, Meta Platforms, Inc., process to provide Meta Products, which we also call \"Products\".",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 250,
+      "old": null,
+      "new": "Stands for \"Internet protocol address\". It's a unique number assigned to a device, such as a phone or computer, which allows it to communicate over the Internet. Numbers are assigned according to standard guidelines, or protocols.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
