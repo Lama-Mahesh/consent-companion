@@ -2,13 +2,13 @@
   "service_id": "x",
   "doc_type": "privacy_policy",
   "name": "X (Twitter) Privacy Policy (UK)",
-  "generated_at": "2026-01-16T02:09:35+00:00",
+  "generated_at": "2026-07-16T02:58:10+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2025-12-22T06:45:35+00:00",
-      "content_sha256": "57a94a233c7a619d7086fe6265344f80105b199275f1d0720216a74f13e31fb6",
+      "fetched_at": "2026-01-16T02:09:29+00:00",
+      "content_sha256": "1d840c41f18d9432da68ac43104da1c11deda5864f415e82f1da570b557fe553",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-01-16T02:09:29+00:00",
-      "content_sha256": "1d840c41f18d9432da68ac43104da1c11deda5864f415e82f1da570b557fe553",
+      "fetched_at": "2026-07-16T02:58:04+00:00",
+      "content_sha256": "9ae7e6213425e22bddb70a9b263bf1f370b2a5eae75d8db905b6417d1ec13e30",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -51,11 +51,11 @@
       "category": "Other policy change",
       "type": "modified",
       "risk_score": 0.5,
-      "similarity": 0.7342602014541626,
-      "old_index": 0,
-      "new_index": 106,
-      "old": "We have made some updates to our Privacy Policy. This version of the Privacy Policy will go into effect on January 15, 2026. Until then, the current Privacy Policy continues to apply.",
-      "new": "The most current version of this Privacy Policy governs our processing of your personal data and we may revise this Privacy Policy from time to time as needed.",
+      "similarity": 0.9449474811553955,
+      "old_index": 113,
+      "new_index": 113,
+      "old": "If you wish to raise a concern about our data processing practices, you have the right to do so with your local supervisory authority or X Internet Unlimited Company’s lead supervisory authority, the Irish Data Protection Commission, using the contact details listed on their website.",
+      "new": "If you wish to raise a concern about our data processing practices, you have the right to do so with your local supervisory authority. If you live in the European Union, you may contact X Internet Unlimited Company’s lead supervisory authority, the Irish Data Protection Commission, using the contact details listed on their website.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
