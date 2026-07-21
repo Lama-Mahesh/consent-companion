@@ -2,13 +2,13 @@
   "service_id": "chatgpt",
   "doc_type": "privacy_policy",
   "name": "ChatGPT Privacy Policy",
-  "generated_at": "2026-07-15T19:19:32+00:00",
+  "generated_at": "2026-07-21T08:37:13+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-05-18T10:15:48+00:00",
-      "content_sha256": "b88deba1b95eb9a5bc305bdc6d5a3bd013bda771f38ddb951dd129567bfdbbf8",
+      "fetched_at": "2026-07-15T19:19:27+00:00",
+      "content_sha256": "5da715e601bb627aa67d43cad577cf0aaf90f18bbecfc56cfbdc3f046286dab0",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-07-15T19:19:27+00:00",
-      "content_sha256": "5da715e601bb627aa67d43cad577cf0aaf90f18bbecfc56cfbdc3f046286dab0",
+      "fetched_at": "2026-07-21T08:37:07+00:00",
+      "content_sha256": "9ff9c14ee3217188986560702b38beb7364f065b364876df0b704b7d5ed6a11d",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,21 +32,9 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 4
+    "num_changes": 1
   },
   "changes": [
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 77,
-      "old": null,
-      "new": "If you notice that ChatGPT output contains factually inaccurate information about you and you would like to request a correction or removal of the information, you can submit these requests through privacy.openai.com or to dsar@openai.com, and we will consider your request based on applicable law and the technical capabilities of our models.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
     {
       "category": "Other policy change",
       "type": "added",
@@ -56,30 +44,6 @@
       "new_index": 104,
       "old": null,
       "new": "Services for businesses, such as ChatGPT Team, ChatGPT Enterprise, and our API Platform",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 0.5,
-      "similarity": 0.7080732583999634,
-      "old_index": 56,
-      "new_index": 52,
-      "old": "You can use the advertising controls in your account settings to control what data we use to personalize the ads we show you on our Services.",
-      "new": "Our Services provide you with a number of controls over your Personal Data and how it is used and retained. You can always change these settings in your account. These include the following controls:",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "modified",
-      "risk_score": 0.5,
-      "similarity": 0.911149263381958,
-      "old_index": 74,
-      "new_index": 76,
-      "old": "A note about accuracy: Services like ChatGPT generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models. If you notice that ChatGPT output contains factually inaccurate information about you and you would like to request a correction or removal of the information, you can submit these requests through privacy.openai.com or to dsar@openai.com⁠, and we will consider your request based on applicable law and the technical capabilities of our models.",
-      "new": "A note about accuracy: Services like ChatGPT generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
