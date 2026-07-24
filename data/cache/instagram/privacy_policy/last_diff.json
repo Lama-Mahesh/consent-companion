@@ -2,13 +2,13 @@
   "service_id": "instagram",
   "doc_type": "privacy_policy",
   "name": "Instagram Privacy Policy (UK)",
-  "generated_at": "2026-06-25T04:04:01+00:00",
+  "generated_at": "2026-07-24T03:17:16+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-05-13T03:54:17+00:00",
-      "content_sha256": "3508cdae5f34a99de1a7698bafa9d82809581c5706bd417b66ed5554a8c669b7",
+      "fetched_at": "2026-06-25T04:03:57+00:00",
+      "content_sha256": "550e5ce8ba3f887747f6076f1ce409a9a49e7444fee3b4764b0bde4fa6334834",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-06-25T04:03:57+00:00",
-      "content_sha256": "550e5ce8ba3f887747f6076f1ce409a9a49e7444fee3b4764b0bde4fa6334834",
+      "fetched_at": "2026-07-24T03:17:12+00:00",
+      "content_sha256": "fcf59008d186479b081bf9bf3a13ff28f3751f1448a4c922e9cb6a469ea82fe4",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 7
+    "num_changes": 9
   },
   "changes": [
     {
@@ -41,21 +41,81 @@
       "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 154,
+      "new_index": 164,
       "old": null,
       "new": "Information about the network that you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
       "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
     },
     {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
+      "category": "Data sharing & third parties",
+      "type": "modified",
+      "risk_score": 3.0,
+      "similarity": 0.9071054458618164,
+      "old_index": 98,
       "new_index": 100,
+      "old": "If you decide to add a WhatsApp account to an Accounts Centre with other accounts on Meta Company Products:",
+      "new": "If you add a WhatsApp account to an Accounts Centre with other accounts on Meta Company Products: to associate your accounts on Meta Company Products with your WhatsApp account in the same Accounts Centre and share your information with WhatsApp.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "modified",
+      "risk_score": 3.0,
+      "similarity": 0.7396913766860962,
+      "old_index": 276,
+      "new_index": 48,
+      "old": "Sharing information with others, including law enforcement and to respond to legal requests.",
+      "new": "We also share information with other third parties in response to legal requests, to comply with applicable law or to prevent harm. Read the Policy.",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 135,
       "old": null,
-      "new": "Information categories that we use (see \"What information do we collect?\" for more detail on each information category). The actual information that we use depends on your factual circumstances, but could include any of the following:",
+      "new": "Promoting safety, integrity and security on and across the Meta Products",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.8818053007125854,
+      "old_index": 80,
+      "new_index": 82,
+      "old": "Personalising the Meta Products: Our systems automatically process information that we've collected and stored associated with you and others to assess and understand your interests and your preferences and provide you with personalised experiences on and across the Meta Company Products in accordance with our terms. This is how we:",
+      "new": "Our systems automatically process information that we've collected and stored associated with you and others to assess and understand your interests and preferences and provide you with personalised experiences on and across the Meta Company Products in accordance with our terms. This is how we:",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.9379713535308838,
+      "old_index": 134,
+      "new_index": 136,
+      "old": "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to research and help ensure the safety, integrity and security of those services and those people who enjoy them, on and off Meta Products. We process the information that we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
+      "new": "The Meta Products are designed to research and help ensure the safety, integrity and security of those services and those people who enjoy them, on and off Meta Products. We process the information that we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.8341681361198425,
+      "old_index": 185,
+      "new_index": 185,
+      "old": "Sharing your contact, profile or other information with third parties upon your request: The type of third party and categories of information shared depend on the circumstances of what you ask us to share. For example:",
+      "new": "The type of third party and categories of information shared depend on the circumstances of what you ask us to share. For example:",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -65,9 +125,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 117,
+      "new_index": 0,
       "old": null,
-      "new": "Content that you provide through our camera feature or your camera roll settings, or through our voice-enabled features",
+      "new": "We've updated our Privacy Policy with details about agentic AI capabilities and how we personalise your AI experiences.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -77,45 +137,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 118,
+      "new_index": 25,
       "old": null,
-      "new": "Messages that you send and receive, including their content, subject to applicable law",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 119,
-      "old": null,
-      "new": "Interactions with AI at Meta and related metadata. For example, information that you or others exchange with AI at Meta, such as content and messages",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 120,
-      "old": null,
-      "new": "Types of content that you view or interact with, and how you interact with them",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 121,
-      "old": null,
-      "new": "Apps and features that you use and what actions you take in them",
+      "new": "How we use information to personalise our features that are part of AI at Meta",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
