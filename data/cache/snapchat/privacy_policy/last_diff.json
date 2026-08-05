@@ -2,13 +2,13 @@
   "service_id": "snapchat",
   "doc_type": "privacy_policy",
   "name": "Snapchat Privacy Policy (UK)",
-  "generated_at": "2026-06-25T04:04:13+00:00",
+  "generated_at": "2026-08-05T14:21:13+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-04-13T03:30:11+00:00",
-      "content_sha256": "1d4b95d9f4010f43d0772697ba609a5a9da7282bcf331b58d881007f76b63846",
+      "fetched_at": "2026-06-25T04:04:01+00:00",
+      "content_sha256": "c074b02d70d2b6e4ec956db9c62392d5cfe82d3db230ed513fc68d479d00bc9d",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-06-25T04:04:01+00:00",
-      "content_sha256": "c074b02d70d2b6e4ec956db9c62392d5cfe82d3db230ed513fc68d479d00bc9d",
+      "fetched_at": "2026-08-05T14:20:58+00:00",
+      "content_sha256": "e59d7417115628e9aaa98bf724571ab27f78552cc157a4ebb855ace65d80a91a",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 1
+    "num_changes": 12
   },
   "changes": [
     {
@@ -41,11 +41,143 @@
       "risk_score": 4.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 131,
+      "new_index": 57,
       "old": null,
-      "new": "Third-Party Apps. Sometimes we provide features that allow you to connect with third-party apps. If you decide to connect your Snapchat account with a third-party app, we will share any additional information you direct us to.",
+      "new": "Third-Party Apps. Sometimes we provide features that allow you to connect with third-party apps. If you decide to connect your Snapchat account with a third-party app, we will share any additional information associated with your account that you direct us to for the purpose of fulfilling the connection request.",
       "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
       "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "modified",
+      "risk_score": 3.0,
+      "similarity": 0.9492404460906982,
+      "old_index": 32,
+      "new_index": 33,
+      "old": "We offer personalised Services to Snapchatters. One of the ways we do this is by showing you content that is relevant to you, or we think you may enjoy based on the information you share with us. To do so, we use information about you across different areas of the Services in order to add context to your Snapchat experience. For example, we automatically tag content with labels based on the content, your location or the time of day. So if there's a dog in the photo, it may be searchable in Memories by the term “dog,” show up on the Map at the location where you created the Memory and inform us that you’re into dogs, so we can surface you fun dog videos and dog food ads in other parts of our Services, such as Spotlight.",
+      "new": "We offer personalised Services to Snapchatters. One of the ways we do this is by showing you content that is relevant to you, or we think you may enjoy based on the information you share with us. To do so, we use information about you across different areas of the Services in order to add context to your Snapchat experience. For example, we automatically tag content with labels based on the content, your location or the time of day. So if there's a dog in the photo, it may be searchable in Memories by the term “dog”, show up on the Map at the location where you created the Memory and inform us that you’re into dogs, so we can surface you fun dog videos and dog food ads in other parts of our Services, such as Spotlight. If you enable certain face grouping features, we may use information about faces in your Memories to improve search, organisation and personalisation in Memories (for example, by suggesting Memories with the same friend).",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 189,
+      "old": null,
+      "new": "2. You have turned off the “Personalisation Controls” in the Settings page.",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 143,
+      "old": null,
+      "new": "Personalised ads allow advertisers, especially small and medium-sized businesses, to reach people who are genuinely interested in their products, which helps reduce advertising costs. By focusing budgets on those most likely to engage, personalised ads empower smaller businesses to maximise their resources and compete effectively.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 187,
+      "old": null,
+      "new": "Personalised advertising is a core element of our service and essential for us to provide you with a fun, safe, and innovative Snapchat without charge. You can read more about why this is the case in the section.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 188,
+      "old": null,
+      "new": "If you are in the EU, the UK, Norway, or Switzerland, certain laws limit our service and determine whether we can show personalised ads. We are required to display ‘contextual ads’ to you if:",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 190,
+      "old": null,
+      "new": "What public content is displayed around the ad (e.g. a sports video to show you a sport related ad)",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.5,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 191,
+      "old": null,
+      "new": "The time of day the ad is shown (e.g. morning, afternoon, evening)",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.2,
+      "similarity": 0.879966139793396,
+      "old_index": 18,
+      "new_index": 19,
+      "old": "Many of our Services require you to set up an account. To do this, we ask you to provide us with account details (information about you, like your name, username, email address, birthday and phone number). When you set up your profile, you’ll also provide us with profile details (like your Bitmoji and profile picture). If you use our commerce products to buy something, like those latest sneakers, we may ask you for payment and related information (like your physical address, so we can ship the product to you, and payment information, so we can process the payment and transaction history).",
+      "new": "Many of our Services require you to set up an account. To do this, we ask you to provide us with account details. When you set up your profile, you’ll also provide us with profile details (like your Bitmoji and profile picture). If you use our commerce products to buy something, like those latest trainers, we may ask you for payment and related information (like your physical address, so we can ship the product to you, payment information, so we can process the payment, and transaction history). Based on your region, we may also use information you provide to estimate or infer your age or ask you to verify your age.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.7988568544387817,
+      "old_index": 160,
+      "new_index": 164,
+      "old": "Your friends. (Lower weight) Many friends have similar interests. So, we may use information about your friends' interactions with ads or content to determine whether to show those ads to you. For example, if your friends clicked on an ad for a new pair of shoes, we may use that to prioritise showing the same ad to you.",
+      "new": "Your friends and Snapchatters in your household. (Lower weight) Many friends have similar interests. So, we may use information about your friends' interactions with ads or content to determine whether to show those ads to you. For example, if your friends clicked on an ad for a new pair of shoes, we may use that to prioritise showing the same ad to you. We also may use similar information from Snapchatters in your household who are over 18 to help us choose which ads to show you.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.9468072652816772,
+      "old_index": 185,
+      "new_index": 196,
+      "old": "Ads may appear in your Chat feed. These “Sponsored Snaps” will be labelled as an Ad and are another format for advertising on Snapchat. Although Sponsored Snaps are displayed in your Chat feed they do not rely on your private communications between friends – we do not use the contents of private communications you send to your friends to personalise your experience, make recommendations or show you ads. The targeting of Sponsored Snaps follows the same logic as other personalised ads on Snapchat, as described on this page.",
+      "new": "Ads may appear in your Chat feed. These “Sponsored Snaps” will be labelled as an Ad and are another format for advertising on Snapchat. Although Sponsored Snaps are displayed in your Chat feed they do not rely on your private communications between friends – we do not use the contents of private communications you send to your friends to personalise your experience, make recommendations or show you ads. The targeting of Sponsored Snaps follows the same logic as other personalised ads on Snapchat, as described on this page. If you are in the EU, Norway, Switzerland or Israel, you can choose how these Sponsored Snaps appear, either in your Chat feed with other chats or outside your Chat feed in a banner style format. If you are under 18 in these countries, Sponsored snaps will only appear outside of your Chat feed.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 0,
+      "old": null,
+      "new": "We've updated our Privacy Policy, effective 21 September 2026. You can view the prior Privacy Policy, which applies to all users until 21 September 2026, here .",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
   ]
 }
