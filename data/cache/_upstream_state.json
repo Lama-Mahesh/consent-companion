@@ -3,21 +3,28 @@
   "fingerprints": {
     "reddit:privacy_policy": "3476b2789f0349b6f6095d3e19f5e509677e3052e45ac714863935067f76a97a",
     "google:privacy_policy": "ed811581674d2b3f546a6b0e01fb8ce14cdbc542edd4c1c498becbc7f5506748",
-    "twitch:privacy_policy": "29e05da2b4f8fcc40d03b88fb7c2bdb3eb636485e1c514c490b55e42910b6cde",
-    "whatsapp:privacy_policy": "058c26f17d472e17c09b3b0252bfdc12886d8e6a0b1c90d40edc57afdfb65534",
-    "netflix:privacy_policy": "f0f5f92d7ff621434b8a56cb6756fdd52639855d18ffd81e27c2d37dd80c9535",
-    "discord:privacy_policy": "1ba7c559c88354eb3f4bc07cb78ee962fa6f2125f8a549099fda5fe14153dc0c",
-    "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
+    "twitch:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
+    "whatsapp:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
+    "netflix:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
+    "discord:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
+    "amazon:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
     "facebook:privacy_policy": "65c37e9a5a7e22f6a6a70501cf6cb219cd19a7f8d30f72122bbc00ff7d1f715b",
     "instagram:privacy_policy": "6fc07123e3a67f0f113e2f91951fe026f99ba7161983ae89750a52a55c11c5cd",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
     "snapchat:privacy_policy": "07daf00450744dc07f965a3f795c7e0dde2b2ea354f8a2f91ac9c870b80e52f1",
-    "x:privacy_policy": "834b7676d2bc52519c29401b20e9ee54f7b2a9ea934bcc4ab46c2ce6ea8c0250",
+    "x:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
     "chatgpt:privacy_policy": "e1dde002452fe612b3cc6e7454767bbf202289f6d67507e3f18d8d6365450c7a",
-    "llama_api:privacy_policy": "30894f61635527d0d1ab65cc4efca42eae6ed47021015fb601c00fa76c23d38e",
-    "claude_ai:privacy_policy": "498b71572cc08b4ab5d94f191bf069c8afc45adc47960b2ca5f54033e16b6ef7"
+    "llama_api:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20",
+    "claude_ai:privacy_policy": "c5525245b230a733ced6c5509bcab7412eeac5db0cdf334ad2ed5b70bc364c20"
   },
   "changed_keys": [
+    "twitch:privacy_policy",
+    "whatsapp:privacy_policy",
+    "netflix:privacy_policy",
+    "discord:privacy_policy",
+    "amazon:privacy_policy",
+    "x:privacy_policy",
+    "llama_api:privacy_policy",
     "claude_ai:privacy_policy"
   ],
   "failures": []
