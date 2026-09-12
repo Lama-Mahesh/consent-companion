@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-09-11T20:46:47+00:00",
+  "generated_at": "2026-09-12T10:25:44+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-09-11T10:57:59+00:00",
-      "content_sha256": "0898311f5293b2e78f95a693fbdef2d70ca454929eba13c4c68ff13bedc42b2c",
+      "fetched_at": "2026-09-11T20:46:43+00:00",
+      "content_sha256": "28f61b4850c581a3db520f80682a3c9dd3e29f5a05b7568e58bbbb5976d0238f",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-09-11T20:46:43+00:00",
-      "content_sha256": "28f61b4850c581a3db520f80682a3c9dd3e29f5a05b7568e58bbbb5976d0238f",
+      "fetched_at": "2026-09-12T10:25:40+00:00",
+      "content_sha256": "3b378ff8404e3318e97f72303dac7865431100f97e3c428c976adbb35e9e0900",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,21 +32,9 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 13
+    "num_changes": 9
   },
   "changes": [
-    {
-      "category": "Data sharing & third parties",
-      "type": "added",
-      "risk_score": 4.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 126,
-      "old": null,
-      "new": "Anthropic delegates the processing of personal data to affiliates and third parties, all of whom are located overseas. In addition, Anthropic transfers personal data overseas as follows:",
-      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
-      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
-    },
     {
       "category": "Tracking, analytics & profiling",
       "type": "added",
@@ -108,26 +96,14 @@
       "suggested_action": "Review the available rights and consider whether you wish to exercise any of them, for example by requesting data deletion or adjusting consent settings."
     },
     {
-      "category": "Security & safety measures",
-      "type": "added",
-      "risk_score": 2.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 120,
-      "old": null,
-      "new": "Purpose: Identity verification, Fraud and abuse monitoring",
-      "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
-      "suggested_action": "This may improve protection of your data. You can still review details to understand what changed."
-    },
-    {
       "category": "Other policy change",
       "type": "added",
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 119,
+      "new_index": 168,
       "old": null,
-      "new": "In addition to “1. Collection of Personal Data”, we collect and use your information as follows:",
+      "new": "Restriction: the right to restrict our processing of your personal data in certain circumstances.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -137,9 +113,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 122,
+      "new_index": 190,
       "old": null,
-      "new": "Anthropic delegates the processing of personal data as described here and below, and the delegatees may process personal data according to the purpose of the delegation.",
+      "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “European Region”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -149,9 +125,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 123,
+      "new_index": 192,
       "old": null,
-      "new": "Korea Credit Bureau: Fraud and abuse detection and identity verification",
+      "new": "Anthropic PBC with a registered address at 548 Market St, PMB 90375, San Francisco, CA 94104 (United States).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -161,33 +137,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 127,
+      "new_index": 194,
       "old": null,
-      "new": "Country to which Personal Data to be Transferred: United States",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 128,
-      "old": null,
-      "new": "Items of Personal Data to be Transferred: Name, birthdate, sex, native-foreigner-code, and DI (duplication information)",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 129,
-      "old": null,
-      "new": "Recipient’s Purpose of Use: Fraud and abuse detection and identity verification",
+      "new": "You can email us at privacy@anthropic.com and contact our Data Protection Officer at dpo@anthropic.com.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
