@@ -13,12 +13,13 @@
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
     "snapchat:privacy_policy": "07daf00450744dc07f965a3f795c7e0dde2b2ea354f8a2f91ac9c870b80e52f1",
     "x:privacy_policy": "834b7676d2bc52519c29401b20e9ee54f7b2a9ea934bcc4ab46c2ce6ea8c0250",
-    "chatgpt:privacy_policy": "9443c174a28042411c0a4ecad9f5a7da30ad5b78384fd4e7f3f9fd2917323e57",
+    "chatgpt:privacy_policy": "54b6e12a64af7148385849764f9f53e7e0c938f3ea078a5b258fc72f0eddb4b9",
     "llama_api:privacy_policy": "30894f61635527d0d1ab65cc4efca42eae6ed47021015fb601c00fa76c23d38e",
-    "claude_ai:privacy_policy": "dca78e162a73c00077f62095bf51216df6f5592e8a37d8d1f4ea2615ffb3cd9e"
+    "claude_ai:privacy_policy": "cfaf1702beb63a5063d9e3563741cbdf9c6e945f899d808fb70fb02c39373ef5"
   },
   "changed_keys": [
-    "instagram:privacy_policy"
+    "chatgpt:privacy_policy",
+    "claude_ai:privacy_policy"
   ],
   "failures": []
 }
