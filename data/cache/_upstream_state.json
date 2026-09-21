@@ -9,7 +9,7 @@
     "discord:privacy_policy": "1ba7c559c88354eb3f4bc07cb78ee962fa6f2125f8a549099fda5fe14153dc0c",
     "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
     "facebook:privacy_policy": "592f734bdce13473327f747d8f38bb45df1256c2dfe07d37820a58a5224b27d0",
-    "instagram:privacy_policy": "558ba9c457d37cfb1c6d3cd3a13886177de13189274cb5371a1e07bce62b912e",
+    "instagram:privacy_policy": "7abba71838af11cd3f28b6eed6e2bfba99e7a006d900c451c41eb5b5a903e1cd",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
     "snapchat:privacy_policy": "07daf00450744dc07f965a3f795c7e0dde2b2ea354f8a2f91ac9c870b80e52f1",
     "x:privacy_policy": "834b7676d2bc52519c29401b20e9ee54f7b2a9ea934bcc4ab46c2ce6ea8c0250",
@@ -18,8 +18,7 @@
     "claude_ai:privacy_policy": "dca78e162a73c00077f62095bf51216df6f5592e8a37d8d1f4ea2615ffb3cd9e"
   },
   "changed_keys": [
-    "chatgpt:privacy_policy",
-    "claude_ai:privacy_policy"
+    "instagram:privacy_policy"
   ],
   "failures": []
 }
