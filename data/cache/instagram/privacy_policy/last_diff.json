@@ -2,13 +2,13 @@
   "service_id": "instagram",
   "doc_type": "privacy_policy",
   "name": "Instagram Privacy Policy (UK)",
-  "generated_at": "2026-09-02T03:52:35+00:00",
+  "generated_at": "2026-10-01T05:10:46+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-07-24T03:17:12+00:00",
-      "content_sha256": "fcf59008d186479b081bf9bf3a13ff28f3751f1448a4c922e9cb6a469ea82fe4",
+      "fetched_at": "2026-09-02T03:52:30+00:00",
+      "content_sha256": "2fb82c8d7c0412aabf8eb4bbbdf072feec34e3987bc9f4d32f08a51f8d150502",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-09-02T03:52:30+00:00",
-      "content_sha256": "2fb82c8d7c0412aabf8eb4bbbdf072feec34e3987bc9f4d32f08a51f8d150502",
+      "fetched_at": "2026-10-01T05:10:35+00:00",
+      "content_sha256": "6a396ee7e6b38f789e16fcba63e89c6553e91eff6162eff52dfe99904fa44dc5",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -53,18 +53,6 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 90,
-      "old": null,
-      "new": "Interactions with our features that are part of AI at Meta and related metadata. For example, information such as content and messages that you or others exchange with these features",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
       "new_index": 101,
       "old": null,
       "new": "Information categories that we use (see \"What information do we collect?\" for more detail on each information category). The actual information that we use depends on your factual circumstances, but could include any of the following:",
@@ -80,6 +68,18 @@
       "new_index": 118,
       "old": null,
       "new": "Content that you provide through our camera feature or your camera roll settings, or through our voice-enabled features",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 120,
+      "old": null,
+      "new": "Interactions with our features that are part of AI at Meta and related metadata. For example, information such as content and messages that you or others exchange with these features",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
