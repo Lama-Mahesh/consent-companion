@@ -2,13 +2,13 @@
   "service_id": "instagram",
   "doc_type": "privacy_policy",
   "name": "Instagram Privacy Policy (UK)",
-  "generated_at": "2026-10-01T05:10:46+00:00",
+  "generated_at": "2026-10-08T10:17:08+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-09-02T03:52:30+00:00",
-      "content_sha256": "2fb82c8d7c0412aabf8eb4bbbdf072feec34e3987bc9f4d32f08a51f8d150502",
+      "fetched_at": "2026-10-01T05:10:35+00:00",
+      "content_sha256": "6a396ee7e6b38f789e16fcba63e89c6553e91eff6162eff52dfe99904fa44dc5",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-10-01T05:10:35+00:00",
-      "content_sha256": "6a396ee7e6b38f789e16fcba63e89c6553e91eff6162eff52dfe99904fa44dc5",
+      "fetched_at": "2026-10-08T10:17:04+00:00",
+      "content_sha256": "49932cfa50b6b55ce0bba0bd65664c94fcfa22b791b52ee80fe48413e1fb5f42",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/vlopses-gb-versions",
@@ -41,7 +41,7 @@
       "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 164,
+      "new_index": 163,
       "old": null,
       "new": "Information about the network that you connect your device to, including your IP address",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
@@ -53,7 +53,19 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 101,
+      "new_index": 89,
+      "old": null,
+      "new": "Interactions with our features that are part of AI at Meta and related metadata. For example, information such as content and messages that you or others exchange with these features",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 100,
       "old": null,
       "new": "Information categories that we use (see \"What information do we collect?\" for more detail on each information category). The actual information that we use depends on your factual circumstances, but could include any of the following:",
       "explanation": "This section of the policy text has been modified.",
@@ -65,7 +77,7 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 118,
+      "new_index": 117,
       "old": null,
       "new": "Content that you provide through our camera feature or your camera roll settings, or through our voice-enabled features",
       "explanation": "This section of the policy text has been modified.",
@@ -79,7 +91,7 @@
       "old_index": null,
       "new_index": 120,
       "old": null,
-      "new": "Interactions with our features that are part of AI at Meta and related metadata. For example, information such as content and messages that you or others exchange with these features",
+      "new": "Types of content that you view or interact with, and how you interact with them",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -91,18 +103,6 @@
       "old_index": null,
       "new_index": 121,
       "old": null,
-      "new": "Types of content that you view or interact with, and how you interact with them",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 122,
-      "old": null,
       "new": "Apps and features that you use and what actions you take in them",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
@@ -113,7 +113,7 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 124,
+      "new_index": 123,
       "old": null,
       "new": "The time, frequency and duration of your activities on our Products",
       "explanation": "This section of the policy text has been modified.",

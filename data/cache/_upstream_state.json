@@ -8,16 +8,18 @@
     "netflix:privacy_policy": "f0f5f92d7ff621434b8a56cb6756fdd52639855d18ffd81e27c2d37dd80c9535",
     "discord:privacy_policy": "1ba7c559c88354eb3f4bc07cb78ee962fa6f2125f8a549099fda5fe14153dc0c",
     "amazon:privacy_policy": "aca1bdba9f8f53b01bdf07787242289192db0e492cd6f43a761f7b84aff753e2",
-    "facebook:privacy_policy": "592f734bdce13473327f747d8f38bb45df1256c2dfe07d37820a58a5224b27d0",
-    "instagram:privacy_policy": "bf2a2f0d41a189cb865aeaff0d6d279960bcad5655a2f75a6e976341b784512f",
+    "facebook:privacy_policy": "b7da4cae5d0b6e906b22493c034aee17b09c3e882deb9e8479d6870db60ead98",
+    "instagram:privacy_policy": "64bb72bcc49b06581b4f4d25bd8988e193cccccbe5692529ec80d5da1b637639",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
     "snapchat:privacy_policy": "07daf00450744dc07f965a3f795c7e0dde2b2ea354f8a2f91ac9c870b80e52f1",
     "x:privacy_policy": "394c641fec41f5cf2d010cf92d9450dad0e37f8b1d2cfa9bd0514b830c7c7a19",
-    "chatgpt:privacy_policy": "3656a78cc58ea644b6ee5f2bf223b2239de54ec624dc6aef0bbe0bc9dfed56dc",
+    "chatgpt:privacy_policy": "ff9339f16b5ddf212ccbd5be157a03bfce07577f6c7218c0d2e0e9ce7ec31c9c",
     "llama_api:privacy_policy": "30894f61635527d0d1ab65cc4efca42eae6ed47021015fb601c00fa76c23d38e",
-    "claude_ai:privacy_policy": "9e0342452af494a1a43bbbce4d06650b07615c5e3f774b62f1a2205e54f86390"
+    "claude_ai:privacy_policy": "a65dd3a0f4efa6e79f6a1d8659f2b34d3b7f5e480922ec92f48f014580f07969"
   },
   "changed_keys": [
+    "facebook:privacy_policy",
+    "instagram:privacy_policy",
     "chatgpt:privacy_policy",
     "claude_ai:privacy_policy"
   ],
