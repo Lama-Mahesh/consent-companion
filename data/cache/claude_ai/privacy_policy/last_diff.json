@@ -2,13 +2,13 @@
   "service_id": "claude_ai",
   "doc_type": "privacy_policy",
   "name": "Claude.ai Privacy Policy",
-  "generated_at": "2026-10-20T23:43:01+00:00",
+  "generated_at": "2026-10-28T12:28:27+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-10-20T08:21:13+00:00",
-      "content_sha256": "9dd332a728be0eae65220c99575bc034d8db710bb1928cdb4e672a6e9255f8bb",
+      "fetched_at": "2026-10-20T23:42:57+00:00",
+      "content_sha256": "3caf11ebbd94adad4f0733fbebbd4fde382d7b4cca53128612e0846e70afb288",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-10-20T23:42:57+00:00",
-      "content_sha256": "3caf11ebbd94adad4f0733fbebbd4fde382d7b4cca53128612e0846e70afb288",
+      "fetched_at": "2026-10-28T12:28:23+00:00",
+      "content_sha256": "ca9bdcb8c0c43fa48aff6f5897aba3ecd02b779bd200284c6966ae4eca681c4c",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 18
+    "num_changes": 11
   },
   "changes": [
     {
@@ -101,42 +101,6 @@
       "risk_score": 2.3,
       "similarity": null,
       "old_index": null,
-      "new_index": 91,
-      "old": null,
-      "new": "It is in our and our users' legitimate interests to expand our product features and deliver additional services that enhance platform functionality and user experience.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 95,
-      "old": null,
-      "new": "It is in our legitimate interests to promote our Services that may be of interest to you, including sending direct marketing.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 99,
-      "old": null,
-      "new": "It is in our legitimate interests to protect our business, employees and users from illegal activities, inappropriate behavior or violations of terms that would be detrimental. We also have a duty to cooperate with authorities.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
       "new_index": 110,
       "old": null,
       "new": "It is in our legitimate interests and in the interest of Anthropic users to evaluate the use of the Services and adoption of new features to inform the development of future features and improve direction and development of the Services. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable.",
@@ -144,50 +108,14 @@
       "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
     },
     {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 188,
-      "old": null,
-      "new": "To improve our services and conduct research, including to develop and improve our AI models (as described in more detail in section 4)",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Purpose & legal basis",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 191,
-      "old": null,
-      "new": "It is in our legitimate interests to protect our business, and we also have a duty to cooperate with authorities.",
-      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
-      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
-    },
-    {
-      "category": "Billing & financial terms",
-      "type": "added",
-      "risk_score": 2.3,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 96,
-      "old": null,
-      "new": "To facilitate payments for products and services provided by Anthropic",
-      "explanation": "The updated policy introduces or changes billing/payment-related terms (subscriptions, fees, pricing, or payment methods).",
-      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
-    },
-    {
       "category": "Other policy change",
-      "type": "modified",
+      "type": "added",
       "risk_score": 1.0,
-      "similarity": 0.7603480815887451,
-      "old_index": 98,
-      "new_index": 189,
-      "old": "| To improve the Services and conduct research (including model training). See our Non-User Privacy Policy for more details on the data used to train our models, and the different stages of development. | Feedback Study Participation Data Inputs and Outputs Data provided through the Development Partner Program | Scientific Research Consent Legitimate interests It is in our legitimate interests and in the interest of Anthropic users to evaluate the use of the Services and adoption of new features to inform the development of future features and improve direction and development of the Services. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable. |",
-      "new": "It is in our legitimate interests to train and improve our AI models. This enables us to provide more accurate and helpful services to our users over time. Our AI models also offer significant societal benefits to the wider public such as supporting scientific and medical research, facilitating education, creating content, promoting software development, improving customer service and enhancing workplace productivity. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable",
+      "similarity": null,
+      "old_index": null,
+      "new_index": 111,
+      "old": null,
+      "new": "To enforce our Terms of Service and similar terms and agreements, including our Usage Policy.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -197,9 +125,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 89,
+      "new_index": 183,
       "old": null,
-      "new": "To provide, maintain and facilitate optional services and features that enhance platform functionality and user experience",
+      "new": "Restriction: the right to restrict our processing of your personal data in certain circumstances.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -209,9 +137,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 90,
+      "new_index": 208,
       "old": null,
-      "new": "Consent (for example for precise device location or for health app integrations)",
+      "new": "If you live in the European Economic Area (EEA), UK or Switzerland (the “European Region”), the data controller responsible for your personal data is Anthropic Ireland, Limited. If you live outside the European Region, the data controller responsible for your personal data is Anthropic PBC.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -221,9 +149,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 92,
+      "new_index": 210,
       "old": null,
-      "new": "To provide you with service updates, communications, and to provide tailored recommendations about our Services that may be of interest to you.",
+      "new": "Anthropic PBC with a registered address at 548 Market St, PMB 90375, San Francisco, CA 94104 (United States).",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     },
@@ -233,21 +161,9 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 93,
+      "new_index": 212,
       "old": null,
-      "new": "Where necessary to perform a contract with you, such as processing your contact information to send you a technical announcement about the Services.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 97,
-      "old": null,
-      "new": "To prevent and investigate fraud, abuse, and violations of our Usage Policy, unlawful or criminal activity, unauthorized access to or use of personal data or Anthropic systems and networks, to protect our rights and the rights of others, to protect your safety or that of any other person, and to meet legal, governmental and institutional policy obligations",
+      "new": "You can email us at privacy@anthropic.com and contact our Data Protection Officer at dpo@anthropic.com.",
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }

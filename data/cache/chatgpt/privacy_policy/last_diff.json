@@ -2,13 +2,13 @@
   "service_id": "chatgpt",
   "doc_type": "privacy_policy",
   "name": "ChatGPT Privacy Policy",
-  "generated_at": "2026-10-27T22:00:26+00:00",
+  "generated_at": "2026-10-28T12:28:23+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-10-27T08:48:53+00:00",
-      "content_sha256": "fab5076bc4c7df59200734877c705cce8aa6e7cbc624c4b5d82163cd92f31b17",
+      "fetched_at": "2026-10-27T22:00:19+00:00",
+      "content_sha256": "536aca9e63d174d7d719745a079da8710bf42e52e80b52604215f2add5aa93cb",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-10-27T22:00:19+00:00",
-      "content_sha256": "536aca9e63d174d7d719745a079da8710bf42e52e80b52604215f2add5aa93cb",
+      "fetched_at": "2026-10-28T12:28:16+00:00",
+      "content_sha256": "dfe68c343f5bd3d6d8be8d8d11b988b4595e42193c725d942b58fe150d6e3c6c",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/genai-contrib-versions",
