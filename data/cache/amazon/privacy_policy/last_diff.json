@@ -2,13 +2,13 @@
   "service_id": "amazon",
   "doc_type": "privacy_policy",
   "name": "Amazon Privacy Policy",
-  "generated_at": "2026-10-28T04:58:51+00:00",
+  "generated_at": "2026-11-04T19:36:09+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2025-12-30T03:21:17+00:00",
-      "content_sha256": "8f1aa922724ac71dabda335a75cf6c90faf33a73462ec16b5d20d9337cb37499",
+      "fetched_at": "2026-10-28T04:58:45+00:00",
+      "content_sha256": "a71ac18214ed9b3958edca82e238bbc220c9d9f829b8bd605d48fc32e86617a0",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-10-28T04:58:45+00:00",
-      "content_sha256": "a71ac18214ed9b3958edca82e238bbc220c9d9f829b8bd605d48fc32e86617a0",
+      "fetched_at": "2026-11-04T19:35:59+00:00",
+      "content_sha256": "7a40553a8f7db1342bdae91e6bb007e614671b490fa9f83b3dad66c176a550e4",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -32,7 +32,7 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 7
+    "num_changes": 4
   },
   "changes": [
     {
@@ -41,7 +41,7 @@
       "risk_score": 3.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 33,
+      "new_index": 32,
       "old": null,
       "new": "Qu'en est-il des cookies et des autres identificateurs ?",
       "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
@@ -53,7 +53,7 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 11,
+      "new_index": 10,
       "old": null,
       "new": "Quelles informations personnelles Amazon Europe collecte-t-elle sur ses clients ?",
       "explanation": "This section of the policy text has been modified.",
@@ -65,19 +65,7 @@
       "risk_score": 1.0,
       "similarity": null,
       "old_index": null,
-      "new_index": 21,
-      "old": null,
-      "new": "Nous utilisons vos informations personnelles pour vous fournir des fonctionnalités, analyser des performances, corriger les erreurs et améliorer l'accessibilité et l'efficacité des Services Amazon. Pour cela, nous recourons à l'apprentissage automatique et à l'intelligence artificielle pour enrichir l'expérience client sur l'ensemble de nos produits et services, notamment en utilisant des données pour développer ou déployer nos modèles et services d'IA générative. Pour en savoir plus, consultez notre Déclaration de développement de l'IA générative.",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 70,
+      "new_index": 69,
       "old": null,
       "new": "Les enfants sont-ils autorisés à utiliser les Services Amazon ?",
       "explanation": "This section of the policy text has been modified.",
@@ -85,37 +73,13 @@
     },
     {
       "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 89,
-      "old": null,
-      "new": "utilisez Connexion avec Amazon ou liez votre compte Amazon d'une autre manière à une entreprise tierce ;",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 114,
-      "old": null,
-      "new": "les informations sur vos interactions avec les publicités diffusées par Amazon sur des sites web et applications tiers (pour en savoir plus, consultez notre avis Publicités basées sur vos centres d'intérêt) ;",
-      "explanation": "This section of the policy text has been modified.",
-      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
-    },
-    {
-      "category": "Other policy change",
-      "type": "added",
-      "risk_score": 1.0,
-      "similarity": null,
-      "old_index": null,
-      "new_index": 115,
-      "old": null,
-      "new": "les contenus que nous recevons de tiers afin de fournir, développer et améliorer les services Amazon, tels que les informations et identifiants liés à la publicité (décrits plus en détail dans notre avis Publicités basées sur vos centres d'intérêt) ;",
+      "type": "removed",
+      "risk_score": 0.5,
+      "similarity": 0.503899097442627,
+      "old_index": 0,
+      "new_index": null,
+      "old": "Dernière mise à jour : le 17 séptembre 2026.",
+      "new": null,
       "explanation": "This section of the policy text has been modified.",
       "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
     }
