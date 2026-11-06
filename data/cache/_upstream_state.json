@@ -11,17 +11,14 @@
     "facebook:privacy_policy": "0004503bcd58b8cf11bded473705b65306759bb05f49f6823dbdf6f58127dd42",
     "instagram:privacy_policy": "6ab6f8cb78a1cc8b3d1f8c715a4b1b8fd8d2f23af32c18f3dc33693d8ac7ea44",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
-    "snapchat:privacy_policy": "e784b4a21d50c67518e368494c12ea8acaf361a154da7f589f56b1263f162cb2",
+    "snapchat:privacy_policy": "1e02ca9caa45c55db2c17de412032c92167283ab55902394ff6c6047ef14da2a",
     "x:privacy_policy": "394c641fec41f5cf2d010cf92d9450dad0e37f8b1d2cfa9bd0514b830c7c7a19",
     "chatgpt:privacy_policy": "60e5722deac3517f83716187e9b5bd23c50373c889b0438e69c22a5045850455",
     "llama_api:privacy_policy": "30894f61635527d0d1ab65cc4efca42eae6ed47021015fb601c00fa76c23d38e",
     "claude_ai:privacy_policy": "7e4af4ea4c7e936240ec60c4ceeeb0f24099d89e8d7277eb21ba59e49709703a"
   },
   "changed_keys": [
-    "instagram:privacy_policy",
-    "snapchat:privacy_policy",
-    "chatgpt:privacy_policy",
-    "claude_ai:privacy_policy"
+    "snapchat:privacy_policy"
   ],
   "failures": []
 }
