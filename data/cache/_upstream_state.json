@@ -11,15 +11,15 @@
     "facebook:privacy_policy": "0004503bcd58b8cf11bded473705b65306759bb05f49f6823dbdf6f58127dd42",
     "instagram:privacy_policy": "6ab6f8cb78a1cc8b3d1f8c715a4b1b8fd8d2f23af32c18f3dc33693d8ac7ea44",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
-    "snapchat:privacy_policy": "4e82a6eb895064319ac662646b7215debb6df66ec0c35f7615601eb42ff9ee90",
+    "snapchat:privacy_policy": "8a7a77b2649fe0ea593f9cf596a7c0c8536c97a317257869cd99ef7f5dc97596",
     "x:privacy_policy": "394c641fec41f5cf2d010cf92d9450dad0e37f8b1d2cfa9bd0514b830c7c7a19",
-    "chatgpt:privacy_policy": "31a4bdd802a4336e37f319d18962c1a3d286794925b6aec9c524bcef3f2082f4",
+    "chatgpt:privacy_policy": "92ae1c8b9b544ab75a6e42514847162276150af1ef26215a69567085b3c54f54",
     "llama_api:privacy_policy": "30894f61635527d0d1ab65cc4efca42eae6ed47021015fb601c00fa76c23d38e",
     "claude_ai:privacy_policy": "a75e42ae3bcc094e4fdeb0a325f4f18685d5f321d0fa7e87fd91e192973f1f87"
   },
   "changed_keys": [
-    "chatgpt:privacy_policy",
-    "claude_ai:privacy_policy"
+    "snapchat:privacy_policy",
+    "chatgpt:privacy_policy"
   ],
   "failures": []
 }
