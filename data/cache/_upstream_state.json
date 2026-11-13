@@ -9,16 +9,17 @@
     "discord:privacy_policy": "1ba7c559c88354eb3f4bc07cb78ee962fa6f2125f8a549099fda5fe14153dc0c",
     "amazon:privacy_policy": "d822195911c2d941ea3c47e1da2ff99e8995f562a60d811f167dd0b76cd4ff11",
     "facebook:privacy_policy": "0004503bcd58b8cf11bded473705b65306759bb05f49f6823dbdf6f58127dd42",
-    "instagram:privacy_policy": "36bce6d83a1a932f80ac211c37e298c8a75f9972d105c3944ad9bb0bcc819d22",
+    "instagram:privacy_policy": "9b7d2554a3800407951ff16dc4c1f7df26d0bce08ba7c6cf1e3e537a02cdd033",
     "linkedin:privacy_policy": "df46749897a8068c4e17423a0e560625fdb95b8e871322451620480a0e0dcb15",
-    "snapchat:privacy_policy": "0f445709105810c1495ecaa68ed86bc438abc5924e550f6e7a0e656719b30972",
+    "snapchat:privacy_policy": "b89c61e1a7a52fdb897baa392dbcd87df359643fd1e2fe2f8cb4af6056e0e065",
     "x:privacy_policy": "394c641fec41f5cf2d010cf92d9450dad0e37f8b1d2cfa9bd0514b830c7c7a19",
     "chatgpt:privacy_policy": "91b21bc3d0228d6c2e3f6f57096021c689d3565f083b92da3a72ef504374f6b8",
     "llama_api:privacy_policy": "30894f61635527d0d1ab65cc4efca42eae6ed47021015fb601c00fa76c23d38e",
     "claude_ai:privacy_policy": "a75e42ae3bcc094e4fdeb0a325f4f18685d5f321d0fa7e87fd91e192973f1f87"
   },
   "changed_keys": [
-    "chatgpt:privacy_policy"
+    "instagram:privacy_policy",
+    "snapchat:privacy_policy"
   ],
   "failures": []
 }
