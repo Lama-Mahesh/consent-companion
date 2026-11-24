@@ -2,13 +2,13 @@
   "service_id": "discord",
   "doc_type": "privacy_policy",
   "name": "Discord Privacy Policy",
-  "generated_at": "2026-04-08T02:54:07+00:00",
+  "generated_at": "2026-11-24T02:05:27+00:00",
   "mode_requested": "semantic",
   "mode_used": "semantic",
   "provenance": {
     "old": {
-      "fetched_at": "2026-02-20T02:36:33+00:00",
-      "content_sha256": "703d29604ed391b757f178cb046d490b023872cc5625bb1e6404efdf9f15d489",
+      "fetched_at": "2026-04-08T02:54:00+00:00",
+      "content_sha256": "c463d47d5b6e7edbc59662e6d5a43cda9bad9fed58502ff8b2978a0fac172b28",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -18,8 +18,8 @@
       }
     },
     "new": {
-      "fetched_at": "2026-04-08T02:54:00+00:00",
-      "content_sha256": "c463d47d5b6e7edbc59662e6d5a43cda9bad9fed58502ff8b2978a0fac172b28",
+      "fetched_at": "2026-11-24T02:05:20+00:00",
+      "content_sha256": "e386251051861e223ec705fdd3354953115bc240154301f53d3a0a7390ceb2e3",
       "source": {
         "type": "ota",
         "repo": "OpenTermsArchive/france-versions",
@@ -32,7 +32,164 @@
   "engine": {
     "mode": "semantic",
     "model_name": "all-MiniLM-L6-v2",
-    "num_changes": 0
+    "num_changes": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "category": "Tracking, analytics & profiling",
+      "type": "added",
+      "risk_score": 3.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 22,
+      "old": null,
+      "new": "Age information. When you create a Discord account, you’ll also need to provide your birthday. We also collect your IP address and limited device information to help us determine the region you’re in when you’re using Discord. In some cases, we may require additional information to verify your age, and the information collected depends on the age assurance method used. We work with trusted providers so that Discord doesn’t handle the information you submit to confirm your age, such as a selfie, identify documents, or credit card details. Instead, Discord only collects, processes, or stores age signals (such as your age or age category).",
+      "explanation": "The updated policy indicates expanded tracking or behavioural analytics (e.g., interactions, pages visited, search terms, click activity, or location) which may be used for personalisation or profiling.",
+      "suggested_action": "Review privacy settings to limit tracking/analytics. Consider disabling personalised ads, restricting cookies, or using privacy tools if concerned about behavioural profiling."
+    },
+    {
+      "category": "Data sharing & third parties",
+      "type": "modified",
+      "risk_score": 3.0,
+      "similarity": 0.8401053547859192,
+      "old_index": 67,
+      "new_index": 70,
+      "old": "We offer a number of settings that allow you to tailor your experience within Discord. Some of these relate to specific features: for example, you can choose whether to display your current activity (like the game you are playing or the music you are listening to) in your status in your User Settings page (this is the gear icon next to your username).",
+      "new": "We offer a number of settings that allow you to tailor your experience within Discord. Some of these relate to specific features, others allow you to control how we process or share your information on or off Discord. These include:",
+      "explanation": "The updated policy indicates that your data may now be shared with additional third parties, such as partners, advertisers, service providers, or group companies.",
+      "suggested_action": "Check which third parties are involved and whether you can opt out of certain types of sharing or limit data transfers in your account settings."
+    },
+    {
+      "category": "Purpose & legal basis",
+      "type": "modified",
+      "risk_score": 2.8,
+      "similarity": 0.9549928307533264,
+      "old_index": 31,
+      "new_index": 33,
+      "old": "We may receive information about you from other sources, including from other users and third parties, and combine that information with the other information we have about you. For example, if you interact with our social media account on another platform, we may receive certain information about you like your username on that platform. Similarly, when we advertise on other services, we may receive information about your engagement with those ads. We may also receive information about you from advertisers and third-party data providers, such as demographic information and how you engage with other products and services outside of Discord.",
+      "new": "We may receive information about you from other sources, including from other users and third parties, and combine that information with the other information we have about you. For example, if you interact with our social media account on another platform, we may receive certain information about you like your username on that platform. Similarly, when we advertise on other services, we may receive information about your engagement with those ads. We may also receive information about you from advertisers, partners and third-party data providers, such as demographic information and how you engage with other products and services outside of Discord. If you engage with third party sponsored content, we may receive interaction and measurement data (such as impressions, clicks, and conversions) from these sources.",
+      "explanation": "The updated policy introduces or expands the purposes for which your data is used (e.g., advertising, analytics, research, or security) or clarifies the legal basis for processing.",
+      "suggested_action": "Check whether you are comfortable with these purposes and, where applicable, adjust your consent or opt-out preferences."
+    },
+    {
+      "category": "Data collection expanded",
+      "type": "modified",
+      "risk_score": 2.5,
+      "similarity": 0.7820284366607666,
+      "old_index": 27,
+      "new_index": 29,
+      "old": "Information about your device . We collect information about the device you are using to access the services. For example, this includes information like your IP address, operating system information, browser information, and information about your device settings, such as your microphone and/or camera.",
+      "new": "Information about your device . We collect information about the device you are using to access the services. For example, this includes information like your IP address, operating system information, browser information, and information about your device settings, such as your microphone and/or camera. If you interact with sponsored content, this may also include, consistent with your settings, information like device ID, advertising ID (such as IDFA or Android Ad ID), or similar unique IDs (such as a click or interaction ID).",
+      "explanation": "The policy indicates that additional types of personal or usage data are now collected, including: device id.",
+      "suggested_action": "Review whether you are comfortable with these new types of data being collected. If not, adjust your privacy settings or limit the information you provide."
+    },
+    {
+      "category": "Billing & financial terms",
+      "type": "added",
+      "risk_score": 2.3,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 51,
+      "old": null,
+      "new": "We are also required to retain and use certain information for compliance, regulatory, and auditing purposes. For example, privacy laws (such as the E.U. General Data Protection Regulation and U.S. State Laws) require us to maintain records about privacy rights requests. Similarly, minors’ privacy and online safety laws (such as the E.U. Digital Services Act, U.K Online Safety Act, or U.K. Age Appropriate Design Code), require us to maintain logs about age signals we receive, the method used to confirm age, and aggregate information about users’ age groups. Or, under our financial and tax obligations we process transaction records, billing information, and other data that may be necessary for fraud detection and prevention.",
+      "explanation": "The updated policy introduces or changes billing/payment-related terms (subscriptions, fees, pricing, or payment methods).",
+      "suggested_action": "Review these financial terms carefully to understand any new costs or obligations."
+    },
+    {
+      "category": "Security & safety measures",
+      "type": "added",
+      "risk_score": 2.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 42,
+      "old": null,
+      "new": "To protect our services . We use your information to keep our services secure, to prevent misuse, and to enforce our Terms of Service and other policies against users who violate them. This may include using information to build or improve models that help us determine a user’s age group and deliver age-appropriate experiences. (You can read more about how our age estimation model works here.)",
+      "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
+      "suggested_action": "This may improve protection of your data. You can still review details to understand what changed."
+    },
+    {
+      "category": "Security & safety measures",
+      "type": "modified",
+      "risk_score": 1.5,
+      "similarity": 0.9123849868774414,
+      "old_index": 53,
+      "new_index": 56,
+      "old": "With our vendors . We may provide information to vendors we hire to carry out specific work for us. This includes payment processors like Stripe and PayPal that process transactions on our behalf and cloud providers like Google that host our data and our services. We may also provide limited information to advertising platforms to help us reach people that we think will like our products and to measure the performance of our ads shown on those platforms. We do this to help bring more users to Discord and make our business successful, and provide only the information required to facilitate these services. This may include information like the fact that you installed our app or registered to use Discord. We may also provide information to analytics and measurement partners to measure the effectiveness of sponsored content if you engage with it (for example, by starting a Quest or clicking on other sponsored content).",
+      "new": "With our vendors . Vendors who support our technical infrastructure may sometimes process or host your information. Similarly vendors who help secure the service may have access to some of your information. We may also provide information to vendors who carry out specific work for us, such as to verify your email address or phone number and process payments. . It may also include age verification providers who process verification information solely to determine age or age category, and then must delete that information. We may also provide limited information to advertising platforms to help us reach people that we think will like our products and to measure the performance of our ads shown on those platforms. We do this to help bring more users to Discord and make our business successful, and provide only the information required to facilitate these services. This may include information like the fact that you installed our app or registered to use Discord. We may also provide information to analytics and measurement partners to measure the effectiveness of sponsored content if you engage with it (for example, by starting a Quest or clicking on other sponsored content).",
+      "explanation": "The updated policy describes new or enhanced security measures to protect your data, such as encryption, access controls, or monitoring.",
+      "suggested_action": "This may improve protection of your data. You can still review details to understand what changed."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.8178775310516357,
+      "old_index": 52,
+      "new_index": 68,
+      "old": "When you tell us to . When you add your content to the services, you are telling us to make that content available to certain people or communities. Who can access that information is determined by who can access a particular space. For servers, those permissions are set by server owners or admins. They control whether a server requires an invite link or is open and accessible to anyone. And these permissions, like the size of the server, may change over time. Similarly, if you link your Discord account with a third-party service (like a music-streaming service or gaming platform), embed content, interact with third-party content posted on Discord, interact with users on other services who have linked their account, or participate in a server that has third-party features like bots enabled, we may provide certain information to that service or to other Discord users to operate that content, service, or feature. Additionally, if you purchase goods or services from other users on Discord, we may disclose certain information to these users in order to facilitate the delivery of the goods or services purchased or help them understand and improve their business. We may also disclose your information as you otherwise instruct us or provide us your consent to do so.",
+      "new": "You can choose what spaces to participate in and what information you add to our services. You can choose what messages to send or post, who to engage with (e.g., one or more particular users or a potentially unlimited group of users), what information to include in your profile, whether to connect any third party services to your Discord account, and more. For example, if you share content in certain spaces, such as servers listed in Server Discovery, servers with public invite links, or eligible servers that choose to have content appear off of Discord, your content may be accessed by anyone.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 1.0,
+      "similarity": 0.878229022026062,
+      "old_index": 56,
+      "new_index": 59,
+      "old": "To enforce our policies and rights . We may disclose information if needed to enforce our Terms of Service, Community Guidelines, any of our other policies, or to protect the rights, property, and safety of ourselves and others.",
+      "new": "To enforce our policies and rights . We may disclose information if needed to enforce our Terms of Service, Community Guidelines, any of our other policies, or to protect the rights, property, and safety of ourselves and others. This may include sharing info with third-party gaming platforms, law enforcement, or children’s safety task forces depending on the nature and severity of the contexts.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 16,
+      "old": null,
+      "new": "You can limit the extent to which your content is used for these purposes as described in the “How to control your privacy” section below. You can learn more about our approach to safety and content moderation, including how we use your information for these purposes, in our Safety Center. You should take all of this into account when you are using our services, and choose the spaces, features, and settings that are most appropriate for your content.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 36,
+      "old": null,
+      "new": "In certain jurisdictions, we rely on consent (implied or express) to collect, use and disclose personal information, subject to limited exceptions. For example, depending on where you live and how old you are, we may deliver personalized sponsored content after you provide consent. But in other regions, sponsored content may be personalized by default (and you can disable it). As a result, the legal bases below may not apply to you. Please see Information About Local Privacy Laws page located here.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "added",
+      "risk_score": 1.0,
+      "similarity": null,
+      "old_index": null,
+      "new_index": 73,
+      "old": null,
+      "new": "Limit how we deliver sponsored content. We offer certain sponsored content settings that allow you to control your experience with sponsored content on Discord, including to limit how we use your information to deliver relevant sponsored content to you on Discord.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    },
+    {
+      "category": "Other policy change",
+      "type": "modified",
+      "risk_score": 0.5,
+      "similarity": 0.9044704437255859,
+      "old_index": 14,
+      "new_index": 14,
+      "old": "As explained in our Terms of Service, we allow users to add content to the services in a number of different ways, including via direct messages and in smaller and larger spaces. If you share content within larger spaces, that content may be accessed by many people, including people you do not know. For example, some servers are available in the Server Discovery section of the app and do not require an invite link to join. Other server owners may publish their server invite link on public websites. Anyone can access these servers, and you should be aware that server owners or admins set these permissions, and like the size of a server, the permissions may change over time.",
+      "new": "As explained in our Terms of Service, we allow users to add content to the services in a number of different ways, including via direct messages and in smaller and larger spaces. If you share content within larger spaces, that content may be accessed by many people, including people you do not know. For example, some servers are available on Server Discovery and do not require an invite link to join. Server owners may publish their server invite link on public websites or enable certain server content to appear off Discord. Anyone can access this content. You also should be aware of your own privacy settings, described below, and understand that server owners and admins set their own server permissions, and like the size of a server, the permissions may change over time.",
+      "explanation": "This section of the policy text has been modified.",
+      "suggested_action": "Read this part of the policy carefully to understand how it affects your data."
+    }
+  ]
 }
